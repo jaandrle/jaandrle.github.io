@@ -52,14 +52,14 @@
                 background-color: inherit;
             }
         }
-    }
-    div&-form {
-        padding: .5em;
-        background: rgba(255,255,255, .1);
-        border-radius: 15px;
-        textarea, input {
-            flex: 1;
-            max-width: 30em;
+        div&{
+            padding: .5em;
+            background: rgba(255,255,255, .1);
+            border-radius: 15px;
+            textarea, input {
+                flex: 1;
+                max-width: 30em;
+            }
         }
     }
     .form-group {
