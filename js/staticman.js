@@ -5,8 +5,8 @@
     js_notice_success_el= js_notice_el.getElementsByClassName("js-notice-text-success")[0],
     js_notice_failure_el= js_notice_el.getElementsByClassName("js-notice-text-failure")[0],
     submitted_el= document.getElementById('comment-form-submitted'),
-    submitted_el_className= submitted_el.className,
-    submit_el= document.getElementById('comment-form-submit');
+    submit_el= document.getElementById('comment-form-submit'),
+    submit_el_className= submit_el.className;
   
   form.onsubmit= function(){
     toggleDisabled(form, true);
@@ -48,11 +48,11 @@
   function toggleDisabled(el, disabled){ el.disabled= disabled || false; }
   function toggleSubmitButton(form_disabled){
     if(form_disabled){
-      submit_el.className= submitted_el_className+" hidden";
-      submitted_el.className= submitted_el_className;
+      submit_el.className= submit_el_className+" hidden";
+      submitted_el.className= submit_el_className;
     } else {
-      submit_el.className= submitted_el_className;
-      submitted_el.className= submitted_el_className+" hidden";
+      submit_el.className= submit_el_className;
+      submitted_el.className= submit_el_className+" hidden";
     }
   }
   function setNoticeClass(className){
