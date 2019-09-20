@@ -417,6 +417,24 @@ ja: &DEFAULT_JA
 ja-JP:
   <<: *DEFAULT_JA
 
+# Czech
+# -----------------
+sk: &DEFAULT_CS
+  comments_label             : "Zanechejte odkaz"
+  comments_title             : "Komentáře"
+  comment_form_info          : "Emailová adresa se nebude zobrazovat."
+  comment_form_comment_label : "Komentář"
+  comment_form_md_info       : "V textu komentáře je podporován zápis pomocí Markdown."
+  comment_form_name_label    : "Zobrazované jméno (povinné)"
+  comment_form_email_label   : "Emailová adresa"
+  comment_form_website_label : "Webstránka"
+  comment_btn_submit         : "Odeslat"
+  comment_btn_submitted      : "Komentář byl odeslán"
+  comment_success_msg        : "Děkuji za tvůj komentář! Po schválení bude zobrazený na stránce."
+  comment_error_msg          : "Omlouvám se, při ukladaní nastala chyba. Zkontrolujte prosím, zda jsou vyplněna všechna požadovaná pole a skús znova."
+cz-CS:
+  <<: *DEFAULT_CS
+
 # Slovak
 # -----------------
 sk: &DEFAULT_SK
