@@ -5,7 +5,7 @@ layout: default
 {%- for tag in site.tags -%}
     {%- assign t = tag | first -%}
     {%- assign posts = tag | last -%}
-    {% if forloop.index0 %}, {% endif %}
+    {% if forloop.index0!=0 %}, {% endif %}
     <a href='./#tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{t}}</a>
 {%- endfor -%}
 

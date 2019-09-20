@@ -8,7 +8,7 @@ layout: default
     <b>Written on</b> {{ page.date | date: "%B %e, %Y" }}
     {%- if page.tags[0] %} | <b>Tags:</b> 
       {% for tag in page.tags -%}
-        {% if forloop.index0 %}, {% endif %}{{forloop.index0}}
+        {% if forloop.index0!=0 %}, {% endif %}
         <a href="/tags#tag_anchor_{{ tag | downcase }}">{{tag}}</a>
       {%- endfor -%}
     {%- endif -%}
