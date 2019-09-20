@@ -82,6 +82,23 @@ a {
   }
 }
 
+.button {
+  display: flex;
+  color: white;
+  background: black;
+  border: 1px solid $blue;
+  line-height: 2em;
+  padding: 0 1em .25em 1em;
+  transition: .5s all;
+  &:hover{
+      background: $blue;
+  }
+  &[disabled]{
+      border-color: white;
+      background-color: inherit;
+  }
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -120,18 +137,6 @@ img {
   max-width: none;
 }
 
-.info {
-  color: white;
-  font-size: .75em;
-  padding: .5em;
-  background: rgba(255,255,255,.05);
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -157,6 +162,18 @@ img {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
+
+.info {
+  color: white;
+  font-size: .75em;
+  padding: .5em;
+  background: rgba(255,255,255,.05);
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
 
 //
 // .masthead

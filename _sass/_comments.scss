@@ -41,22 +41,6 @@
     &-form {
         margin: .5em 0 2em 0;
         padding: 0 0 0 3em;
-        &-button {
-            display: flex;
-            color: white;
-            background: black;
-            border: 1px solid $blue;
-            line-height: 2em;
-            padding: 0 1em .25em 1em;
-            transition: .5s all;
-            &:hover{
-                background: $blue;
-            }
-            &[disabled]{
-                border-color: white;
-                background-color: inherit;
-            }
-        }
     }
     .form-group {
         display: flex;
