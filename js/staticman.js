@@ -20,7 +20,7 @@
   };
 
   function showAlert(message) {
-    js_notice_el.removeClass('hidden');
+    js_notice_el.classList.remove('hidden');
     if (message == 'success') {
       js_notice_success_el.classList.remove('hidden');
       js_notice_failure_el.classList.add('hidden');

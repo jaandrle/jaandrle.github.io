@@ -419,7 +419,7 @@ ja-JP:
 
 # Czech
 # -----------------
-sk: &DEFAULT_CS
+cs: &DEFAULT_CS
   comments_label             : "Zanechejte odkaz"
   comments_title             : "Komentáře"
   comment_form_info          : "Emailová adresa se nebude zobrazovat."
@@ -432,7 +432,7 @@ sk: &DEFAULT_CS
   comment_btn_submitted      : "Komentář byl odeslán"
   comment_success_msg        : "Děkuji za tvůj komentář! Po schválení bude zobrazený na stránce."
   comment_error_msg          : "Omlouvám se, při ukladaní nastala chyba. Zkontrolujte prosím, zda jsou vyplněna všechna požadovaná pole a skús znova."
-cz-CS:
+cs-CZ:
   <<: *DEFAULT_CS
 
 # Slovak
