@@ -5,8 +5,8 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
   <div class="info">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-    {%- if page.tags[0] -%}| <b>Tags:</b> {{ page.tags | join: ", " }}{%- endif -%}
+    <b>Written on</b> {{ page.date | date: "%B %e, %Y" }}
+    {%- if page.tags[0] -%} | <b>Tags:</b> {%- for tag in page.tags -%}<a href="/tags#tag_anchor_{{ tag | downcase }}">{{tag}}</a> {%- endfor -%}{%- endif -%}
   </div>
 
   <div class="entry">
