@@ -420,14 +420,14 @@ ja-JP:
 # Czech
 # -----------------
 cs: &DEFAULT_CS
-  comments_label             : "Zanechejte odkaz"
+  comments_label             : "Přidejte svůj komentář"
   comments_title             : "Komentáře"
   comment_form_info          : "Emailová adresa se nebude zobrazovat."
-  comment_form_comment_label : "Komentář"
+  comment_form_comment_label : "Komentář (povinné)"
   comment_form_md_info       : "V textu komentáře je podporován zápis pomocí Markdown."
   comment_form_name_label    : "Zobrazované jméno (povinné)"
   comment_form_email_label   : "Emailová adresa"
-  comment_form_website_label : "Webstránka"
+  comment_form_website_label : "Webová stránka"
   comment_btn_submit         : "Odeslat"
   comment_btn_submitted      : "Komentář byl odeslán"
   comment_success_msg        : "Děkuji za tvůj komentář! Po schválení bude zobrazený na stránce."

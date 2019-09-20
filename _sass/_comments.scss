@@ -1,0 +1,79 @@
+.comment {
+    display: flex;
+    background: rgba(255,255,255,.1);
+    border-radius: 15px;
+
+    &__avatar-wrapper img {
+        border-radius: 15px;
+        opacity: .75;
+    }
+    &__content-wrapper {
+        flex: 1;
+        margin-left: 1em;
+    }
+
+    &__date {
+        margin: 0;
+        font-size: .65em;
+        padding: 0;
+        font-style: italic;
+    }
+    &__author {
+        margin: 0;
+    }
+    &__date, &__author {
+      a {
+            color: inherit;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+}
+.page__comments {
+    &-title {
+        margin: 0 0 .5em 0;
+    }
+    &-form {
+        margin: .5em 0 2em 0;
+        &-button {
+            display: flex;
+            color: white;
+            background: black;
+            border: 1px solid $blue;
+            line-height: 2em;
+            padding: 0 1em .25em 1em;
+            transition: .5s all;
+            &:hover{
+                background: $blue;
+            }
+            &[disabled]{
+                border-color: white;
+                background-color: inherit;
+            }
+        }
+    }
+    div&-form {
+        padding: .5em;
+        background: rgba(255,255,255, .1);
+        border-radius: 15px;
+        textarea, input {
+            flex: 1;
+            max-width: 30em;
+        }
+    }
+    .form-group {
+        display: flex;
+        padding: .25em 0;
+    }
+    label {
+        font-size: .9em;
+        flex: 0 0 15em;
+    }
+}
+.help-block a{
+    color: white;
+    &:hover{
+        color: $blue;
+    }
+}

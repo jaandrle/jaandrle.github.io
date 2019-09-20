@@ -278,6 +278,7 @@ nav {
     font-size: 15px;
   }
 }
+@import "comments";
 
 .wrapper-footer {
   background-color: $lightGray;
@@ -297,4 +298,9 @@ footer {
 
 .hidden{
   display: none;
+}
+.small {
+  font-size: .65em;
+  font-style: italic;
+  margin: 0;
 }
