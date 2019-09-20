@@ -1,15 +1,17 @@
 (function () {
   var form= document.getElementById('new_comment'),
     js_notice_el= form.getElementsByClassName("js-notice")[0],
-    js_notice_className= js_notice_el.className+" ",
+    js_notice_className= js_notice_el.className,
     js_notice_success_el= js_notice_el.getElementsByClassName("js-notice-text-success")[0],
     js_notice_failure_el= js_notice_el.getElementsByClassName("js-notice-text-failure")[0],
     submitted_el= document.getElementById('comment-form-submitted'),
+    submitted_el_className= submitted_el.className,
     submit_el= document.getElementById('comment-form-submit');
   
   form.onsubmit= function(){
-    var form= this;
     toggleDisabled(form, true);
+    toggleSubmitButton(true);
+    js_notice_el.className= js_notice_className;
     var xhr= new XMLHttpRequest();
     xhr.open(form.getAttribute('method'), form.getAttribute('url'), true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -31,29 +33,30 @@
   }
   function ajaxCallback(exit_code, data){
     exit_code= exit_code || data.srcElement && data.srcElement.status===500;
-    offSubmitButton();
     if(!exit_code){
       setNoticeClass('notice--success');
       showAlert('success');
+      form.reset();
     } else {
       console.log(data);
       setNoticeClass('notice--danger');
       showAlert('failure');
     }
+    toggleSubmitButton(false);
     toggleDisabled(form, false);
   }
-  function toggleDisabled(el, disabled){
-    disabled= disabled || false;
-    if(disabled) el.classList.add("disabled");
-    else el.classList.remove("disabled");
-    el.disabled= disabled;
-  }
-  function offSubmitButton(){
-    submit_el.classList.add("disabled");
-    submitted_el.classList.remove("disabled");
+  function toggleDisabled(el, disabled){ el.disabled= disabled || false; }
+  function toggleSubmitButton(form_disabled){
+    if(form_disabled){
+      submit_el.className= submitted_el_className+" hidden";
+      submitted_el.className= submitted_el_className;
+    } else {
+      submit_el.className= submitted_el_className;
+      submitted_el.className= submitted_el_className+" hidden";
+    }
   }
   function setNoticeClass(className){
-    js_notice_el.className= js_notice_className+className;
+    js_notice_el.className+= className;
   }
   function serialize(form) {
     if (!form || form.nodeName !== "FORM") {
