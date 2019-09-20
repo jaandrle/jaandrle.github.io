@@ -40,6 +40,7 @@
     }
     &-form {
         margin: .5em 0 2em 0;
+        padding: 0 0 0 3em;
         &-button {
             display: flex;
             color: white;
@@ -84,6 +85,7 @@ div.page__comments-form{
     }
     textarea {
         max-width: 30em;
+        padding: .5em;
     }
 }
 .help-block a{
