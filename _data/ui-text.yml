@@ -429,9 +429,9 @@ cs: &DEFAULT_CS
   comment_form_email_label   : "Emailová adresa"
   comment_form_website_label : "Webová stránka"
   comment_btn_submit         : "Odeslat"
-  comment_btn_submitted      : "Komentář byl odeslán"
+  comment_btn_submitted      : "Komentář se odesílá"
   comment_success_msg        : "Děkuji za tvůj komentář! Po schválení bude zobrazený na stránce."
-  comment_error_msg          : "Omlouvám se, při ukladaní nastala chyba. Zkontrolujte prosím, zda jsou vyplněna všechna požadovaná pole a skús znova."
+  comment_error_msg          : "Omlouvám se, při ukladaní nastala chyba. Zkontrolujte prosím, zda jsou vyplněna všechna požadovaná pole a zkuste to znovu."
 cs-CZ:
   <<: *DEFAULT_CS
 
