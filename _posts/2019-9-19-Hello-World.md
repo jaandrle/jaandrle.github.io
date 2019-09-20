@@ -1,5 +1,6 @@
 ---
 layout: post
+tags : [first]
 title: You're up and running!
 ---
 
