@@ -1,1 +1,16 @@
-{% assign _publikovano_mesice = "ledna, února, března, dubna, května, června, července, srpna, září, října, listopadu, prosince" | split: ", " %}
+{%- assign m = include.date | date: "%-m" -%}
+{{ include.date | date: "%-d" }}.
+{%- case m %}
+  {% when '1' %}ledna
+  {% when '2' %}února
+  {% when '3' %}března
+  {% when '4' %}dubna
+  {% when '5' %}května
+  {% when '6' %}června
+  {% when '7' %}července
+  {% when '8' %}srpna
+  {% when '9' %}září
+  {% when '10' %}října
+  {% when '11' %}listopadu
+  {% when '12' %}prosince
+{%- endcase %} {{ include.date | date: "%Y" }}
