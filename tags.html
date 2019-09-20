@@ -1,20 +1,20 @@
 ---
 layout: default
 ---
-
-<ul class="tags">
-    {% for tag in site.tags %}
-        {% assign t = tag | first %}
-        {% assign posts = tag | last %}
-        <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
-    {% endfor %}
-</ul>
+<h1>Tags</h1>
+{%- for tag in site.tags -%}
+    {%- assign t = tag | first -%}
+    {%- assign posts = tag | last -%}
+    {% if forloop.index0 %}, {% endif %}
+    <a href='./#tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{t}}</a>
+{%- endfor -%}
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<h2 id="tag_anchor_{{ t | downcase }}">{{ t | downcase }}</h2>
+<h2 id='tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{ t }}</h2>
+<p>Has {{ posts | size }} posts</p>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
