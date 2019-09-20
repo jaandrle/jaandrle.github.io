@@ -120,6 +120,13 @@ img {
   max-width: none;
 }
 
+.info {
+  color: white;
+  font-size: .75em;
+  padding: .5em;
+  background: rgba(255,255,255,.05);
+}
+
 .date {
   font-style: italic;
   color: $gray;
