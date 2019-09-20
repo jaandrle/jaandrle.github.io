@@ -1,54 +1,120 @@
----
-layout: null
----
-
-(function ($) {
-  var $comments = $('.js-comments');
-
-  $('#new_comment').submit(function () {
-    var form = this;
-
-    $(form).addClass('disabled');
-
-    {% assign sm = site.staticman -%}
-    var endpoint = '{{ sm.endpoint | default: "https://staticman3.herokuapp.com/v3/entry/github/" }}';
-    var repository = '{{ sm.repository }}';
-    var branch = '{{ sm.branch }}';
-
-    $.ajax({
-      type: $(this).attr('method'),
-      url: endpoint + repository + '/' + branch + '/comments',
-      data: $(this).serialize(),
-      contentType: 'application/x-www-form-urlencoded',
-      success: function (data) {
-        $('#comment-form-submit').addClass('hidden');
-        $('#comment-form-submitted').removeClass('hidden');
-        $('.page__comments-form .js-notice').removeClass('notice--danger');
-        $('.page__comments-form .js-notice').addClass('notice--success');
-        showAlert('success');
-      },
-      error: function (err) {
-        console.log(err);
-        $('#comment-form-submitted').addClass('hidden');
-        $('#comment-form-submit').removeClass('hidden');
-        $('.page__comments-form .js-notice').removeClass('notice--success');
-        $('.page__comments-form .js-notice').addClass('notice--danger');
-        showAlert('failure');
-        $(form).removeClass('disabled');
-      }
-    });
-
+(function () {
+  var form= document.getElementById('#new_comment'),
+    js_notice_el= form.getElementsByClassName("js-notice")[0],
+    js_notice_className= js_notice_el.className,
+    js_notice_success_el= js_notice_el.getElementsByClassName("js-notice-text-success")[0],
+    js_notice_failure_el= js_notice_el.getElementsByClassName("js-notice-text-failure")[0],
+    submitted_el= document.getElementById('comment-form-submitted'),
+    submit_el= document.getElementById('comment-form-submit');
+  
+  document.getElementById('#new_comment').onsubmit= function(){
+    var form= this;
+    toggleDisabled(form, true);
+    var xhr= new XMLHttpRequest();
+    xhr.open(form.getAttribute('method'), form.getAttribute('url'), true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload= ajaxCallback.bind(null, 0);
+    xhr.onerror= ajaxCallback.bind(null, 1);
+    xhr.send(serialize(form));
     return false;
-  });
+  };
 
   function showAlert(message) {
-    $('.page__comments-form .js-notice').removeClass('hidden');
+    js_notice_el.removeClass('hidden');
     if (message == 'success') {
-      $('.page__comments-form .js-notice-text-success').removeClass('hidden');
-      $('.page__comments-form .js-notice-text-failure').addClass('hidden');
+      js_notice_success_el.classList.remove('hidden');
+      js_notice_failure_el.classList.add('hidden');
     } else {
-      $('.page__comments-form .js-notice-text-success').addClass('hidden');
-      $('.page__comments-form .js-notice-text-failure').removeClass('hidden');
+      js_notice_success_el.classList.add('hidden');
+      js_notice_failure_el.classList.remove('hidden');
     }
   }
-})(jQuery);
+  function ajaxCallback(exit_code, data){
+    exit_code= exit_code || 0;
+    offSubmitButton();
+    if(!exit_code){
+      setNoticeClass('notice--success');
+      showAlert('success');
+    } else {
+      console.log(data);
+      setNoticeClass('notice--danger');
+      showAlert('failure');
+    }
+    toggleDisabled(form, false);
+  }
+  function toggleDisabled(el, disabled){
+    disabled= disabled || false;
+    if(disabled) el.classList.add("disabled");
+    else el.classList.remove("disabled");
+    el.disabled= disabled;
+  }
+  function offSubmitButton(){
+    submit_el.classList.add("disabled");
+    submitted_el.classList.remove("disabled");
+  }
+  function setNoticeClass(className){
+    js_notice_el.className= js_notice_className+className;
+  }
+  function serialize(form) {
+    if (!form || form.nodeName !== "FORM") {
+      return;
+    }
+    var i, j, q = [];
+    for (i = form.elements.length - 1; i >= 0; i = i - 1) {
+      if (form.elements[i].name === "") {
+        continue;
+      }
+      switch (form.elements[i].nodeName) {
+      case 'INPUT':
+        switch (form.elements[i].type) {
+        case 'text':
+        case 'email':
+        case 'url':
+        case 'hidden':
+        case 'password':
+        case 'button':
+        case 'reset':
+        case 'submit':
+          q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].value));
+          break;
+        case 'checkbox':
+        case 'radio':
+          if (form.elements[i].checked) {
+            q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].value));
+          }
+          break;
+        case 'file':
+          break;
+        }
+        break;
+      case 'TEXTAREA':
+        q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].value));
+        break;
+      case 'SELECT':
+        switch (form.elements[i].type) {
+        case 'select-one':
+          q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].value));
+          break;
+        case 'select-multiple':
+          for (j = form.elements[i].options.length - 1; j >= 0; j = j - 1) {
+            if (form.elements[i].options[j].selected) {
+              q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].options[j].value));
+            }
+          }
+          break;
+        }
+        break;
+      case 'BUTTON':
+        switch (form.elements[i].type) {
+        case 'reset':
+        case 'submit':
+        case 'button':
+          q.push(encodeURIComponent(form.elements[i].name) + "=" + encodeURIComponent(form.elements[i].value));
+          break;
+        }
+        break;
+      }
+    }
+    return q.join("&");
+  }
+})();

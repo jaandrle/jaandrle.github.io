@@ -20,7 +20,11 @@
     <div class="page__comments-form">
       <h3 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h3>
       <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-      <form id="new_comment" class="page__comments-form js-form form" method="post">
+      {% assign sm = site.staticman -%}
+      {% assign sm_endpoint = sm.endpoint | default: "https://staticman3.herokuapp.com/v3/entry/github/" -%};
+      {% assign sm_repository = sm.repository -%};
+      {% assign sm_branch = sm.branch -%};
+      <form id="new_comment" class="page__comments-form js-form form" method="post" url="{{endpoint}}{{repository}}/{{branch}}/comments">
         <div class="form-group">
           <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label><br>
           <textarea type="text" rows="12" cols="36" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
@@ -71,11 +75,5 @@
   </div>
 
   <!-- Load script to handle comment form submission -->
-  <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-  <script>
-    if (typeof jQuery == 'undefined') {
-      document.write('<script src="{{ "/js/jquery-1.11.2.min.js" | relative_url }}"></scr' + 'ipt>');
-    }
-  </script>
   <script src="{{ "/js/staticman.js" | relative_url }}"></script>
 {% endif %}
