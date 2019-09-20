@@ -4,6 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: Jan Andrle
+author: Jan Andrle <andrle.jan@centrum.cz>
 
 # Short bio or description (displayed in the header)
 description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.
@@ -25,7 +26,7 @@ footer-links:
   instagram:
   linkedin:
   pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: https://jaandrle.github.io/feed.xml
   twitter: jaandrle
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
