@@ -1,5 +1,5 @@
 (function () {
-  var form= document.getElementById('#new_comment'),
+  var form= document.getElementById('new_comment'),
     js_notice_el= form.getElementsByClassName("js-notice")[0],
     js_notice_className= js_notice_el.className,
     js_notice_success_el= js_notice_el.getElementsByClassName("js-notice-text-success")[0],
@@ -7,7 +7,7 @@
     submitted_el= document.getElementById('comment-form-submitted'),
     submit_el= document.getElementById('comment-form-submit');
   
-  document.getElementById('#new_comment').onsubmit= function(){
+  form.onsubmit= function(){
     var form= this;
     toggleDisabled(form, true);
     var xhr= new XMLHttpRequest();
