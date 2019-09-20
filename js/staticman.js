@@ -30,8 +30,7 @@
     }
   }
   function ajaxCallback(exit_code, data){
-    console.log({ exit_code, data });
-    exit_code= exit_code || 0;
+    exit_code= exit_code || data.srcElement && data.srcElement.status==="500";
     offSubmitButton();
     if(!exit_code){
       setNoticeClass('notice--success');
