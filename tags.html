@@ -13,14 +13,13 @@ layout: default
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<h2 id='tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{ t }}</h2>
-<p>Has {{ posts | size }} post(s).</p>
+<h2 id='tag_anchor_{{ t | downcase | replace:" ","-" }}'>Příspěvky se štítkem '{{ t }}'</h2>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="date">{% include helpers_months.html date=post.date %}</span>
+    <span class="date">Publikováno: {% include helpers_months.html date=post.date %}</span>
   </li>
   {% endif %}
 {% endfor %}
