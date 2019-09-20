@@ -20,7 +20,7 @@
     <div class="page__comments-form">
       <h3 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h3>
       <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-      {% assign sm = site.staticman -%}
+      {% assign sm = site.staticman %}
       <form id="new_comment" class="page__comments-form js-form form" method="post" url="{% sm.endpoint | default: 'https://staticman3.herokuapp.com/v3/entry/github/' %}{% sm.repository %}/{% sm.branch %}/comments">
         <div class="form-group">
           <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label><br>
@@ -72,5 +72,5 @@
   </div>
 
   <!-- Load script to handle comment form submission -->
-  <script src="{{ "/js/staticman.js" | relative_url }}"></script>
+  <script src="{{ '/js/staticman.js' | relative_url }}"></script>
 {% endif %}
