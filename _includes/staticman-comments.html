@@ -30,7 +30,7 @@
             {{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }}
             <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
           </label>
-          <textarea type="text" rows="12" cols="36" id="comment-form-message" name="fields[message]" tabindex="2"></textarea>
+          <textarea type="text" rows="12" id="comment-form-message" name="fields[message]" tabindex="2"></textarea>
         </div>
         <div class="form-group">
           <label for="comment-form-email">
@@ -40,7 +40,10 @@
           <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
         </div>
         <div class="form-group">
-          <label for="comment-form-url">{{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}</label>
+          <label for="comment-form-url">
+            {{ site.data.ui-text[site.locale].comment_form_website_label | default: "Website (optional)" }}
+            <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Website address will not be published. Required fields are marked" }}</p>
+          </label>
           <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
         </div>
         <div class="form-group hidden" style="display: none;">

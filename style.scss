@@ -103,6 +103,7 @@ a {
 a.button{
   line-height: 1.5em;
   padding-top: .25em;
+  display: inline-flex;
   &:hover{
     color: white;
   }
@@ -231,7 +232,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $blue;
+  color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;

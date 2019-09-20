@@ -44,6 +44,7 @@
     }
     .form-group {
         display: flex;
+        flex-wrap: wrap;
         padding: .25em 0;
     }
     label {
