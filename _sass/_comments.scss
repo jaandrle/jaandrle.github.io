@@ -31,6 +31,9 @@
     }
 }
 .page__comments {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 3px solid $lightGray;
     &-title {
         margin: 0 0 .5em 0;
     }
@@ -52,15 +55,6 @@
                 background-color: inherit;
             }
         }
-        div#{&}{
-            padding: .5em;
-            background: rgba(255,255,255, .1);
-            border-radius: 15px;
-            textarea, input {
-                flex: 1;
-                max-width: 30em;
-            }
-        }
     }
     .form-group {
         display: flex;
@@ -69,6 +63,15 @@
     label {
         font-size: .9em;
         flex: 0 0 15em;
+    }
+}
+div.page__comments-form{
+    padding: .5em;
+    background: rgba(255,255,255, .1);
+    border-radius: 15px;
+    textarea, input {
+        flex: 1;
+        max-width: 30em;
     }
 }
 .help-block a{
