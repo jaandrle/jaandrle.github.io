@@ -14,7 +14,7 @@ layout: default
   {% assign posts = tag | last %}
 
 <h2 id='tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{ t }}</h2>
-<p>Has {{ posts | size }} posts</p>
+<p>Has {{ posts | size }} post(s).</p>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
