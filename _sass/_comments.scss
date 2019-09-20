@@ -2,6 +2,7 @@
     display: flex;
     background: rgba(255,255,255,.1);
     border-radius: 15px;
+    margin-bottom: 1em;
 
     &__avatar-wrapper img {
         border-radius: 15px;
@@ -63,6 +64,8 @@
     label {
         font-size: .9em;
         flex: 0 0 15em;
+        text-align: right;
+        padding-right: 1em;
     }
 }
 div.page__comments-form{
@@ -71,6 +74,15 @@ div.page__comments-form{
     border-radius: 15px;
     textarea, input {
         flex: 1;
+        border: 1px solid $blue;
+        background: black;
+        color: white;
+    }
+    input {
+        height: 2.5em;
+        max-width: 29.25em;
+    }
+    textarea {
         max-width: 30em;
     }
 }
