@@ -11,6 +11,9 @@
 .flex__4 {
     flex: 4;
 }
+.justifyC__fE {
+    justify-content: flex-end;
+}
 .float__l {
     float: left;
 }
@@ -34,6 +37,12 @@
 }
 .padding__1 {
     padding: 1rem
+}
+
+.m_padding__0 {
+    @include mobile {
+        padding: 0;
+    }
 }
 
 

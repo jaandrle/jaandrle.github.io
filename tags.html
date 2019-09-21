@@ -8,6 +8,7 @@ layout: default
     {% if forloop.index0!=0 %}, {% endif %}
     <a href='./#tag_anchor_{{ t | downcase | replace:" ","-" }}'>{{t}}</a>
 {%- endfor -%}
+<article class="maxW__article margin__0_auto">
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
@@ -24,4 +25,4 @@ layout: default
   {% endif %}
 {% endfor %}
 </ul>
-{% endfor %}
+{% endfor %}</article>
