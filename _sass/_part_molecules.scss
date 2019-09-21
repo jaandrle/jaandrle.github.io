@@ -1,0 +1,76 @@
+.C__sidebar {
+    flex-direction: row-reverse;
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.C__sidebarAvatar {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.C__sidebarInfo {
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.C__sidebarInfo_name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+.C__sidebarInfo_description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+.C__sidebarNav {
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
+  background: $white;
+  width: 100%;
+  padding: .8em 1em 1em 1em;
+  border-top: .2em solid $black;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin: 0 .5em;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+    }
+  }
+}
