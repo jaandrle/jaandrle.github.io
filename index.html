@@ -2,17 +2,18 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts maxW__article margin__0_auto">
+    <p>{{site.welcome_text}} Níže je seznam posledních příspěvků.</p>
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="button read-more">Přečíst celé »</a>
     </article>
   {% endfor %}
 </div>
