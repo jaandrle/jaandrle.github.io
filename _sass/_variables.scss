@@ -25,3 +25,8 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+@mixin is_flex {
+  @supports (display: flex){
+    @content;
+  }
+}

@@ -1,4 +1,4 @@
-.C__sidebar {
+.C__with_sidebar {
     flex-direction: row-reverse;
     @include mobile {
         flex-direction: column;
@@ -7,11 +7,15 @@
 
 .C__sidebarAvatar {
   float: left;
-
+  display: none;
+  
+  @include is_flex {
+    display: initial;
+  }
   @include mobile {
     float: none;
     display: block;
-    margin: 0 auto;
+    width: 5em;
   }
 
   img {
@@ -20,10 +24,12 @@
 }
 
 .C__sidebarInfo {
+  max-width: 400px; //floatuje bez flexu
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
+    height: 1.5em;
   }
 }
 
@@ -41,35 +47,44 @@
 .C__sidebarInfo_description {
   margin: -5px 0 0 0;
   color: $gray;
-  font-size: 16px;
+  font-size: .75em;
+  text-align: justify;
 
   @include mobile {
-    margin: 3px 0;
+    display: none;
   }
 }
 
 .C__sidebarNav {
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-  background: $white;
-  width: 100%;
-  padding: .8em 1em 1em 1em;
-  border-top: .2em solid $black;
-
+  margin-top: .5em;
+  
+  
+  
   @include mobile {
-    float: none;
-    margin-top: 9px;
     display: block;
-    font-size: 16px;
+    order: 1;
   }
 
   a {
-    margin: 0 .5em;
+    border-left: .2em solid $black;
+    background: $white;
+    margin: 0 .5em .25em 0;
+    padding: .1em 3em .1em 1em;
+    display: inline-block;
+    width: 100%;
+    color: $gray;
+    text-decoration: none;
     font-weight: 300;
     letter-spacing: 1px;
+    transition: .5s all;
+    text-align: left;
+
+    &:hover {
+      background-color: $blue;
+    }
 
     @include mobile {
+      width: initial;
       margin: 0 10px;
     }
   }
