@@ -51,11 +51,6 @@
   .comments {
     margin-top: 10px;
   }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
 }
 @import "comments";
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
