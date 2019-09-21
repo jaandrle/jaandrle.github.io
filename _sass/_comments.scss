@@ -60,16 +60,15 @@ div.page__comments-form{
     border-radius: 15px;
     textarea, input {
         flex: 1;
+        max-width: 30rem;
         border: 1px solid $blue;
         background: $white;
         color: white;
     }
     input {
         height: 2.5em;
-        max-width: 29.25em;
     }
     textarea {
-        max-width: 30em;
         padding: .5em;
     }
 }
