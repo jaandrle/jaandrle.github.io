@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+in_menu: O mně
 ---
 
 Some information about you!
