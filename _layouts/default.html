@@ -15,9 +15,9 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   <body class="display__f C__sidebar">
-    <header class="display__f flexD__c minW__bar flex__1 textA__c padding__1 clearfix">
-      <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__1_auto"><img src="{{ site.avatar }}" /></a>
-      <nav class="C__sidebarNav float__r margin__1_auto">
+    <header class="display__f flexD__c minW__bar flex__1 textA__c margin__0_auto padding__1 clearfix">
+      <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img src="{{ site.avatar }}" /></a>
+      <nav class="C__sidebarNav display__f flexD__c float__l margin__0_auto">
           <a href="{{ site.baseurl }}/">Blog</a>
           {% for page in site.pages %}{% if page.in_menu %}<a href="{{ site.baseurl }}{{ page.permalink }}">{{ page.in_menu }}</a>{% endif %}{% endfor %}
       </nav>
@@ -27,7 +27,7 @@
         <p class="C__sidebarInfo_description">{{ site.description }}</p>
       </div>
 
-      <div class="float__l margin__1_auto">
+      <div class="float__r margin__1_auto">
         {% for social in site.data.social %}
           {% assign sp= social | last %}
           <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}"></a>
