@@ -1,3 +1,30 @@
+.C__button {
+  display: inline-block;
+  text-decoration: none;
+  background: $white;
+  padding: 0 .5em;
+  border: 1px solid $lightGray;
+  border-left: 2px solid $blue;
+  text-align: left;
+  color: $gray;
+  transition: .5s all;
+  line-height: 2em;
+
+  &:hover {
+      background-color: $blue;
+  }
+  &[disabled]{
+      border-color: $white;
+      background-color: inherit;
+  }
+}
+a.C__button {
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
+}
+
 .C__with_sidebar {
     flex-direction: row-reverse;
     @include mobile {
@@ -58,30 +85,14 @@
 .C__sidebarNav {
   margin-top: .5em;
   
-  
-  
   @include mobile {
     display: block;
     order: 1;
   }
 
   a {
-    border-left: .2em solid $black;
-    background: $white;
     margin: 0 .5em .25em 0;
-    padding: .1em 3em .1em 1em;
-    display: inline-block;
     width: 100%;
-    color: $gray;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: 1px;
-    transition: .5s all;
-    text-align: left;
-
-    &:hover {
-      background-color: $blue;
-    }
 
     @include mobile {
       width: initial;

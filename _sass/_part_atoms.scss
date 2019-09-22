@@ -1,87 +1,111 @@
+/*
 
+display:
+
+*/
 .display__f {
     display: flex;
 }
+/*
+
+flex-*:
+
+*/
 .flexD__c {
     flex-direction: column;
 }
+/*
+
+flex:
+
+*/
 .flex__1 {
     flex: 1;
 }
 .flex__4 {
     flex: 4;
 }
+/*
+
+jusify-*:
+align-*:
+
+*/
 .justifyC__fE {
     justify-content: flex-end;
 }
+/*
+
+float:
+
+*/
 .float__l {
     float: left;
 }
 .float__r {
     float: right;
 }
+/*
+
+width:
+*-width:
+height:
+*-height:
+
+*/
 .minW__bar {
     min-width: 15rem;
 }
 .maxW__article {
     max-width: 40rem;
 }
+/*
+
+text-*:
+
+*/
 .textA__c {
     text-align: center;
 }
+/*
+
+margin:
+margin-*:
+
+*/
 .margin__0_auto {
     margin: 0 auto;
 }
 .margin__1_auto {
     margin: 1rem auto;
 }
+/*
+
+padding:
+padding-*:
+
+*/
 .padding__1 {
     padding: 1rem
 }
-
+/* ...mobile */
 .m_padding__0 {
     @include mobile {
         padding: 0;
     }
 }
+/*
 
+clearfix
+    Nicolas Gallagher's micro clearfix hack
+    http://nicolasgallagher.com/micro-clearfix-hack/
 
-
-
-.button {
-  display: flex;
-  color: white;
-  background: $white;
-  border: 1px solid $blue;
-  line-height: 2em;
-  padding: 0 1em .25em 1em;
-  transition: .5s all;
-  &:hover{
-      background: $blue;
-  }
-  &[disabled]{
-      border-color: white;
-      background-color: inherit;
-  }
-}
-a.button{
-  line-height: 1.5em;
-  padding-top: .25em;
-  text-decoration: none;
-  display: inline-flex;
-  &:hover{
-    color: white;
-  }
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
+*/
 .clearfix:before,
 .clearfix:after {
     content: " ";
     display: table;
 }
-
 .clearfix:after {
     clear: both;
 }
