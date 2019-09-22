@@ -1,11 +1,11 @@
 .comment {
     display: flex;
     background: rgba(255,255,255,.1);
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 1em;
 
     &__avatar-wrapper img {
-        border-radius: 15px;
+        border-radius: 5px;
         opacity: .75;
     }
     &__content-wrapper {
@@ -27,9 +27,6 @@
     &__info, &__author {
       a {
             color: inherit;
-            &:hover{
-                color: $blue;
-            }
         }
     }
 }
@@ -62,7 +59,7 @@
 div.page__comments-form{
     padding: .5em;
     background: rgba(255,255,255, .1);
-    border-radius: 15px;
+    border-radius: 5px;
     textarea, input {
         flex: 1;
         max-width: 30rem;
