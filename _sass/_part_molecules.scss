@@ -38,6 +38,14 @@ a.C__button {
   display: inline-block;
 }
 
+.C__header{
+  flex-flow: column;
+  @include mobile {
+    flex-flow: row wrap;
+    align-items: flex-end;
+    margin: 0;
+  }
+}
 .C__sidebarAvatar {
   float: left;
   display: none;
@@ -73,6 +81,13 @@ a.C__button {
   color: $blue;
   cursor: pointer;
   text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white, -1px -1px $white;
+  @include mobile {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: none; 
+    min-width: 7em;
+    display: block; //flex fallback
+  }
 }
 
 .C__sidebarInfo_description {
@@ -87,9 +102,11 @@ a.C__button {
 
 .C__sidebarNav {
   margin-top: .5em;
+  flex-direction: column;
   
   @include mobile {
-    display: block;
+    flex-direction: row;
+    align-items: flex-end;
     order: 1;
   }
 
@@ -99,7 +116,7 @@ a.C__button {
 
     @include mobile {
       width: initial;
-      margin: 0 10px;
+      margin: 0;
     }
   }
 }

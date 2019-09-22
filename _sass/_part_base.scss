@@ -8,6 +8,9 @@ body {
   font: 18px/1.4 $georgia;
   color: $darkGray;
   min-height: 100vh;
+  @include mobile {
+    padding: 0 0 .5rem 0;
+  }
 }
 
 .container {

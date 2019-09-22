@@ -6,10 +6,10 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <!-- Created with Jekyll & GitHub Pages -->
   </head>
-  <body class="display__f C__with_sidebar">
-    <header class="display__f flexD__c minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
+  <body class="C__with_sidebar display__f">
+    <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
       <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img src="{{ site.avatar }}"/></a>
-      <nav class="C__sidebarNav display__f flexD__c float__l">
+      <nav class="C__sidebarNav display__f float__l">
           <a href="{{ site.baseurl }}/" class="C__button">Blog</a>
           {% for page in site.pages %}{% if page.in_menu %}<a href="{{ site.baseurl }}{{ page.permalink }}" class="C__button">{{ page.in_menu }}</a>{% endif %}{% endfor %}
       </nav>
