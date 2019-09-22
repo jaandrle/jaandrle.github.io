@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background: $lightGray;
+  background-color: $lightGray;
+  @extend %bg-image;
   font: 18px/1.4 $georgia;
   color: $darkGray;
   min-height: 100vh;
@@ -16,14 +17,14 @@ body {
   padding: 0 2.5em;
   flex: 1 0;
   background-color: $white;
+  @extend %bg-image;
+  @include mobile {
+    padding: 0 1em;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -50,7 +51,7 @@ a {
   letter-spacing: 1px;
   font-weight: bolder;
   &:hover, &:active {
-    text-decoration-style: double;
+    text-decoration: none;
     color: $darkerGray;
   }
 }
