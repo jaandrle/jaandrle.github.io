@@ -50,6 +50,8 @@ a.C__button {
 .C__sidebarAvatar {
   float: left;
   display: none;
+  mix-blend-mode: luminosity;
+  opacity: .35;
   
   @include is_flex {
     display: initial;
