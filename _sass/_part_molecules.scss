@@ -31,6 +31,12 @@ a.C__button {
         flex-direction: column;
     }
 }
+.C__text_highlited {
+  background: rgba(0,0,0,.25);
+  padding: .35rem;
+  box-decoration-break: clone;
+  display: inline-block;
+}
 
 .C__sidebarAvatar {
   float: left;
@@ -56,26 +62,23 @@ a.C__button {
     float: none;
     display: block;
     margin: 0 auto;
-    height: 1.5em;
   }
 }
 
 .C__sidebarInfo_name {
-  margin: 0;
-  color: $darkGray;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  color: $blue;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-  padding-bottom: 1em;
+  text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white, -1px -1px $white;
 }
 
 .C__sidebarInfo_description {
-  margin: -5px 0 0 0;
+  display: inline;
   color: $gray;
   font-size: .75em;
-  text-align: justify;
 
   @include mobile {
     display: none;
