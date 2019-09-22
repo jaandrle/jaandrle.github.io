@@ -12,6 +12,7 @@
 
   &:hover {
       background-color: $blue;
+      border-color: $blue;
   }
   &[disabled]{
       border-color: $white;
