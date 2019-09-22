@@ -19,10 +19,10 @@
   }
 }
 a.C__button {
-text-decoration: none;
-&:hover{
-  color: white;
-}
+  text-decoration: none;
+  &:hover{
+    color: white;
+  }
 }
 
 .C__with_sidebar {
@@ -84,6 +84,7 @@ text-decoration: none;
 
 .C__sidebarNav {
   margin-top: .5em;
+  
   @include mobile {
     display: block;
     order: 1;
