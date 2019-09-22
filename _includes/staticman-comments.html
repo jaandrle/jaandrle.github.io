@@ -21,6 +21,7 @@
       <h3 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h3>
       {% assign sm = site.staticman %}
       <form id="new_comment" class="page__comments-form js-form form" method="post" url="{{ sm.endpoint | default: 'https://staticman3.herokuapp.com/v3/entry/github/' }}{{ sm.repository }}/{{ sm.branch }}/comments">
+        <script>document.getElementById("new_comment").onsubmit= function(_){_.preventDefault();}</script>
         <div class="form-group">
           <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }}</label>
           <input type="text" id="comment-form-name" name="fields[name]" tabindex="1" />
@@ -79,5 +80,11 @@
   </div>
 
   <!-- Load script to handle comment form submission -->
-  <script src="{{ '/js/staticman.js' | relative_url }}"></script>
+  <script>
+    window.addEventListener("load", function(){
+      var script_el= document.createElement("script");
+      script_el.src= "{{ '/js/staticman.js' | relative_url }}";
+      document.body.appendChild(script_el);
+    });
+  </script>
 {% endif %}
