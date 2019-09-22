@@ -1,4 +1,3 @@
 .*
 !/.gitignore
 _site
-_includes/helpers_months.html
