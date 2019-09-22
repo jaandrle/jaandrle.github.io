@@ -13,16 +13,18 @@
         margin-left: 1em;
     }
 
-    &__date {
-        margin: 0;
+    &__info {
+        margin: 0 1em 0 0;
         font-size: .65em;
-        padding: 0;
+        padding: .1em .5em 0 .5em;
         font-style: italic;
+        background: rgba(0,0,0,.2);
+        width: initial;
     }
     &__author {
         margin: 0;
     }
-    &__date, &__author {
+    &__info, &__author {
       a {
             color: inherit;
             &:hover{
@@ -41,6 +43,9 @@
     &-form {
         margin: .5em 0 2em 0;
         padding: 0 0 0 3em;
+        @include mobile {
+            padding: 0;
+        }
     }
     .form-group {
         display: flex;
@@ -62,20 +67,25 @@ div.page__comments-form{
         flex: 1;
         max-width: 30rem;
         min-width: 12rem;
-        border: 1px solid $blue;
+        border: 1px solid transparent;
+        border-left: 2px solid $blue;
+        padding: .5em;
         background: $white;
         color: white;
+        &:focus {
+            border-color: $blue;
+        }
     }
     input {
         height: 2.5em;
     }
-    textarea {
-        padding: .5em;
+    button {
+        &:focus {
+            outline: 1px solid $blue;
+        }
     }
 }
 .help-block a{
+    font-size: 1em;
     color: white;
-    &:hover{
-        color: $blue;
-    }
 }
