@@ -25,10 +25,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -55,7 +51,7 @@ a {
   letter-spacing: 1px;
   font-weight: bolder;
   &:hover, &:active {
-    text-decoration-style: double;
+    text-decoration: none;
     color: $darkerGray;
   }
 }
