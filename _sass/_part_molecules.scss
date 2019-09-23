@@ -1,3 +1,24 @@
+.C__visuallyHide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.C__skipLink {
+  &:not(:focus) {
+    @extend .C__visuallyHide;
+  }
+  &:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
 .C__button {
   display: inline-block;
   text-decoration: none;
@@ -42,15 +63,18 @@ a.C__button {
 .C__header{
   flex-flow: column;
   @include mobile {
+    flex: 0;
     flex-flow: row wrap;
     align-items: flex-end;
-    margin: 0;
+    margin: 5em 0 0 0;
+    @include is_flex {
+      margin: 0;
+    }
   }
 }
 .C__sidebarAvatar {
   float: left;
   display: none;
-  mix-blend-mode: luminosity;
   opacity: .35;
   
   @include is_flex {
