@@ -3,9 +3,11 @@ layout: default
 permalink: /blog/nondev.html
 title: Blog — Obecné
 in_menu: Blog — Obecné
+category: nondev
 ---
 <div class="posts maxW__article margin__0_auto">
   <p class="C__text_highlited">Zde jsou příspěvky netýkající se programování.</p>
   <p>Další příspěvky jsou v <a href="{{site.baseurl}}/blog/dev.html" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
-  {% include post_list.html category=nondev %}
+  <hr>
+  {% include post_list.html category=page.category %}
 </div>
