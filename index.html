@@ -3,6 +3,9 @@ layout: default
 ---
     <div class="posts maxW__article margin__0_auto">
       <p class="C__text_highlited">{{site.welcome_text}} Níže je seznam posledních příspěvků.</p>
+      <p>Další příspěvky jsou v 
+        <a href="{{site.baseurl}}/blog/nondev.html" alt="Přejít na Obecné příspěvky">Blog — Obecné</a> nebo 
+        <a href="{{site.baseurl}}/blog/dev.html" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
+      <hr>
       {% include post_list.html limit=10 %}
-      <p class="C__text_highlited">Další příspěvky jsou v [Blog — Obecné]({% link blog/nondev.html %}) nebo [Blog — Dev]({% link blog/dev.html %}).</p>
     </div>
