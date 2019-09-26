@@ -130,6 +130,10 @@ a.C__button {
 .C__sidebarNav {
   margin-top: .5em;
   flex-direction: column;
+
+  &_active {
+    border-color: $blue;
+  }
   
   @include mobile {
     flex-direction: row;

@@ -14,7 +14,7 @@
             %}{% for page_i in pages %}{% if page_i.in_menu 
               %}<a 
               href="{{ site.baseurl }}{{ page_i.permalink }}" 
-              class="C__button{% if page.in_menu contains page_i.in_menu %} C__button_active{%endif%}"
+              class="C__button{% if page.in_menu contains page_i.in_menu or (page.category contains page_i.category and page_i.category contains page.category) %} C__sidebarNav_active{%endif%}"
               >{{ page_i.in_menu }}</a>{%
             endif %}{% endfor %}
       </nav>
