@@ -10,7 +10,13 @@
     <header class="C__header display__f minW__bar maxW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
       <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img src="{{ site.avatar }}"/></a>
       <nav class="C__sidebarNav display__f float__l">
-          {% for page_i in site.pages %}{% if page_i.in_menu %}<a href="{{ site.baseurl }}{{ page_i.permalink }}" class="C__button{% if page.in_menu==page_i.in_menu %}active{%endif%}">{{ page_i.in_menu }}</a>{% endif %}{% endfor %}
+          {% assign pages= site.pages | sort: "in_menu"
+            %}{% for page_i in pages %}{% if page_i.in_menu 
+              %}<a 
+              href="{{ site.baseurl }}{{ page_i.permalink }}" 
+              class="C__button{% if page.in_menu contains page_i.in_menu %} C__button_active{%endif%}"
+              >{{ page_i.in_menu }}</a>{%
+            endif %}{% endfor %}
       </nav>
 
       <div class="C__sidebarInfo float__l margin__1_auto textA__j">
