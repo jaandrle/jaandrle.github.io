@@ -3,8 +3,9 @@
 #
 locale: cs
 # Name of your site (displayed in the header)
-name: Jan Andrle
-author: Jan Andrle <andrle.jan@centrum.cz>
+author:
+  name: Jan Andrle
+  email: andrle.jan@centrum.cz
 
 # Short bio or description (displayed in the header)
 description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.
