@@ -2,7 +2,6 @@
 <html>
   <head>
     {% include meta.html %}
-
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     <!-- Created with Jekyll & GitHub Pages -->
   </head>
@@ -19,15 +18,13 @@
         <p class="C__sidebarInfo_description C__text_highlited">{{ site.description }}</p>
       </div>
 
-      <div class="float__r margin__0_auto">
-        {%- for social in site.data.social %}{% assign sp= social | last %}
+      <div class="float__r margin__0_auto">{% for social in site.data.social %}{% assign sp= social | last %}
         <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}"></a>{% endfor %}
       </div>
     </header>
 
     <div id="main" role="main" class="container flex__4">
       {{ content }}</div>
-
-    {%- include analytics.html -%}
+    {% include analytics.html %}
   </body>
 </html>

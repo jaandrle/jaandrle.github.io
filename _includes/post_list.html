@@ -1,11 +1,12 @@
-{%- assign posts= site.posts | where_exp: "item", "item.category == include.category" -%}
-{%- assign limit= include.limit | default: posts.size -%}
-{%- for post in posts limit:limit -%}
-<article class="post">
+{% 
+  assign posts= site.posts | where_exp: "item", "item.category == include.category" %}{%
+  assign limit= include.limit | default: posts.size %}
+{% for post in posts limit:limit 
+  %}<article class="post">
   <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   <div class="entry">
     {{ post.excerpt }}
   </div>
   <a href="{{ site.baseurl }}{{ post.url }}" class="C__button read-more">Přečíst celé »</a>
-</article>
-{% endfor %}
+</article>{%
+endfor %}
