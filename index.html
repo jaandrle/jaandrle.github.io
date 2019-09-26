@@ -1,19 +1,8 @@
 ---
 layout: default
 ---
-
-<div class="posts maxW__article margin__0_auto">
-    <p class="C__text_highlited">{{site.welcome_text}} Níže je seznam posledních příspěvků.</p>
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="C__button read-more">Přečíst celé »</a>
-    </article>
-  {% endfor %}
-</div>
+    <div class="posts maxW__article margin__0_auto">
+      <p class="C__text_highlited">{{site.welcome_text}} Níže je seznam posledních příspěvků.</p>
+      {% include post_list.html limit=10 %}
+      <p class="C__text_highlited">Další příspěvky jsou v [Blog — Obecné]({% link blog/nondev.html %}) nebo [Blog — Dev]({% link blog/dev.html %}).</p>
+    </div>

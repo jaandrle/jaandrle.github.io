@@ -11,8 +11,7 @@
     <header class="C__header display__f minW__bar maxW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
       <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img src="{{ site.avatar }}"/></a>
       <nav class="C__sidebarNav display__f float__l">
-          <a href="{{ site.baseurl }}/" class="C__button">Blog</a>
-          {% for page in site.pages %}{% if page.in_menu %}<a href="{{ site.baseurl }}{{ page.permalink }}" class="C__button">{{ page.in_menu }}</a>{% endif %}{% endfor %}
+          {% for page_i in site.pages %}{% if page_i.in_menu %}<a href="{{ site.baseurl }}{{ page_i.permalink }}" class="C__button{% if page.in_menu==page_i.in_menu %}active{%endif%}">{{ page_i.in_menu }}</a>{% endif %}{% endfor %}
       </nav>
 
       <div class="C__sidebarInfo float__l margin__1_auto textA__j">
@@ -21,17 +20,14 @@
       </div>
 
       <div class="float__r margin__0_auto">
-        {% for social in site.data.social %}
-          {% assign sp= social | last %}
-          <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}"></a>
-        {% endfor %}
+        {%- for social in site.data.social %}{% assign sp= social | last %}
+        <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}"></a>{% endfor %}
       </div>
     </header>
 
     <div id="main" role="main" class="container flex__4">
-      {{ content }}
-    </div>
+      {{ content }}</div>
 
-    {% include analytics.html %}
+    {%- include analytics.html -%}
   </body>
 </html>
