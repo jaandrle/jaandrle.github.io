@@ -75,6 +75,7 @@ a.C__button {
   }
 }
 .C__sidebarAvatar {
+  @extend %block_hover;
   float: left;
   display: none;
   opacity: .35;
@@ -154,11 +155,8 @@ a.C__button {
   }
 }
 .C__figureWrapper {
+  @extend %block_hover;
   margin: 0;
   border-bottom: 1px solid gray;
   border-top: 1px solid gray;
-
-  &:hover, &:active {
-    opacity: .75;
-  }
 }
