@@ -153,3 +153,12 @@ a.C__button {
     }
   }
 }
+.C__figureWrapper {
+  margin: 0;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+
+  &:hover, &:active {
+    opacity: .75;
+  }
+}
