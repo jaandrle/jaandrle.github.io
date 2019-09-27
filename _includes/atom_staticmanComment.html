@@ -12,7 +12,7 @@
     <p class="comment__info">
       Přijato: 
       {% if include.date %}
-        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{% include helpers_months.html date=include.date %}{{ include.date | date: " v %k:%M" }}</time>
+        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{% include atom_months.html date=include.date %}{{ include.date | date: " v %k:%M" }}</time>
       {% endif %}
       {% if include.index && include.date %} | {% endif %}
       {% if include.index %}<a href="#comment{{ include.index }}" itemprop="url">#comment{{ include.index }}</a>{% endif %}

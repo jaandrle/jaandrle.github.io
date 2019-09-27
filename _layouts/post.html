@@ -4,7 +4,7 @@ layout: default
 <article class="post maxW__article margin__0_auto">
   <h1 class="C__text_highlited">{{ page.title }}</h1>
   <div class="info">
-    <b>Publikováno:</b> {% include helpers_months.html date=page.date %}
+    <b>Publikováno:</b> {% include atom_months.html date=page.date %}
     {% if page.tags[0] %} | <b>Štítky:</b> 
       {% for tag in page.tags -%}
         {% if forloop.index0!=0 %}, {% endif %}
@@ -16,11 +16,11 @@ layout: default
   <div class="entry">{%
     if page.show_toc and page.show_toc>0 %}
     <h2>Obsah</h2>
-    {% include toc.html html=content ordered=true h_max=page.show_toc %}
+    {% include molecule_toc.html html=content ordered=true h_max=page.show_toc %}
     <hr>{%
     endif %}
     {{ content }}
   </div>
   
-  {% include staticman-comments.html %}
+  {% include molecule_staticmanComments.html %}
 </article>
