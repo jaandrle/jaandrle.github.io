@@ -1,4 +1,11 @@
-{%      assign src= include.src
+{% comment %}
+    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}]`
+        - `src`, `href`: jsou cesty k obrazku (obrazkum nahled/plny)
+        - `alt`: popis obsahu obrazku
+        - `title`: titulek obrazku
+        - `caption`: popisek (jeden paragraf)
+{% endcomment
+%}{%    assign src= include.src
 %}{%    assign href= include.href | default: src
 %}{%    assign relative_url= src | first
 %}{%    assign alt= include.alt | default: "Obrázek v článku"

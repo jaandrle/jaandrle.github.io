@@ -14,12 +14,8 @@ layout: default
   </div>
 
   <div class="entry">{%
-    if page.show_toc and page.show_toc>0 %}
-    <h2>Obsah</h2>
-    {% include molecule_toc.html html=content ordered=true h_max=page.show_toc %}
-    <hr>{%
-    endif %}
-    {{ content }}
+    include show_toc.html show_toc=page.show_toc html=content
+    %}{{ content }}
   </div>
   
   {% include molecule_staticmanComments.html %}
