@@ -13,7 +13,12 @@ layout: default
     {% endif %}
   </div>
 
-  <div class="entry">
+  <div class="entry">{%
+    if page.show_toc and page.show_toc>0 %}
+    <h2>Obsah</h2>
+    {% include toc.html html=content ordered=true h_max=page.show_toc %}
+    <hr>{%
+    endif %}
     {{ content }}
   </div>
   
