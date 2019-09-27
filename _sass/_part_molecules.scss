@@ -51,6 +51,7 @@ a.C__button {
     flex-direction: row-reverse;
     @include mobile {
         flex-direction: column;
+        padding: .5em 0;
     }
 }
 .C__text_highlited {
@@ -66,7 +67,8 @@ a.C__button {
     flex: 0;
     flex-flow: row wrap;
     align-items: flex-end;
-    margin: 5em 0 0 0;
+    padding: 0 .25em;
+    margin: 0;
     @include is_flex {
       margin: 0;
     }
