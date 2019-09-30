@@ -32,12 +32,12 @@
   line-height: 2em;
 
   &:hover {
-      background-color: $blue;
-      border-color: $blue;
+    background-color: $blue;
+    border-color: $blue;
   }
   &[disabled]{
-      border-color: $white;
-      background-color: inherit;
+    border-color: $white;
+    background-color: inherit;
   }
 }
 a.C__button {
@@ -50,8 +50,8 @@ a.C__button {
 .C__with_sidebar {
     flex-direction: row-reverse;
     @include mobile {
-        flex-direction: column;
-        padding: .5em 0;
+      flex-direction: column;
+      padding: .5em 0;
     }
 }
 .C__text_highlited {
@@ -128,7 +128,6 @@ a.C__button {
   display: inline;
   color: $gray;
   font-size: .75em;
-
   @include mobile {
     display: none;
   }
