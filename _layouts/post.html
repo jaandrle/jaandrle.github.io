@@ -3,16 +3,7 @@ layout: default
 ---
 <article class="post maxW__article margin__0_auto">
   <h1 class="C__text_highlited">{{ page.title }}</h1>
-  <div class="info">
-    <b>Publikováno:</b> {% include atom_months.html date=page.date %}
-    {% if page.tags[0] %} | <b>Štítky:</b> 
-      {% for tag in page.tags -%}
-        {% if forloop.index0!=0 %}, {% endif %}
-        <a href="/blog/tags.html#tag_anchor_{{ tag | downcase }}">{{tag}}</a>
-      {% endfor %}
-    {% endif %}
-  </div>
-
+  {% include molecule_articleInfo.html content=content date=page.date tags=page.tags %}
   <div class="entry">{%
     include show_toc.html show_toc=page.show_toc html=content
     %}{{ content }}

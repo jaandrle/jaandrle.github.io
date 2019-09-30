@@ -21,7 +21,7 @@ permalink: /blog/tags.html
     {% if post.tags contains t %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">Publikováno: {% include atom_months.html date=post.date %}</span>
+      {% include molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
     </li>
     {% endif %}
   {% endfor %}
