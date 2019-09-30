@@ -63,6 +63,7 @@ a.C__button {
 
 .C__header{
   flex-flow: column;
+  margin: 0 auto 0 0;
   @include mobile {
     flex: 0;
     flex-flow: row wrap;
@@ -72,6 +73,9 @@ a.C__button {
     @include is_flex {
       margin: 0;
     }
+  }
+  @include is_flex {
+    max-width: 25rem;
   }
 }
 .C__sidebarAvatar {
