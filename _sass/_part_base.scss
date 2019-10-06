@@ -85,6 +85,8 @@ ul ul, ol ul {
 
 em, i {
   font-style: italic;
+  color: white;
+  text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white, -1px -1px $white;
 }
 
 strong, b {

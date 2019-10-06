@@ -1,6 +1,6 @@
 {% assign words = include.content | number_of_words %}{%
 if words < 275 %}
   do minuty{%
-else %}
-  cca {{ words | divided_by: 135 }} minut.{%
+else %}{% assign time= words | divided_by: 135 %}
+  cca {{ time }} minut{% if time < 5 %}y{% endif %}{%
 endif %}
