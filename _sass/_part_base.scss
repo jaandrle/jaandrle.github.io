@@ -60,6 +60,14 @@ a {
     text-decoration: none;
     color: $darkerGray;
   }
+  &[href^="http"] {
+      background: right center no-repeat;
+          background-image: none;
+          background-size: auto;
+      padding-right: 14px;
+      background-size: 13px;
+      background-image: url(/images/internal/link.gif);
+  }
 }
 
 ul, ol {
