@@ -1,0 +1,18 @@
+{%
+  assign limit= include.limit | default: site.posts.size %}
+  {% for post in site.posts
+    %}{% if include.category and post.category and post.category != include.category
+  %}{%
+    else %}{% if limit == 0 %}{% break %}{% endif 
+  %}<article class="post">
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    {% include molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="C__button read-more">Přečíst celé »</a>
+  </article>{% assign limit= limit | minus: 1 %}{%
+    endif %}{%
+  endfor %}{% if limit == include.limit or limit == site.posts.size
+  %}<p>Prozatím tu nejsou žádné příspěvky.</p>{%
+  endif %}

@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 in_menu: O mně
+show_toc: 3
 ---
 
 Some information about you!

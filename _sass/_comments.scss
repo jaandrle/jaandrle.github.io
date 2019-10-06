@@ -62,6 +62,8 @@ div.page__comments-form{
     border-radius: 5px;
     textarea, input {
         flex: 1;
+        font: .9rem/1 $georgia;
+        font-weight: bolder;
         max-width: 30rem;
         min-width: 12rem;
         border: 1px solid transparent;
@@ -69,8 +71,16 @@ div.page__comments-form{
         padding: .5em;
         background: $white;
         color: white;
+        outline: none;
         &:focus {
+            outline: none;
             border-color: $blue;
+        }
+        transition: background 1s;
+        &:invalid {
+            outline: none;
+            background: #3c1318;
+            
         }
     }
     input {

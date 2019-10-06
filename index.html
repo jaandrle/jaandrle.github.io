@@ -1,19 +1,12 @@
 ---
 layout: default
+limit: 10
 ---
-
-<div class="posts maxW__article margin__0_auto">
-    <p class="C__text_highlited">{{site.welcome_text}} Níže je seznam posledních příspěvků.</p>
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="C__button read-more">Přečíst celé »</a>
-    </article>
-  {% endfor %}
-</div>
+    <div class="posts maxW__article margin__0_auto">
+      <p class="C__text_highlited">{{site.welcome_text}} Níže je výběr z posledních příspěvků.</p>
+      <p>Další příspěvky jsou v 
+        <a href="{{site.baseurl}}/blog/nondev.html" alt="Přejít na Obecné příspěvky">Blog — Obecné</a> nebo 
+        <a href="{{site.baseurl}}/blog/dev.html" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
+      <hr>
+      {% include molecule_postList.html limit=page.limit %}
+    </div>

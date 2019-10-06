@@ -1,0 +1,23 @@
+{% comment %}
+    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}]`
+        - `src`, `href`: jsou cesty k obrazku (obrazkum nahled/plny)
+        - `alt`: popis obsahu obrazku
+        - `title`: titulek obrazku
+        - `caption`: popisek (jeden paragraf)
+{% endcomment
+%}{%    assign src= include.src
+%}{%    assign href= include.href | default: src
+%}{%    assign relative_url= src | first
+%}{%    assign alt= include.alt | default: "Obrázek v článku"
+%}{%    if relative_url == "\/"
+%}{%        assign src= src | prepend: site.baseurl
+%}{%        assign href= href | prepend: site.baseurl
+%}{%    endif
+%}<figure class="C__figureWrapper">
+    <a href="{{ href }}" title="{{ include.title }}" target="_blank">
+        <img src="{{ src }}" alt="{{ alt }}" class="maxH__image"/>
+    </a>{%
+    if include.caption %}
+    <figcaption class="info">{{ include.caption | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" }}</figcaption>{%
+    endif %}
+</figure>

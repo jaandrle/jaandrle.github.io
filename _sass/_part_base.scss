@@ -8,6 +8,9 @@ body {
   font: 18px/1.4 $georgia;
   color: $darkGray;
   min-height: 100vh;
+  @include mobile {
+    padding: 0 0 .5rem 0;
+  }
 }
 
 .container {
@@ -21,6 +24,9 @@ body {
   @include mobile {
     padding: 0 1em;
   }
+  @include is_flex {
+    margin: 0 0 0 auto;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
   a {
-      color: inherit;
+    color: inherit;
   }
 }
 h4, h5, h6 {
@@ -41,6 +47,8 @@ h4, h5, h6 {
 
 p {
   margin: 15px 0;
+  text-align: justify;
+  text-indent: 1em;
 }
 
 a {
@@ -53,6 +61,14 @@ a {
   &:hover, &:active {
     text-decoration: none;
     color: $darkerGray;
+  }
+  &[href^="http"] {
+      background: right center no-repeat;
+          background-image: none;
+          background-size: auto;
+      padding-right: 14px;
+      background-size: 13px;
+      background-image: url(/images/internal/link.gif);
   }
 }
 
@@ -79,6 +95,8 @@ ul ul, ol ul {
 
 em, i {
   font-style: italic;
+  color: white;
+  letter-spacing: 1px;
 }
 
 strong, b {

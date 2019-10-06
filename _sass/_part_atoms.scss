@@ -11,9 +11,6 @@ display:
 flex-*:
 
 */
-.flexD__c {
-    flex-direction: column;
-}
 /*
 
 flex:
@@ -58,6 +55,15 @@ height:
 }
 .maxW__article {
     max-width: 40rem;
+}
+.maxH__image {
+    max-height: 25rem;
+}
+/*
+    object-*
+*/
+.objectF__c {
+    object-fit: cover;
 }
 /*
 
