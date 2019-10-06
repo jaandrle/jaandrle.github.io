@@ -71,8 +71,16 @@ div.page__comments-form{
         padding: .5em;
         background: $white;
         color: white;
+        outline: none;
         &:focus {
+            outline: none;
             border-color: $blue;
+        }
+        transition: background 1s;
+        &:invalid {
+            outline: none;
+            background: #3c1318;
+            
         }
     }
     input {
