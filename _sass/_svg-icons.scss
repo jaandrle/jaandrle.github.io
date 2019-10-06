@@ -28,4 +28,11 @@
       content: "r";
     }
   }
+  &.rss_dev {
+    background: #ffab00;
+    padding: .1em .45em;
+    &:after{
+      content: "rd";
+    }
+  }
 }
