@@ -1,0 +1,16 @@
+{% comment %}
+    Pouziti: `include code.html code={string} [caption={string|markdown}]`
+        - `code`: GitHub code started and ended with new line
+        - `caption`: popisek (jeden paragraf)
+{% endcomment
+%}{% assign pre_code= include.code | split: "
+" %}{% assign lines= pre_code | size %}{% capture code %}{% for line in pre_code %}{% if forloop.index > 2 and forloop.index < lines %}{{line}}
+{% endif %}{% endfor %}{% endcapture %}{%
+    if pre_code[1] == "```JavaScript" %}{%
+        highlight JavaScript linenos %}{{code}}{% endhighlight %}{%
+    elsif pre_code[1] == "```js" %}{%
+        highlight JavaScript linenos %}{{code}}{% endhighlight %}{%
+    else  %}{%
+        highlight text %}{{code}}{% endhighlight %}{%
+    endif %}{% if include.caption %}
+<p class="info">{{ include.caption | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" }}</p>{% endif %}
