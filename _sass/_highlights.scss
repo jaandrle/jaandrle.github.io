@@ -3,8 +3,7 @@
   background-color: rgba(0,0,0,.25);
   max-height: 15em;
   padding: 1em 1em 0 .5em;
-  border: 1px solid $blue;
-  border-left-width: 4px;
+  border-left: 2px solid $gray;
   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
   -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
   box-shadow: 3px 3px rgba(0,0,0,0.1);
@@ -16,14 +15,22 @@
   .code {
     padding-left: 1em;
   }
+  code {
+    border: none;
+    padding: 0;
+  }
   +.info{
     margin-top: -.5em;
     border-bottom: 1px solid gray;
+    text-indent: 0;
   }
 }
 
 code {
   font: .75em 'Bitstream Vera Sans Mono','Courier', monospace;
+  border: 1px solid $gray;
+  border-left-width: 2px;
+  padding: .25em;
 }
 
 .highlight .c { color: #84CE99 } /* Comment */

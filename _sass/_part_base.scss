@@ -47,6 +47,8 @@ h4, h5, h6 {
 
 p {
   margin: 15px 0;
+  text-align: justify;
+  text-indent: 1em;
 }
 
 a {
@@ -94,7 +96,7 @@ ul ul, ol ul {
 em, i {
   font-style: italic;
   color: white;
-  text-shadow: 1px 1px $white, -1px 1px $white, 1px -1px $white, -1px -1px $white;
+  letter-spacing: 1px;
 }
 
 strong, b {
