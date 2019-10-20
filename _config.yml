@@ -1,71 +1,63 @@
-#
 # This file contains configuration flags to customize your site
+# code version
+version: 1.1
 #
+# \ Site infos part \
+#     1. localization
 locale: cs
-# Name of your site (displayed in the header)
+#     2. my infos (name is also site name)
 author:
   name: Jan Andrle
   email: andrle.jan@centrum.cz
-
-# Short bio or description (displayed in the header)
+#     3. site(s) description
 description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.
+#     4. text in main page
 welcome_text: Vítejte na osobních stránkách Jana Andrle.
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
+#     5. URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
+# / Site infos part /
+# \ Comments, google analytics \
+#     1. Staticman
 staticman:
   repository : "jaandrle/jaandrle.github.io"
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
   endpoint   : #https://staticman3.herokuapp.com/v1/webhook/
-  reCaptcha:
-    # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
-    # If you use reCaptcha, you must also set these parameters in staticman.yml
-    siteKey  : # Use your own site key, you need to apply for one on Google
-    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-    
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+  reCaptcha  : # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
+               # If you use reCaptcha, you must also set these parameters in staticman.yml
+    siteKey   : # Use your own site key, you need to apply for one on Google
+    secret    : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+#     2. GA (not used)
+#       Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
+#     3. Disqus (not used)
+#       Enter your Disqus shortname (not your username) to enable commenting on posts
+#       You can find your shortname on the Settings page of your Disqus account
+disqus:
+# / Comments, google analytics /
+# \ Jekyll (plugins) \
+#   1. sites root URL
+#     Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co). Used for Sitemap.xml and your RSS feed
 url: https://jaandrle.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+#   2. sites root URL if not 1. level
+#     If you're hosting your site at a Project repository on GitHub pages (http://yourusername.github.io/repository-name) and NOT your User repository (http://yourusername.github.io) then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
+#   3. URLs pattern for blog posts
 permalink: /blog/:year-:month/:title/
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+#   4. Markdown
+#     Jekyll 3 now only supports Kramdown for Markdown
+kramdown: # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
+  syntax_highlighter_opts: # Use existing pygments syntax highlighting css
     css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
+#   5. Sass
+#     Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed || :expanded
-
-# Use the following plug-ins
+  style: :compressed # You might prefer to minify using :compressed || :expanded
+#   6. Plugins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-
-# Exclude these files from your production _site
+#   7. Exclude these files from your production _site
 exclude:
   - Gemfile
   - Gemfile.lock
