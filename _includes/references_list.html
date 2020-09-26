@@ -1,0 +1,30 @@
+{% comment %}
+    Pouziti: `include references_list.html references={object[]}`
+        - `references`: Pole referencí
+    Reference ve tvaru
+    `name`:
+        `caption`: Text or link text
+        [`href`]: URL if link
+        [`title`]: Title for link
+        [`description`]: Append (separated by " – ")
+{% endcomment
+%}{%
+    assign references= include.references
+%}{% if references %}
+<ol>{%
+    for reference in references
+    %}{%
+        assign _name= reference.first %}{%
+        assign params= reference.last
+    %}<li id="ref_{{ _name | url_encode }}" ><b>[{{ _name }}]</b> {% if params.href
+    %}<a href="{{params.href}}" title="{{params.title}}">{{params.caption}}</a>{%
+    else
+    %}{{ params.caption }}{%
+    endif
+    %}{% if params.description
+    %} – {{params.description}}{%
+    endif
+    %}</li>{%
+    endfor %}
+</ol>{%
+endif %}
