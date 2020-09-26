@@ -5,20 +5,20 @@
     <meta name="Robots" content="all">
     
     <meta name="author" content="{{ site.author.name }}" />
-    <meta name="generator" content="Jekyll" />
-
-    {% if page.excerpt %}
+    <meta name="generator" content="Jekyll" /> <!-- Created with Jekyll & GitHub Pages -->
+{%
+    if page.excerpt %}
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
+    {%- else %}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />
-    {% endif %}
-
-    {% if page.title %}
+    {%- endif -%}
+{%
+    if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+    {%- endif %}
 
     <link rel="shortcut icon" href="/images/internal/favicon.ico">
 

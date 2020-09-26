@@ -1,0 +1,18 @@
+.info, .highlight, .page__comments, .comment {
+    clip-path: polygon(var(--clip-top), var(--clip-bottom));
+    --clip-size: .25em;
+    --clip-top: 0 var(--clip-size, .5em), 100% 0;
+    --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+    &:nth-of-type(even) {
+        --clip-top: 0 0, 100% var(--clip-size, .5em);
+        --clip-bottom: 100% calc(100% - var(--clip-size, .5em)), 0 100%;
+    }
+    &:nth-of-type(2n+3) {
+        --clip-top: 0 0, 100% var(--clip-size, .5em);
+        --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+    }
+    &:nth-of-type(2n+4) {
+        --clip-top: 0 var(--clip-size, .5em), 100% 0;
+        --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+    }
+}
