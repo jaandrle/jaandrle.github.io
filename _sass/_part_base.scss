@@ -51,6 +51,20 @@ p {
   text-indent: 1em;
 }
 
+input, textarea{
+  background: rgba(255,255,255,.1);
+  color: $darkGray;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  border: 1px solid transparent;
+  border-left: 2px solid $blue;
+  padding: .5em;
+  &:focus {
+      outline: none;
+      border-color: $blue;
+  }
+}
+
 a {
   color: $blue;
   text-decoration-color: $blue;

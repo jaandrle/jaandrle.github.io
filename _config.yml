@@ -55,8 +55,6 @@ kramdown: # Use GitHub flavored markdown, including triple backtick fenced code 
 sass:
   style: :compressed # You might prefer to minify using :compressed || :expanded
 #   6. Plugins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 #   7. Exclude these files from your production _site
 exclude:
   - Gemfile

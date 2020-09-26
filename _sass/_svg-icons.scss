@@ -11,28 +11,14 @@
 
   &.twitter {
     background: #00ACED;
-    &:after{
-      content: "t";
-    }
   }
   &.github {
     background: black;
-    padding: 0 .7em .2em .7em;
-    &:after{
-      content: "g";
-    }
   }
   &.rss {
     background: #ffab00;
-    &:after{
-      content: "r";
-    }
   }
   &.rss_dev {
     background: #ffab00;
-    padding: .1em .45em;
-    &:after{
-      content: "rd";
-    }
   }
 }
