@@ -47,7 +47,7 @@ Po doknočení aktulizace nastává druhý krok. Čtečka je totiž pravděpodob
 Jako třetí krok přichází zmínění a vyřešení některých problémů/nedostatků:
 
 ### O anglicko-českém slovníku
-Čtečka neobsahuje anglicko-český překladový slovník: S tím se lze buď smířit (lze využívat anglický výkladový slovník), či stáhnout mnou vytvořené slovníky: [Anglicko-Český slovník](/images/2013-01/english_czech_utf8.dic), [Česko-Anglický slovník](/images/2013-01/czech_english_utf8.dic); stačí jen tyto soubory přesunout do složky: `jednotka:\system\dictionaries`.
+Čtečka neobsahuje anglicko-český překladový slovník: S tím se lze buď smířit (lze využívat anglický výkladový slovník), či stáhnout mnou vytvořené slovníky: [Anglicko-Český slovník](/images/2013-01/english_czech_utf8.dic "Stažení Anglicko-Českého slovníku"), [Česko-Anglický slovník](/images/2013-01/czech_english_utf8.dic "Stažení Česko-Anglického slovníku"); stačí jen tyto soubory přesunout do složky: `jednotka:\system\dictionaries`.
 
 - K vytvoření tohoto slovníku jsem využil projekt GNU/FDL Anglicko-Český slovník (více [zde](http://slovnik.zcu.cz/uvod.php "Projekt otevřeného anglicko-českého slovníku")), slovník je "komunitní" (tvořen nekomerčně) a s tím souvisí jeho (ne)kvalita. Původně bylo možné ke čtečce získat komerční slovník od firmy Abbyy - prvně zdarma ... po nějaké době za peníze ... a nyní již získat nelze.
 - Slovník je stále ve vývoji, takže po nějaké době bude možné mnou vytvořený soubor/slovník aktualizovat - zatím jsem jej příliš nepotřeboval a asi ho ani moc využívat nebudu, takže nemůžu úplně zaručit, že budu motivován jej aktualizovat sám - proto zde uvedu návod (není příliš komplikovaný) a potřebné programy:

@@ -14,7 +14,7 @@ Pro ty, co by si rádi poslechli své oblíbené rádio i na počítači  nabíz
 
 Nejrychleji se s přehrávačem seznámíte jeho instalací. Přesto jsem udělal a popsal jeden screenshot: 
 
-{% include image.html src='http://andrle-jan.4fan.cz/images/2013-02/popis-miniaplikace.png' title='Popis miniaplikace' %}
+{% include image.html caption='Popis miniaplikace' src='http://andrle-jan.4fan.cz/images/2013-02/popis-miniaplikace.png' title='Screenshot miniaplikace s popisem tlačítek' %}
 
 ### Několik poznámek
 
