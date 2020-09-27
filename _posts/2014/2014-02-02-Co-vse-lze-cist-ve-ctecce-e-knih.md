@@ -5,27 +5,8 @@ title: "Co vše lze číst ve čtečce e-knih"
 show_toc: 3
 excerpt_separator: <!--more-->
 category: nondev
-references:
-    knihovna v Brně:
-        caption: Knihovna Jiřího Mahena v Brně
-        href: http://www.kjm.cz/zdroje-e-knih
-        title: Rozcestník zdrojů e-knih a článků věnovaných e-knihám/e-čtečkám
-        description: Stránka věnovaná zdrojům (nejenom) e-knih pro e-čtečky
-    knihovna v Praze:
-        caption: Online projekty Městské knihovny v Praze
-        href: http://www.mlp.cz/cz/projekty/on-line-projekty/
-        title: Oficiální strány knihovny věnované e-knihám
-        description: Stránky projektu digitalizace knihovny
-    pdf volně JanKoWeb:
-        caption: "E-knihy: knihy v pdf volně ke stažení (JanKoWeb)"
-        href: http://jankoweb.moxo.cz/blog/zabava/e-knihy-knihy-v-pdf-volne-ke-stazeni/
-        title: Další rozcestník
-        description: Další rozcestník
-    Web Ebooky:
-        caption: Web Ebooky.cz
-        href: http://www.ebooky.cz/
-        title: Web věnovaný e-knihám
-        description: Vše, co by mohlo majitele e-čtečky zajímat
+reference:
+    - zdroje_eknih
 ---
 
 V tomto článu sepíši nápady na elektronické knihy či jiné čtivo použitelné pro čtečky. Ukážeme si tedy možnosti používání článků z webových stránek, staronové elektronické PDF verze knih nám také neuniknou, ale zavítáme i na portály distribující knihy v elektronické podobě (placené i zdarma dostupné). Taktéž přidám pár odkazů na nejenom fanouškovská díla, nech te se překvapit!
@@ -82,4 +63,4 @@ Do čtečky můžeme ukládat spousty dokumentů ve formátu **TXT**, **RTF**, *
 No a na závěr, čtečka může sloužit i jako fotoalbum. Samozřejmě v drtivé většině případů jen černobílé, za to zajímavější resp. záleží na fotkách - ale pravda je, že černobílé fotografie mají své kouzlo. Většinou je nutné je nahrávat do speciální složky **Images** v kořenovém adresáři.
 
 ## Reference
-{% include references_list.html references=page.references %}
+{% include references_list.html references=page.reference %}

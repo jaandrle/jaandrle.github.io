@@ -1,30 +1,54 @@
 {% comment %}
     Pouziti: `include references_list.html references={object[]}`
-        - `references`: Pole referencí
-    Reference ve tvaru
-    `name`:
-        `caption`: Text or link text
-        [`href`]: URL if link
-        [`title`]: Title for link
-        [`description`]: Append (separated by " – ")
+        - `references`: Pole referencí združených do sekcí:
+            ```
+            - `section`: string|object[] – odkaz na soubor ve složce 'reference' (v datech), nebo pojmenovani nasledujiciho pole referenci (nema interni ucel)
+                [`reference`: object
+                    `caption`: Text or link text
+                    [`href`]: URL if link
+                    [`title`]: Title for link
+                    [`description`]: Append (separated by " – ")
+                ]
+            ```
+        - ukázka:
+            ```
+            - sekce1
+            - sekce2:
+                - reference1:
+                    caption: Popis
+                - reference2:
+                    caption: Popis
+                    href: link
+                    title: pro linky
+                    description: za referencí
+            ```
 {% endcomment
 %}{%
-    assign references= include.references
-%}{% if references %}
+    assign references_src= include.references
+%}{% if references_src %}
 <ol>{%
-    for reference in references
-    %}{%
-        assign _name= reference.first %}{%
-        assign params= reference.last
-    %}<li id="ref_{{ _name | url_encode }}" ><b>[{{ _name }}]</b> {% if params.href
-    %}<a href="{{params.href}}" title="{{params.title}}">{{params.caption}}</a>{%
-    else
-    %}{{ params.caption }}{%
-    endif
-    %}{% if params.description
-    %} – {{params.description}}{%
-    endif
-    %}</li>{%
+    for ref_src in references_src
+        %}{% if ref_src.first.first %}{%
+            assign references= ref_src.first.last
+        %}{%
+            else
+        %}{%
+            assign references= site.data.reference[ref_src]
+        %}{% endif %}{%
+            for reference in references
+        %}{%
+            assign name= reference.first %}{%
+            assign params= reference.last
+        %}<li id="ref_{{ name | url_encode }}" ><b>[{{ name }}]</b> {% if params.href
+        %}<a href="{{params.href}}" title="{{params.title}}">{{params.caption}}</a>{%
+        else
+        %}{{ params.caption }}{%
+        endif
+        %}{% if params.description
+        %} – {{params.description}}{%
+        endif
+        %}</li>{%
+        endfor %}{%
     endfor %}
 </ol>{%
 endif %}
