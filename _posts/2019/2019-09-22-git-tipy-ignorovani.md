@@ -5,7 +5,10 @@ title: "Git: Ignorování souborů a změn v textu"
 excerpt_separator: <!--more-->
 category: dev
 ---
-Jak ignorovat sobory a nahrazovat texty při commitování…<!--more-->
+
+Jak ignorovat sobory a nahrazovat texty při commitování…
+
+<!--more-->
 
 ## Aliasy
 Aliasy pro git pomáhající s lokálním ignorováním souborů (do `.git/config` zadat – viz [příspěvek od phatmann](https://stackoverflow.com/a/18317425)):
