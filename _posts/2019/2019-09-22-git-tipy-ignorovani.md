@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 category: dev
 ---
 
-Jak ignorovat sobory a nahrazovat texty při commitování…
+Rychlý příspěvek, jak ignorovat sobory a nahrazovat texty v souborech při commitování…
 
 <!--more-->
 
