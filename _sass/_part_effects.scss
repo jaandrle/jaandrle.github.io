@@ -1,18 +1,33 @@
-.info, .highlight, .page__comments, .comment {
-    clip-path: polygon(var(--clip-top), var(--clip-bottom));
-    --clip-size: .25em;
-    --clip-top: 0 var(--clip-size, .5em), 100% 0;
-    --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+hr, .info, .highlight, .page__comments, .comment {
+    clip-path: polygon(var(--eff-clip-top), var(--eff-clip-bottom));
+    --eff-clip-size: .25em;
+    --eff-clip-top: 0 var(--eff-clip-size, .5em), 100% 0;
+    --eff-clip-bottom: 100% 100%, 0 calc(100% - var(--eff-clip-size, .5em));
     &:nth-of-type(even) {
-        --clip-top: 0 0, 100% var(--clip-size, .5em);
-        --clip-bottom: 100% calc(100% - var(--clip-size, .5em)), 0 100%;
+        --eff-clip-top: 0 0, 100% var(--eff-clip-size, .5em);
+        --eff-clip-bottom: 100% calc(100% - var(--eff-clip-size, .5em)), 0 100%;
     }
     &:nth-of-type(2n+3) {
-        --clip-top: 0 0, 100% var(--clip-size, .5em);
-        --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+        --eff-clip-top: 0 0, 100% var(--eff-clip-size, .5em);
+        --eff-clip-bottom: 100% 100%, 0 calc(100% - var(--eff-clip-size, .5em));
     }
     &:nth-of-type(2n+4) {
-        --clip-top: 0 var(--clip-size, .5em), 100% 0;
-        --clip-bottom: 100% 100%, 0 calc(100% - var(--clip-size, .5em));
+        --eff-clip-top: 0 var(--eff-clip-size, .5em), 100% 0;
+        --eff-clip-bottom: 100% 100%, 0 calc(100% - var(--eff-clip-size, .5em));
     }
+}
+
+code, .info, .C__text_highlited {
+    $radius: .5rem;
+    border-radius: var(--eff-br-lt, 0) var(--eff-br-rt, 0) var(--eff-br-rb, 0) var(--eff-br-lb, 0);
+    &:nth-of-type(2n)   { --eff-br-lt: #{$radius}; }
+    &:nth-of-type(2n+1) { --eff-br-rt: #{$radius}; }
+    &:nth-of-type(2n+2) { --eff-br-rb: #{$radius}; }
+    &:nth-of-type(2n+3) { --eff-br-lb: #{$radius}; }
+}
+.C__button, input, textarea {
+    $radius: .5rem;
+    border-radius: var(--eff-br-lt, 0) var(--eff-br-rt, 0) var(--eff-br-rb, 0) var(--eff-br-lb, 0);
+    &:nth-of-type(2n)   { --eff-br-rt: #{$radius}; }
+    &:nth-of-type(2n+1) { --eff-br-rb: #{$radius}; }
 }

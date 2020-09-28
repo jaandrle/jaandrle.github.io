@@ -3,7 +3,7 @@
         V template (kde je {{content}}) pouzivat `{% include show_toc.html show_toc=page.show_toc html=content %}`{%
 endcomment %}{%
      if include.show_toc and include.show_toc > 0 %}
-    <h2>Obsah</h2>
+    <details><summary><b>Obsah</b></summary>
     {% include molecule_toc.html html=include.html ordered=true h_max=include.show_toc %}
-    <hr>{%
+    </details><hr>{%
     endif %}

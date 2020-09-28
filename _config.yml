@@ -1,6 +1,12 @@
 # This file contains configuration flags to customize your site
-# code version
-version: 1.1
+__code: &code_common
+  repository: "jaandrle/jaandrle.github.io"
+  branch: "master"
+code: # code version
+  <<: *code_common
+  version: 2020.09a
+  name: Hoary Hedgehog # name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
+  hosted: "https://github.com/"
 #
 # \ Site infos part \
 #     1. localization
@@ -19,8 +25,8 @@ avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
 # \ Comments, google analytics \
 #     1. Staticman
 staticman:
-  repository : "jaandrle/jaandrle.github.io"
-  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  <<: *code_common
+  # branch     : If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
   endpoint   : #https://staticman3.herokuapp.com/v1/webhook/
   reCaptcha  : # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
                # If you use reCaptcha, you must also set these parameters in staticman.yml

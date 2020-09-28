@@ -1,117 +1,59 @@
 /*
-
-display:
-
+    display
 */
-.display__f {
-    display: flex;
-}
+.display__f { display: flex; }
+.display__i { display: inline; }
+.display__b { display: block; }
 /*
-
-flex-*:
-
+    flex
 */
+.flex__1 { flex: 1; }
+.flex__4 { flex: 4; }
+.justifyC__fE { justify-content: flex-end; }
 /*
-
-flex:
-
+    float
 */
-.flex__1 {
-    flex: 1;
-}
-.flex__4 {
-    flex: 4;
-}
+.float__l { float: left; }
+.float__r { float: right; }
 /*
-
-jusify-*:
-align-*:
-
+    width & height
 */
-.justifyC__fE {
-    justify-content: flex-end;
-}
+.width__100 { width: 100%; }
+.minW__bar { min-width: 15rem; }
+.maxW__article  { max-width: 40rem; }
+.maxH__image    { max-height: 25rem; }
 /*
-
-float:
-
+    object
 */
-.float__l {
-    float: left;
-}
-.float__r {
-    float: right;
-}
+.objectF__c { object-fit: cover; }
 /*
-
-width:
-*-width:
-height:
-*-height:
-
+    text & font
 */
-.width__100 {
-    width: 100%;
-}
-.minW__bar {
-    min-width: 15rem;
-}
-.maxW__article {
-    max-width: 40rem;
-}
-.maxH__image {
-    max-height: 25rem;
-}
+.textA__c { text-align: center; }
+.textA__j { text-align: justify; }
+.fontS__0d5 { font-size: .5rem; }
 /*
-    object-*
+    margin
 */
-.objectF__c {
-    object-fit: cover;
-}
+.margin__0      { margin: 0; }
+.margin__0_auto { margin: 0 auto; }
+.margin__1_auto { margin: 1rem auto; }
 /*
-
-text-*:
-
+    padding
 */
-.textA__c {
-    text-align: center;
-}
-.textA__j {
-    text-align: justify;
-}
+.padding__1 { padding: 1rem }
 /*
-
-margin:
-margin-*:
-
+    ...mobile
 */
-.margin__0_auto {
-    margin: 0 auto;
-}
-.margin__1_auto {
-    margin: 1rem auto;
-}
-/*
-
-padding:
-padding-*:
-
-*/
-.padding__1 {
-    padding: 1rem
-}
-/* ...mobile */
 .m_padding__0 {
     @include mobile {
         padding: 0;
     }
 }
 /*
-
-clearfix
-    Nicolas Gallagher's micro clearfix hack
-    http://nicolasgallagher.com/micro-clearfix-hack/
-
+    clearfix
+        Nicolas Gallagher's micro clearfix hack
+        http://nicolasgallagher.com/micro-clearfix-hack/
 */
 .clearfix:before,
 .clearfix:after {

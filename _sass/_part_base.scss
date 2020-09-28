@@ -117,6 +117,11 @@ strong, b {
   font-weight: bold;
 }
 
+cite{
+  &:before{content:"\201E"}
+  &:after{content:"\201D"}
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
