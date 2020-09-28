@@ -29,7 +29,7 @@ Novou tabulku vytvoříme ikonou <img class="display__i" alt="obrázek listu pap
 
 {% include image.html
     caption='Dialog pro nastavení hodnoty sloupce (vyšší kvalita po kliknutí)'
-    title='Dialog podobný tomu v programu Origin'
+    alt='Dialog podobný tomu v programu Origin'
     href='https://sc9mpq.db.files.1drv.com/y4pLHy6EfLIqYCVaKK1VVi8H_zorQNMjv9pkUP1Av6K2iacC902CpBVvo1LeTUYm7HyIck5kV2JTzNEM5vznS_Eu5gGmY_SdOQq4s_Wx4EZDhcXljt2orfLoMBY1tT5QmehELeMIiwPb_9S6c7Ju40K9YkJ8PIPCNBFBUnCnke09s1-Rszfxq0Vph9KFMTFCkgk9jRYlThSC-CgwYF22rAyVg/qtiplot-tabulky.png?psid=1'
     src='https://db3pap003files.storage.live.com/y4pu48Wv76WgM7-g7XtEMrd6tX9WMw97IjEhWxhE615HDOXA9lQLlVYfDQvVQMmTeCnH2ym-31yCrxvq6Nomt66v55A3pGq9MLvnak5B2H_489wTnEj8D-Pg3yWBFP8qRX0QAj0gbli_JNsA8awpyUj14_mXbxtKb1-c2CccFN7CLZcFeCy1-33EUOhjipIbsic/qtiplot-tabulky.png?psid=1&width=349&height=236'
 %}
@@ -42,7 +42,7 @@ Graf lze vygenerovat vybráním sloupců a pomocí panelu/nabídky _Nákres._
 
 {% include image.html
     caption='Jednoduché vytvoření grafu (vyšší kvalita po kliknutí)'
-    title='Graf a dialog „Nákres”'
+    alt='Graf a dialog „Nákres”'
     href='https://ss9mpq.db.files.1drv.com/y4pLkZf5ammS0kTpnLynQsbNbUwSHh68k9FoNUInqXNni95v54FrY8DzmYzijsHoW9k9BvP9TVGKuU3q1li3BZgZ9DZTCXDXUCeUgUiJRQE619b9IK0p7Ebh09-uEcv3A4QUSd1hEd3e8waqqEAqkq0lOPv_YsVC9tsHKHlU8xfh26oNs88CDTUqBkIug9Thpd5RNqd853XOLQxqz_XQImUBQ/qtiplot-grafy.png?psid=1'
     src='https://db3pap003files.storage.live.com/y4phz_t-pgZFXIoZ08YmLLoMsri5zjEoHbhmOESjfT0SSxyena-VXaxk9wC7g0mJwl_ec3N7K_KV__HrHSW07s42VidrHg4ZZoFapbAwybeqti_DrAyzgl4Ms0J7B8dEFCsF6cS3RV1iVc7AoKuQmkedgY5I33Lw2RSkGIvbQjnWvdKMPqFTTEaaVhszZ-O2KAm/qtiplot-grafy.png?psid=1&width=338&height=183'
 %}
@@ -53,7 +53,7 @@ Proložit tyto body křivkou lze provést pomocí nabídky `Provést rozbor > Pr
 
 {% include image.html
     caption='Zapsání křivky pro fitování (vyšší kvalita po kliknutí)'
-    title='Proložení předpokládaným průběhem - zadání křivky'
+    alt='Proložení předpokládaným průběhem - zadání křivky'
     href='https://qy9mpq.db.files.1drv.com/y4pxzGktVRK1iDe0hK7FR91nxdn2R6jcQ3FAeqoGk2ddGAfitvfhSDgP2qquL_PsmiVFxsgmxx4eFogPMeGhzEnOjnmg0NnnNv719_F9h9HcFB2VM-uIFkXU3ac7FAVJiTA2iokQNW7B4edRqBaXSG82Gl6-Jb0CzeFYQeHak87JS-iJEIBs8TrVU-IVQMtRFXh5ur7gTp0odAlLbC3CqhOcw/qtiplot-fit1.png?psid=1'
     src='https://db3pap003files.storage.live.com/y4pHiwzDh73lzySMBDSUSC9I1HZiSsElavYgAyOnqOJF5_TANqzD9QjMDWXXGtHkdRz8eyj8m8g5_W8gvggllsFQP2ZPOq8TC0-HltojySXwqq_xU7Nacfnvnh0wYjVAb_JeMaZdAiZh3pt2UQp0VFBSnKs2CKaOG_VyV4wVbzB2beq7KA-MDh4__XM8yCZXVYm/qtiplot-fit1.png?psid=1&width=192&height=183'
 %}
@@ -62,7 +62,7 @@ Zelenou šipkou se dostaneme sem:
 
 {% include image.html
     caption='Upřesnění fitu (vyšší kvalita po kliknutí)'
-    title='Proložení předpokládaným průběhem - upřesnění'
+    alt='Proložení předpokládaným průběhem - upřesnění'
     href='https://qi9mpq.db.files.1drv.com/y4pOE60VH4quLk9xv3lo0Yce_bRJvd7N02zZYae5FnJESCbLDIcaEg4co8tOAxmtcXcvJEPhBhNfpO0Iks3ZK13Olzc9ZNiMcfc6Fg9xmYsl3aAq1MhOTFTDKx7Qq6y1N6FE-xhh0t4aRJiPsQhi5R4tX1-AhTm4FptAfhrMVgo3asp-JS8VM-M4fZMZokrV3_BphWzS6jlD64NxiAaBO8r3g/qtiplot-fit2.png?psid=1'
     src='https://db3pap003files.storage.live.com/y4pRr7FlEcwLLse-vnQGkV10N57WpKUYWz8Hj249Ulw-RTZY9xZnPBbxfPngsYoRCYoqAIUaj4tEwgTaXwwZ_ORFruvOcAwYhoeKJutnidpjlFUxKwpSbI9H8SV3NXUBOw2wKpFccDNCeKVXzTOJ6-hyc6-ixWnymoLP4Ilek6ovVBSlHndmxubxXyqwWY4yjPN/qtiplot-fit2.png?psid=1&width=192&height=183'
 %}
@@ -71,7 +71,7 @@ Kde lze přednastavit parametry, případně některé zafixovat (zaškrtnout _S
 
 {% include image.html
     caption='Výsledný graf (vyšší kvalita po kliknutí)'
-    title='Graf vytvořený programem QtiPlot'
+    alt='Graf vytvořený programem QtiPlot'
     href='https://rc9mpq.db.files.1drv.com/y4pc1CNPQQ3N3xu70WnRlouqhY26jtB3Dc_eA-ewNRL-yHkEtIdbb-5gbQsNs1FPYOTQujW8LtjRAky5nzveY_zPcl5dR1DR8FMqXTc5XTDkSQYkeVY8-Nxj9h32j8kJNSSdVSWpkYoFOKEbvCfIfdj0VIU35yovkrYZX0CFU3QFoaJSwBshPDuQ0iOIfifYa7FFFdfbwtkCkSPfmO8jQ8NVQ/qtiplot-grafy-graf.png?psid=1'
     src='https://db3pap003files.storage.live.com/y4plEcK7UCAOpOu7y9i306pRErx9HvObXCnxqOTuPLvhOvEjQbxIgV9LlHhtfM9s-Hg2gyQEjFYikQbVl7fVzZmjmaIeXZwuHhHyFrxB2W9YCHBXCVsNzlyf8fBhWqkH9vAKehS6X3AHg6bEMY0h3FQmNumOJHrrEPIn2T_spWTrAI55h4hyz6jjQGvWscANw6w/qtiplot-grafy-graf.png?psid=1&width=318&height=183'
 %}

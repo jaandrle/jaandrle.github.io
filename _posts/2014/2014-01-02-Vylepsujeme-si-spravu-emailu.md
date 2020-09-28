@@ -24,7 +24,7 @@ Po přihlášení do schránky nás přivítá úvodní obrazovka Seznam Emailu,
 
 {% include image.html
     caption='Úvodní obrazovka Seznam Email'
-    title='Na obrázku vidíme úvodní část Seznam Email'
+    alt='Na obrázku vidíme úvodní část Seznam Email'
     src='https://dm2303files.storage.live.com/y2ptl22NmQtYO4n9n3RCTJw6uGUi7AJfgfuNfJVae5Eonh27dERYrjlMnSJl_XfwV091XAngNO9fs6ZaXvt1BebIg/SeznamEmail1.png.jpg?psid=1&amp;ck=0&amp;ex=720'
     href='https://dm2303files.storage.live.com/y2ptl22NmQtYO4n9n3RCTJw6uGUi7AJfgfuNfJVae5Eonh27dERYrjlMnSJl_XfwV091XAngNO9fs6ZaXvt1BebIg/SeznamEmail1.png.jpg'
 %}
