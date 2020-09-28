@@ -4,7 +4,7 @@
 {%
     include molecule_meta.html %}
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky)</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
   </head>
   <body class="C__with_sidebar display__f">
     <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to content">Scroll to content</a>
@@ -28,18 +28,18 @@
       <details>
         <summary title="Linky na sociální sítě a vyhledávání">Další možnosti</summary>
         
-        <div class="C__sidebarSocial ">{% for social in site.data.social %}{% assign sp= social | last %}
+        <div class="C__sidebarSocial">{% for social in site.data.social %}{% assign sp= social | last %}
           <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{% endfor %}
         </div>
-        <br>
+        <span class="display__b">~</span>
         <form method="get" id="search" action="https://duckduckgo.com/">
           <input type="hidden" name="sites" value="{{ site.url }}"/>
-          <input class="width__100" type="text" name="q" maxlength="300" placeholder="Vyhledat..."/>
+          <input class="width__100 margin__0" type="text" name="q" maxlength="300" placeholder="Vyhledat..."/>
           <input type="hidden" name="kae" value="#252525" />
           <button type="submit" class="C__visuallyHide" >Search</button>
         </form>
-        <br>
-        <a target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
+        <span class="display__b">~</span>
+        <a class="display__b fontS__0d5" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
       </details>
     </header>
 
