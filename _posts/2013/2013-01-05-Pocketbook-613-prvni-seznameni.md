@@ -42,7 +42,7 @@ Prvním krokem je asi aktualizace tzv. firmware (řekněme "něco jako" operačn
 
 > **Poznámka:** Není nutné aktualizaci mermomocí provádět. Já jsem to uvedl jen z praktického důvodu. Totiž až se naplní čtečka knihami, tak už pravděpodobně nebudete chtít „zbytečně riskovat“ problémy. Tedy, při koupi je ideální čas, provést aktualizaci na verzi s opravenými doposud objevenými nedostatky. A pokud se nebudou objevovat žádné problémy, už se tím nemusíte nikdy zabývat.
 
-Po doknočení aktulizace nastává druhý krok. Čtečka je totiž pravděpodobně zanesena některými nechtěnými soubory. Začneme smazáním `SWUPDATE.BIN` (zařízení ho totiž po aktulizaci nesmazalo), dále pak cizojazyčných návodů (v kořenové složce ve formátu pdf). Čtečka může též již obsahovat nějaké ty knihy, ze slušnosti poděkujeme a smažeme všechny knihy, které jsou napsané v jazyce, který neovládáme - tedy například složky `Espanol`, `Русский`, ...
+Po dokončení aktulizace nastává druhý krok. Čtečka je totiž pravděpodobně zanesena některými nechtěnými soubory. Začneme smazáním `SWUPDATE.BIN` (zařízení ho totiž po aktulizaci nesmazalo), dále pak cizojazyčných návodů (v kořenové složce ve formátu pdf). Čtečka může též již obsahovat nějaké ty knihy, ze slušnosti poděkujeme a smažeme všechny knihy, které jsou napsané v jazyce, který neovládáme - tedy například složky `Espanol`, `Русский`, ...
 
 Jako třetí krok přichází zmínění a vyřešení některých problémů/nedostatků:
 
