@@ -7,6 +7,7 @@
 {% endcomment
 %}{%    assign src= include.src
 %}{%    assign href= include.href | default: src
+%}{%    assign title= include.title | default: "Otěvřít obrázek samostatně (ve vyšší kvalitě pokud možno)"
 %}{%    assign relative_url= src | first
 %}{%    assign alt= include.alt | default: "Obrázek v článku"
 %}{%    if relative_url == "\/"
@@ -14,7 +15,7 @@
 %}{%        assign href= href | prepend: site.baseurl
 %}{%    endif
 %}<figure class="C__figureWrapper">
-    <a href="{{ href }}" title="{{ include.title }}" target="_blank">
+    <a href="{{ href }}" title="{{ title }}" target="_blank">
         <img src="{{ src }}" alt="{{ alt }}" class="maxH__image"/>
     </a>{%
     if include.caption %}
