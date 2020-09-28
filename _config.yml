@@ -4,8 +4,8 @@ __code: &code_common
   branch: "master"
 code: # code version
   <<: *code_common
-  version: 2020.07b
-  name: Warty Warthog # name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
+  version: 2020.09a
+  name: Hoary Hedgehog # name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
   hosted: "https://github.com/"
 #
 # \ Site infos part \
