@@ -1,0 +1,5 @@
+---
+---
+User-agent: *
+Disallow: {% link blog/tags.html %}
+Sitemap:  {% link sitemap.xml %}
