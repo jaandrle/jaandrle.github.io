@@ -1,8 +1,13 @@
     <meta charset="utf-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="Robots" content="all">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>{%
+        if page.path == "blog/tags.html" %}
+    <meta name="robots" content="noindex">{%
+        endif %}{%
+        if page.path == "/" %}
+    <meta name="google-site-verification" content="YOZcSxUT4ulKuyqZgv6SOInv7WfWyontLkHaxaMrLA4" />{%
+        endif %}
     
     <meta name="author" content="{{ site.author.name }}" />
     <meta name="generator" content="Jekyll" /> <!-- Created with Jekyll & GitHub Pages -->
@@ -29,5 +34,5 @@
 
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.author.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
