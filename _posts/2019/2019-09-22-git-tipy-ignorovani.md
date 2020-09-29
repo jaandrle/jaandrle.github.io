@@ -5,8 +5,8 @@ title: "Git: Ignorování souborů a změn v textu"
 excerpt_separator: <!--more-->
 category: dev
 redirect_from:
-  - /blog/2019-09/Git-tipy-ignorovani
   - /blog/2019-09/Git-tipy-ignorovani/
+  - /blog/2019-09/Git-tipy-ignorovani
 ---
 
 Rychlý příspěvek, jak ignorovat sobory a nahrazovat texty v souborech při commitování…
