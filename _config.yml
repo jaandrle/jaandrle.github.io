@@ -61,6 +61,8 @@ kramdown: # Use GitHub flavored markdown, including triple backtick fenced code 
 sass:
   style: :compressed # You might prefer to minify using :compressed || :expanded
 #   6. Plugins
+plugins:
+  - jekyll-redirect-from
 #   7. Exclude these files from your production _site
 exclude:
   - Gemfile

@@ -4,6 +4,8 @@ tags : [git]
 title: "Git: Ignorování souborů a změn v textu"
 excerpt_separator: <!--more-->
 category: dev
+redirect_from:
+  - /blog/2019-09/Git-tipy-ignorovani
 ---
 
 Rychlý příspěvek, jak ignorovat sobory a nahrazovat texty v souborech při commitování…
@@ -39,8 +41,8 @@ $gitconfig --global filter.local_global.clean 'sed "s/LOCAL/GLOBAL/"'
 - alternativně v `.gitconfig`:
 {% highlight text %}
 [filter "local_global"]
-	smudge = sed "s/LOCAL/GLOBAL/"
-	clean = sed "s/LOCAL/GLOBAL/"
+    smudge = sed "s/LOCAL/GLOBAL/"
+    clean = sed "s/LOCAL/GLOBAL/"
 {% endhighlight %}
 - se `sed` escapuje pomocí `\\` — oddělovač lze měnit `s/…/…/` na `s:…:…:g`.
 - více [StackOverflow> Can git ignore a specific line?](https://stackoverflow.com/questions/6557467/can-git-ignore-a-specific-line)
