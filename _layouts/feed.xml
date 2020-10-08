@@ -15,7 +15,7 @@
 
  {% for post in site.posts %}{% if category and post.category and post.category != category %}{% else %}
  <entry>
-   <title>{{ post.title }}</title>
+   <title>{{ post.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ post.url }}" rel="alternate" type="text/html" title="{{post.title}}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
