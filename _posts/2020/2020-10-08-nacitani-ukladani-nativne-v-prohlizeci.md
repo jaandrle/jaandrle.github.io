@@ -1,7 +1,7 @@
 ---
 layout: post
 tags : [fs,javascript,chrome]
-title: "Načítání/ukládání do soborů nativně v prohlížeči"
+title: "Načítání/ukládání soborů (a složek) nativně v prohlížeči"
 category: dev
 ---
 
