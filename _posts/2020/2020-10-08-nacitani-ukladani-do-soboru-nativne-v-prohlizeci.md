@@ -1,0 +1,8 @@
+---
+layout: post
+tags : [fs,javascript,chrome]
+title: "Načítání/ukládání do soborů nativně v prohlížeči"
+category: dev
+---
+
+[Tomek Sułkowski odkazuje na Twitteru](https://twitter.com/sulco/status/1313798240043753473) ukazuje možnost otevírání souborů pomocí `window.showOpenFilePicker()` v poslední verzi Chromu. V [GoogleChromeLabs/browser-nativefs: Native File System API with legacy fallback in the browser](https://github.com/GoogleChromeLabs/browser-nativefs) je univerzálně použitelný kód. Pokud prohližeč nepodporuje nové API, použije se `<input type="file">` resp. `<a download>`. Viz také [Reading and writing files and directories with the browser-nativefs library](https://web.dev/browser-nativefs/).
