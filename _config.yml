@@ -4,7 +4,7 @@ __code: &code_common
   branch: "master"
 code: # code version
   <<: *code_common
-  version: 2020.09b
+  version: 2020.09c
   name: Hoary Hedgehog # name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
   hosted: "https://github.com/"
 #
