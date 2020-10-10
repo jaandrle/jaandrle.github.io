@@ -122,6 +122,13 @@ cite{
   &:after{content:"\201D"}
 }
 
+kbd {
+  display: inline;
+  border: 1px dotted gray;
+  border-radius: 5px;
+  padding: .1rem .25rem .05rem .25rem;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
