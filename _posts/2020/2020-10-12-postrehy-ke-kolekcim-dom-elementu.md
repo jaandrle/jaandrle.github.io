@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 <!--more-->
 
 ## Společné vlastnosti
-Oboje třídy jsou podobná polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iteratovatelná](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN"). Dále pak podporují spread operátor `...` a lze je převést na pole `Array.from`. Z method `Array` ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`).
+Oboje třídy jsou podobná polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iterovatelné](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN k 'Iteration protocol'"). Dále pak podporují spread operátor `...` a lze je převést na pole `Array.from`. Z `Array` method ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`).
 
 {% include code.html caption="Procházení kolekcemi elementů. V ukázce použitý `document.forms` vrací `NodeList`, viz dále v textu." code='
 ```JavaScript
@@ -46,9 +46,10 @@ V podporovaných prohlížečích obsahuje metody `forEach`, `values`, `entries`
 ## `HTMLCollection` (vždy živý)
 Podrobné infomace viz [HTMLCollection - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection).
 
-K prvků pole lze přistupovat i přes HTML vlastnosti `id` či `name` daného elementu a to pomocí metody `namedItem` resp. pomocí závorek `pole["name_or_id"]` či tečkového zápisu `pole.name_or_id`.
+Vrací ji například [`Element.getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName), [`Element.getElementsByTagName`](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName) či `document.forms`.
 
-Vrací jej například `document.forms`:
+K prvkům pole lze přistupovat i přes HTML vlastnosti `id` či `name` daného elementu a to pomocí metody `namedItem` resp. pomocí závorek `pole["name_or_id"]` či tečkového zápisu `pole.name_or_id`.
+
 {% include code.html caption="Využití přístupu k elementům `HTMLCollection` přes `name`." code='
 ```JavaScript
 // pro <form name="login"><input name="login_email" type="email"/></form>
