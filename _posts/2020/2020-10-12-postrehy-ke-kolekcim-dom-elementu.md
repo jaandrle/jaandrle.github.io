@@ -11,11 +11,11 @@ excerpt_separator: <!--more-->
 <!--more-->
 
 ## Společné vlastnosti
-Oboje třídy jsou podobná polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iterovatelné](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN k 'Iteration protocol'"). Dále pak podporují spread operátor `...` a lze je převést na pole `Array.from`. Z `Array` method ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`).
+Obě třídy jsou podobné polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iterovatelné](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN k 'Iteration protocol'"). Dále pak podporují spread operátor `...` a lze je převést na pole (`Array.from`). Z `Array` method ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`).
 
 {% include code.html caption="Procházení kolekcemi elementů. V ukázce použitý `document.forms` vrací `NodeList`, viz dále v textu." code='
 ```JavaScript
-const forms= document.forms;
+const { forms }= document;
 // Klasické procházení
 for(let i=0, forms_lenght= forms.lengt; i<forms_length; i++){
     forms[i].className= "just-example";
@@ -34,7 +34,7 @@ Array.from(forms).forEach(
 ' %}
 
 ## Reflektování změn v `DOM`u
-Rozdíl spočívá hl. v tom, zda se pole aktualizuje dle změn `DOM`u (např přidání elementu), viz [Live vs. Static NodeLists](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Live_vs._Static_NodeLists "Příslušná sekce v dokumentaci NodeList na MDN"). Používá se názvosloví *live*/*static* (*živí*/*statický*), které je dostatečně popisné.
+Rozdíl spočívá hlavně v tom, zda se pole aktualizuje dle změn `DOM`u (např přidání elementu), viz [Live vs. Static NodeLists](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Live_vs._Static_NodeLists "Příslušná sekce v dokumentaci NodeList na MDN"). Používá se názvosloví *live*/*static* (*živý*/*statický*), které je dostatečně popisné.
 
 ## `NodeList` (živý/statický)
 Podrobné informace viz [NodeList - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/NodeList).
@@ -54,6 +54,7 @@ K prvkům pole lze přistupovat i přes HTML vlastnosti `id` či `name` daného 
 ```JavaScript
 // pro <form name="login"><input name="login_email" type="email"/></form>
 const login_form= document.forms.login;
-const email_input= login_form.login_email;
+const login_form_elements= login_form.elements;
+const email_input= login_form_elements.login_email;
 ```
 ' %}
