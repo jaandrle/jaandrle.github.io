@@ -61,4 +61,4 @@ const email_input= login_form_elements.login_email;
 
 
 ---
-[^1] Třídy samozřejmě podporují i klasický přístup k prvkům pole přes `[…]`, ten však vrací `undefined` pokud prvek neexistuje.
+[^1]: Třídy samozřejmě podporují i klasický přístup k prvkům pole přes `[…]`, ten však vrací `undefined` pokud prvek neexistuje.
