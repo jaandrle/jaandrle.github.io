@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 <!--more-->
 
 ## Společné vlastnosti
-Obě třídy jsou podobné polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iterovatelné](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN k 'Iteration protocol'"). Dále pak podporují spread operátor `...` a lze je převést na pole (`Array.from`). Z `Array` method ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`).
+Obě třídy jsou podobné polím, ale nedědí z `Array`. Primárně to tedy spíš znamená, že jsou [iterovatelné](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols "Dokumentace na MDN k 'Iteration protocol'"). Dále pak podporují spread operátor `...` a lze je převést na pole (`Array.from`). Z `Array` method ještě obě `DOM` kolekce mají getter `length` a `item` (metoda vrací prvek dle indexu, nebo `null`[^1]).
 
 {% include code.html caption="Procházení kolekcemi elementů. V ukázce použitý `document.forms` vrací `NodeList`, viz dále v textu." code='
 ```JavaScript
@@ -58,3 +58,7 @@ const login_form_elements= login_form.elements;
 const email_input= login_form_elements.login_email;
 ```
 ' %}
+
+
+---
+[^1] Třídy samozřejmě podporují i klasický přístup k prvkům pole přes `[…]`, ten však vrací `undefined` pokud prvek neexistuje.
