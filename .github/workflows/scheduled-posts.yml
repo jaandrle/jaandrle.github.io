@@ -1,4 +1,4 @@
-name: Build every hour
+name: Build every day at 1:00am
 
 on:
   schedule:
