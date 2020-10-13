@@ -14,7 +14,7 @@ Na začátek, tento příspěvek je inspirován problémem provedení kódu po z
 
 Kombinací dvou `window.requestAnimationFrame` zařídíme zavolání *callback*u před druhým následujícím překreslení. Obecná funkce by mohla vypadat nějak takto:
 
-{% include code.html caption="Funkce pro zavolání *callback*u po příštím překreslení stránky (podržitko mám jako úzus pro funkce vracející `Promise`)" code="
+{% include code.html caption="Funkce pro zavolání *callback*u po příštím překreslení stránky (podržítko mám jako úzus pro funkce vracející `Promise`)" code="
 ```JavaScript
 function requestNextAnimationFrame(callback){
     return requestAnimationFrame(requestAnimationFrame.bind(null, callback));
