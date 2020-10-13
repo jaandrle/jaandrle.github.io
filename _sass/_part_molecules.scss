@@ -1,3 +1,11 @@
+.footnotes{
+  font-size: .75rem;
+  font-style: normal;
+  &::before {
+    content: "········· Poznámky pod čarou ·········";
+    font-style: italic;
+  }
+}
 .C__svgIcon {
   display: inline-block;
   vertical-align: top;
