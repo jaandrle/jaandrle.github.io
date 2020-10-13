@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 category: nondev
 ---
 
-Nestačí-li nám možnosti vyhledávání v „chromoidních“ prohlížečích (tedy hlavně [Chrome](/tag/chrome "Entries tagged with: Chrome"), [Chromium](/tag/chromium "Entries tagged with: Chromium") a [Opera](/tag/opera "Entries tagged with: Opera")), nastupuje příslušné rozšíření. Jaké rozšíření a co vše s jeho pomocí lze provádět se dozvíme dále v textu. O možnostech vyhledávání v prohlížečích se lze dočíst v dřívějším článku [Vyhledávání v Internetu v prohlížečích]({% post_url 2014-04-06-vyhledavani-v-internetu-v-prohlizecich %}).
+Nestačí-li nám možnosti vyhledávání v „chromoidních“ prohlížečích (tedy hlavně [Chrome](/tag/chrome "Entries tagged with: Chrome"), [Chromium](/tag/chromium "Entries tagged with: Chromium") a [Opera](/tag/opera "Entries tagged with: Opera")), nastupuje příslušné rozšíření. Jaké rozšíření a co vše s jeho pomocí lze provádět se dozvíme dále v textu. O možnostech vyhledávání v prohlížečích se lze dočíst v dřívějším článku [Vyhledávání v Internetu v prohlížečích]({% post_url 2014/2014-04-06-vyhledavani-v-internetu-v-prohlizecich %}).
 
 <!--more-->
 
