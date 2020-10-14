@@ -14,7 +14,7 @@ Služba funguje přes *Wi-Fi* a na webové stránce zobrazuje dostupná zaříze
 
 Částečně v podobném duchu funguje Android aplikace [Primitive FTPd](https://play.google.com/store/apps/details?id=org.primftpd "Aplikace na Google Play"). Ta umožňuje zprovoznit na zařízení [FTP server](https://cs.wikipedia.org/wiki/File_Transfer_Protocol "Článek o File Transfer Protocol na Wikipedii") a tedy zpřístupnit soborový systém zařízení v lokální síti.
 
-Následující služby se hodí (nejjistěji fungují) mezi Android zařízeními. Jedná se a [Android Beam](https://cs.wikipedia.org/wiki/Android_Beam "Wikipedie") resp. [Wi-Fi Direct](https://cs.wikipedia.org/wiki/Wi-Fi_Direct "Wikipedie"). Obě služby lze zvolit v nabídce sdílení a vyžadují NFC a Bluetooth resp. Wi-Fi a Google ůčet.
+Následující služby se hodí (nejjistěji fungují) mezi Android zařízeními. Jedná se o [Android Beam](https://cs.wikipedia.org/wiki/Android_Beam "Wikipedie") resp. [Wi-Fi Direct](https://cs.wikipedia.org/wiki/Wi-Fi_Direct "Wikipedie"). Obě služby lze zvolit v nabídce sdílení a vyžadují NFC a Bluetooth resp. Wi-Fi a Google ůčet.
 
 
 [^1]: Na *iOS* mi nefungovalo (13. 10. 2020), snad bude zprovozněno v novější verzi Safari.
