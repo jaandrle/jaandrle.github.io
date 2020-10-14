@@ -1,70 +1,53 @@
 # This file contains configuration flags to customize your site
-future: false
+
+# Blog/Website sourse code
+#   - code version (name) / repository
+#   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
 __code: &code_common
   repository: "jaandrle/jaandrle.github.io"
   branch: "master"
-code: # code version
+code:
   <<: *code_common
   version: 2020.09c
-  name: Hoary Hedgehog # name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
+  name: Hoary Hedgehog
   hosted: "https://github.com/"
-#
-# \ Site infos part \
-#     1. localization
+
+# Main site settings
+#   - language, (base)url
+url: https://jaandrle.github.io
+baseurl: ""
 locale: cs
-#     2. my infos (name is also site name)
+sass:
+  style: :compressed # You might prefer to minify using :compressed || :expanded
+
+# Site / author infos
+description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.
+welcome_text: Vítejte na osobních stránkách Jana Andrle.
 author:
   name: Jan Andrle
   email: andrle.jan@centrum.cz
-#     3. site(s) description
-description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.
-#     4. text in main page
-welcome_text: Vítejte na osobních stránkách Jana Andrle.
-#     5. URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
-# / Site infos part /
-# \ Comments, google analytics \
-#     1. Staticman
+
+# Comments (Staticman), analytics
+#   - see https://staticman.net/docs/configuration
+#   - (unused) Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking » google_analytics:
+#   - (unused) Disqus (set your Disqus shortname – not username) » disqus:
 staticman:
   <<: *code_common
-  # branch     : If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : #https://staticman3.herokuapp.com/v1/webhook/
-  reCaptcha  : # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
-               # If you use reCaptcha, you must also set these parameters in staticman.yml
-    siteKey   : # Use your own site key, you need to apply for one on Google
-    secret    : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-#     2. GA (not used)
-#       Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-#     3. Disqus (not used)
-#       Enter your Disqus shortname (not your username) to enable commenting on posts
-#       You can find your shortname on the Settings page of your Disqus account
-disqus:
-# / Comments, google analytics /
-# \ Jekyll (plugins) \
-#   1. sites root URL
-#     Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co). Used for Sitemap.xml and your RSS feed
-url: https://jaandrle.github.io
-#   2. sites root URL if not 1. level
-#     If you're hosting your site at a Project repository on GitHub pages (http://yourusername.github.io/repository-name) and NOT your User repository (http://yourusername.github.io) then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-#   3. URLs pattern for blog posts
+
+# Posts
+#   - related to markdown (kramdown) see https://jekyllrb.com/docs/configuration/markdown/
 permalink: /blog/:year-:month/:title/
-#   4. Markdown
-#     Jekyll 3 now only supports Kramdown for Markdown
-kramdown: # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+future: false
+kramdown:
+  input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Use existing pygments syntax highlighting css
+  syntax_highlighter_opts:
     css_class: 'highlight'
-#   5. Sass
-#     Set the Sass partials directory, as we're using @imports
-sass:
-  style: :compressed # You might prefer to minify using :compressed || :expanded
-#   6. Plugins
+
+# Plugins & Exclude from production (_site)
 plugins:
   - jekyll-redirect-from
-#   7. Exclude these files from your production _site
 exclude:
   - Gemfile
   - Gemfile.lock
