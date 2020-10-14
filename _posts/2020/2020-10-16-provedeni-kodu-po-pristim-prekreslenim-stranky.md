@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [JavaScript,requestAnimationFrame,dev tipy]
+tags: [JavaScript,requestAnimationFrame,tipy]
 title: "Provedení kódu po příštím překreslením stránky"
 category: dev
 excerpt_separator: <!--more-->
