@@ -1,4 +1,5 @@
 # This file contains configuration flags to customize your site
+future: false
 __code: &code_common
   repository: "jaandrle/jaandrle.github.io"
   branch: "master"
