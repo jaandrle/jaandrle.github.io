@@ -1,7 +1,7 @@
 ---
 title: "Klávesa Compose a typografický exkurz z rychlíku"
 category: nondev
-tags: [Compose,typografie,tipy,triky]
+tags: [Compose,typografie,tipy,triky,návody]
 show_toc: 3
 reference:
     - lokální:
