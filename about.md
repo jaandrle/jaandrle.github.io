@@ -3,16 +3,11 @@ layout: page
 title: O mně
 permalink: /about/
 in_menu: O mně
-excerpt_separator: <!--more-->
 show_toc: 3
 ---
 
-Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do **okolí IT** a případně také do tajů *fyziky* či *matematiky*.
-
-<!--more-->
-
-## O mně
-Jmenuji se Jan Andrle, Jsem fyzikální a IT nadšenec. Studuji na MFF-UK obor obecná fyzika. Kontaktovat a sledovat mně můžete pomocí sociálních sítí a RSS zdrojů, jejich seznam se nachází vpravo nahoře. Taktéž můžete sledovat nové komentáře, odkazy na příslušné RSS odkazy nalezte vždy u komentářů v daném článku, v případě, že článek okomentujete a vyplníte (do příslušného pole) svůj email, je možné nechat si zasílat reakce formou emailů. Také mi můžete poslat mail kliknutím na odkaz „Jan Andrle“: <span id='safe_address_1' title='Please enable Javascript (and reload this page) to view the email address.'>Jan Andrle</span>
+## O autorovi
+Jmenuji se Jan Andrle, Jsem fyzikální a IT nadšenec. Úspěšně jsem **nedostudoval** obor obecná fyzika na MFF-UK. Kontaktovat a sledovat mně můžete pomocí sociálních sítí a RSS zdrojů jejichž seznam se nachází vpravo nahoře. Případně mi můžete poslat mail kliknutím na odkaz „Jan Andrle“: <span id='safe_address_1' title='Please enable Javascript (and reload this page) to view the email address.'>Jan Andrle</span>
 <script type="text/javascript">
 <!--
     var first = 'ma';

@@ -1,9 +1,7 @@
 ---
-layout: post
-tags: [android,opensource,software,pwa]
 title: "Android „drop”"
 category: nondev
-excerpt_separator: <!--more-->
+tags: [android,opensource,software,pwa]
 ---
 
 Jak název evokuje, jde o otázku alternativy k [AirDrop](https://en.wikipedia.org/wiki/AirDrop "Článek na Wikipedii")u na zařízeních s (nejenom) Androidem. Rychlá odpověď je, že podobného (vl. lepšího) chování napříč platformami a zařízeními lze dosáhnout pomocí **otevřeného softwaru [Snapdrop](https://snapdrop.net/)**.

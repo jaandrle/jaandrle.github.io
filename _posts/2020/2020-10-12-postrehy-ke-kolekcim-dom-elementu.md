@@ -1,9 +1,7 @@
 ---
-layout: post
-tags: [JavaScript,DOM]
 title: "Postřehy ke kolekcím DOM elementů"
 category: dev
-excerpt_separator: <!--more-->
+tags: [JavaScript,DOM,Web API]
 ---
 
 *[DOM]: Document Object Model
@@ -60,6 +58,5 @@ const login_form_elements= login_form.elements;
 const email_input= login_form_elements.login_email;
 ```
 ' %}
-
 
 [^1]: Třídy samozřejmě podporují i klasický přístup k prvkům pole přes `[…]`, ten však vrací `undefined` pokud prvek neexistuje.

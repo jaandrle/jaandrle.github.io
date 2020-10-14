@@ -1,9 +1,7 @@
 ---
-layout: post
-tags: [Compose,typografie]
 title: "Klávesa Compose a typografický exkurz z rychlíku"
 category: nondev
-excerpt_separator: <!--more-->
+tags: [Compose,typografie,tipy,triky]
 show_toc: 3
 reference:
     - lokální:

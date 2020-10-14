@@ -19,6 +19,14 @@ baseurl: ""
 locale: cs
 sass:
   style: :compressed # You might prefer to minify using :compressed || :expanded
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      excerpt_separator: <!--more-->
 
 # Site / author infos
 description: Zde naleznete věci, které bych nerad zapomněl či mně zaujaly. Přičemž zabrousím do <b>okolí IT</b> a případně také do tajů fyziky či matematiky.

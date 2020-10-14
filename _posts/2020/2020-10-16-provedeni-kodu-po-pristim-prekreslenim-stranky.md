@@ -1,9 +1,7 @@
 ---
-layout: post
-tags: [JavaScript,requestAnimationFrame,tipy]
 title: "Provedení kódu po příštím překreslením stránky"
 category: dev
-excerpt_separator: <!--more-->
+tags: [JavaScript,snippet]
 ---
 
 *[DOM]: Document Object Model
