@@ -7,7 +7,7 @@ show_toc: 3
 ---
 
 ## O autorovi
-Jmenuji se Jan Andrle, Jsem fyzikální a IT nadšenec. Úspěšně jsem **nedostudoval** obor obecná fyzika na MFF-UK. Kontaktovat a sledovat mně můžete pomocí sociálních sítí a RSS zdrojů jejichž seznam se nachází vpravo nahoře. Případně mi můžete poslat mail kliknutím na odkaz „Jan Andrle“: <span id='safe_address_1' title='Please enable Javascript (and reload this page) to view the email address.'>Jan Andrle</span>
+Jmenuji se Jan Andrle, Jsem fyzikální a IT nadšenec. Úspěšně jsem **nedostudoval** obor obecná fyzika na MFF-UK. Kontaktovat a sledovat mně můžete pomocí [sociálních sítí a RSS zdrojů](#foot-section). Případně mi můžete poslat mail kliknutím na odkaz „Jan Andrle“: <span id='safe_address_1' title='Please enable Javascript (and reload this page) to view the email address.'>Jan Andrle</span>
 <script type="text/javascript">
 <!--
     var first = 'ma';

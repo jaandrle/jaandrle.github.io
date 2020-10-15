@@ -1,6 +1,6 @@
 .comment {
     display: flex;
-    background: rgba(255,255,255,.1);
+    background: $makeLighter;
     border-radius: 5px;
     margin-bottom: 1em;
 
@@ -18,7 +18,7 @@
         font-size: .65em;
         padding: .1em .5em 0 .5em;
         font-style: italic;
-        background: rgba(0,0,0,.2);
+        background: $makeDarker;
         width: initial;
     }
     &__author {
@@ -58,7 +58,7 @@
 }
 div.page__comments-form{
     padding: .5em;
-    background: rgba(255,255,255, .1);
+    background: $makeLighter;
     border-radius: 5px;
     textarea, input {
         flex: 1;

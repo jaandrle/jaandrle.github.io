@@ -1,4 +1,5 @@
-{%
+{% include atom_formSearch.html
+%}{%
   assign limit= include.limit | default: site.posts.size %}
   {% for post in site.posts
     %}{% if include.category and post.category and post.category != include.category

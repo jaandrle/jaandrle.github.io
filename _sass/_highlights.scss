@@ -1,6 +1,6 @@
 
 .highlight {
-  background-color: rgba(0,0,0,.25);
+  background-color: $makeDarker;
   max-height: 15em;
   padding: 1rem 1rem 0 .5rem;
   border-left: 2px solid $gray;
@@ -33,7 +33,7 @@
 code {
   font: .75em 'Bitstream Vera Sans Mono','Courier', monospace;
   border: 1px solid $gray;
-  background-color: rgba(0,0,0,.25);
+  background-color: $makeDarker;
   border-left-width: .2rem;
   padding: .1rem .25rem;
   border-radius: .5rem;
