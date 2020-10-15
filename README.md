@@ -23,6 +23,7 @@ The default options are saved in [_config.yml](./_config.yml).
 | redirect_from     	| all       	|                            	| See [jekyll/jekyll-redirect-from: Seamlessly specify multiple redirections URLs for your pages and posts.](https://github.com/jekyll/jekyll-redirect-from) 	|
 | noindex           	| all       	| null                       	| See [robots.txt](./robots.txt) and [sitemap.xml](./sitemap.xml).                                                                                           	|
 | date              	| all       	| based on filename           	| In form `YYYY-MM-DD HH:MM:SS`                                                                                                                              	|
+| updated           	| posts     	|                           	| In form `YYYY-MM-DD`                                                                                                                              	|
 
 ### Helpers
 In general `{% include file ...options %}` with standarized options
