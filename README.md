@@ -2,7 +2,7 @@
 This document covers building and managing my pages with [Jekyll](#jekyll). There are two main sections [my blogging info setup](#this-instance) and [general info](#general).
 
 ## This instance
-The `master` (`main`) branch reflects current publick state of web page. There are some helpers/setups for speed up blogging.
+The `master` (`main`) branch reflects current public state of web page. There are some helpers/setups for speed up blogging.
 
 ### Pages/Posts options
 The default options are saved in [_config.yml](./_config.yml).
@@ -22,6 +22,7 @@ The default options are saved in [_config.yml](./_config.yml).
 | reference         	| posts     	|                            	| See [_includes/references_list.html](./_includes/references_list.html)                                                                                     	|
 | redirect_from     	| all       	|                            	| See [jekyll/jekyll-redirect-from: Seamlessly specify multiple redirections URLs for your pages and posts.](https://github.com/jekyll/jekyll-redirect-from) 	|
 | noindex           	| all       	| null                       	| See [robots.txt](./robots.txt) and [sitemap.xml](./sitemap.xml).                                                                                           	|
+| date              	| all       	| based on filename           	| In form `YYYY-MM-DD HH:MM:SS`                                                                                                                              	|
 
 ### Helpers
 In general `{% include file ...options %}` with standarized options
