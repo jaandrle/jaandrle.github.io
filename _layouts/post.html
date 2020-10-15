@@ -8,15 +8,15 @@ layout: default
     include show_toc.html show_toc=page.show_toc html=content
     %}{{ content | remove_first:page.excerpt }}
   </div>
-  <hr>
-  <div class="info">
-    Přejít na: 
-    {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">starší článek</a>{% endif %}
-    {% if page.previous and page.next %} | {% endif %}
-    {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">novější článek</a>{% endif %}
-    {% unless page.previous and page.next %}
-      | <a href="{% link blog/nondev.html %}">přehled článků v kategorii</a>{%
-    endunless %}
-  </div>
-  {% include molecule_staticmanComments.html %}
 </article>
+<hr>
+<div class="info">
+  Přejít na: 
+  {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">starší článek</a>{% endif %}
+  {% if page.previous and page.next %} | {% endif %}
+  {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">novější článek</a>{% endif %}
+  {% unless page.previous and page.next %}
+    | <a href="{% link blog/nondev.html %}">přehled článků v kategorii</a>{%
+  endunless %}
+</div>
+{% include molecule_staticmanComments.html %}
