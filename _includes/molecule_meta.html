@@ -32,4 +32,7 @@
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.author.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+{%
+    for feed in site.pages %}{% if feed.layout=='feed' %}
+    <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
+    endfor %}
