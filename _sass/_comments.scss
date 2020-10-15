@@ -1,6 +1,6 @@
 .comment {
     display: flex;
-    background: $makeLighter;
+    background: $color_makeLighter;
     border-radius: 5px;
     margin-bottom: 1em;
 
@@ -18,7 +18,7 @@
         font-size: .65em;
         padding: .1em .5em 0 .5em;
         font-style: italic;
-        background: $makeDarker;
+        background: $color_makeDarker;
         width: initial;
     }
     &__author {
@@ -33,7 +33,7 @@
 .page__comments {
     margin-top: 2em;
     padding-top: 1em;
-    border-top: 3px solid $lightGray;
+    border-top: 3px solid $color_highlightMiddle;
     &-title {
         margin: 0 0 .5em 0;
     }
@@ -58,23 +58,23 @@
 }
 div.page__comments-form{
     padding: .5em;
-    background: $makeLighter;
+    background: $color_makeLighter;
     border-radius: 5px;
     textarea, input {
         flex: 1;
-        font: .9rem/1 $georgia;
+        font: .9rem/1 $font_georgia;
         font-weight: bolder;
         max-width: 30rem;
         min-width: 12rem;
         border: 1px solid transparent;
-        border-left: 2px solid $blue;
+        border-left: 2px solid $color_highlight;
         padding: .5em;
-        background: $white;
+        background: $color_regularBG;
         color: white;
         outline: none;
         &:focus {
             outline: none;
-            border-color: $blue;
+            border-color: $color_highlight;
         }
         transition: background 1s;
         &:invalid {
@@ -88,7 +88,7 @@ div.page__comments-form{
     }
     button {
         &:focus {
-            outline: 1px solid $blue;
+            outline: 1px solid $color_highlight;
         }
     }
 }

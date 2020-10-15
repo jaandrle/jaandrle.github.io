@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  background-color: $lightGray;
+  background-color: $color_highlightMiddle;
   @extend %bg-image;
-  font: 18px/1.4 $georgia;
-  color: $darkGray;
+  font: 18px/1.4 $font_georgia;
+  color: $color_regularFG;
   min-height: 100vh;
   @include mobile {
     padding: 0 0 .5rem 0;
@@ -19,7 +19,7 @@ body {
   max-width: 60em;
   padding: 0 2.5em;
   flex: 1 0;
-  background-color: $white;
+  background-color: $color_regularBG;
   @extend %bg-image;
   @include mobile {
     padding: 0 1em;
@@ -30,7 +30,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $font_helveticaNeue;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 h4, h5, h6 {
-  color: $gray;
+  color: $color_highlightLight;
 }
 
 p {
@@ -52,29 +52,29 @@ p {
 }
 
 input, textarea{
-  background: $makeLighter;
-  color: $darkGray;
+  background: $color_makeLighter;
+  color: $color_regularFG;
   border-radius: 5px;
   margin-bottom: 1em;
   border: 1px solid transparent;
-  border-left: 2px solid $blue;
+  border-left: 2px solid $color_highlight;
   padding: .5em;
   &:focus {
       outline: none;
-      border-color: $blue;
+      border-color: $color_highlight;
   }
 }
 
 a {
-  color: $blue;
-  text-decoration-color: $blue;
+  color: $color_highlight;
+  text-decoration-color: $color_highlight;
   cursor: pointer;
   font-size: .8em;
   letter-spacing: 1px;
   font-weight: bolder;
   &:hover, &:active {
     text-decoration: none;
-    color: $darkerGray;
+    color: $color_highlightLight;
   }
   &[href^="http"] {
       background: right center no-repeat;
@@ -136,10 +136,10 @@ kbd {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $gray;
+  color: $color_highlightDark;
+  background: $color_highlightLight;
 }
 ::selection {
-  color: $black;
-  background: $gray;
+  color: $color_highlightDark;
+  background: $color_highlightLight;
 }
