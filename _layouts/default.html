@@ -11,13 +11,16 @@
     <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
       <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img alt="User avatar photo" src="{{ site.avatar }}"/></a>
       <nav class="C__sidebarNav display__f float__l" aria-labelledby="nav-heading" role="navigation">
-          <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2>
-          {% assign pages= site.pages | sort: "in_menu"
-            %}{% for page_i in pages %}{% if page_i.in_menu 
-              %}<a 
-              href="{{ site.baseurl }}{{ page_i.permalink }}" 
-              class="C__button{% if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category %} C__sidebarNav_active{%endif%}"
-              >{{ page_i.in_menu }}</a>{%
+          <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2> {%
+          assign pages= site.pages | sort: "in_menu"
+            %}{% for page_i in pages %}{% if page_i.in_menu %}
+          <a {% comment %}{% endcomment
+                  %}href="{{ site.baseurl }}{{ page_i.permalink }}" {% comment %}{% endcomment
+                  %}class="C__button{%
+                    if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
+                      %} C__sidebarNav_active{%
+                    endif %}"{% comment %}{% endcomment
+                  %}>{{ page_i.in_menu }}</a>{%
             endif %}{% endfor %}
       </nav>
 
@@ -29,8 +32,8 @@
 
     <div class="container flex__4">
       <div id="main" role="main" aria-label="Hlavní obsah">
-        {{ content
-      }}</div>
+        {{ content }}
+      </div>
   
       <footer class="C__targetHighlite textA__c" role="contentinfo" aria-labelledby="foot-heading" id="foot-section">
         <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>

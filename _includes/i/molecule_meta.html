@@ -10,8 +10,8 @@
     <meta name="generator" content="Jekyll" /> <!-- Created with Jekyll & GitHub Pages -->
 {%
     if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html | strip_newlines }}" />
     {%- else %}
     <meta name="description" content="{{ site.description }}">
     <meta property="og:description" content="{{ site.description }}" />

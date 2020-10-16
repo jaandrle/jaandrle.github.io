@@ -1,8 +1,15 @@
-{% assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S" -%}
-{% assign id= "jablog_" | append: id_post -%}
+{%  assign user_twitter= site.author.twitter %}{%
+    assign post_url= page.url | prepend: site.url | url_encode %}{%
+    assign link_params= ' target="_blank" rel="nofolow"' %}{%
+    assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S" -%}{%
+    assign id= "jablog_" | append: id_post -%}
 <div class="info">
     <h5>Komentáře:</h5>
-    <a href="https://twitter.com/search?q=(%23{{id}})(%40{{site.author.twitter}})&src=typed_query" target="_blank" rel="nofolow" title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{site.author.twitter}} (můj účet)">Reakce na Twitteru</a>
+    <a href="https://twitter.com/search?q=(%23{{id}})(%40{{user_twitter}})&src=typed_query" {% comment %}{% endcomment
+        %}title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
+        %}{{link_params}}>Reakce na Twitteru</a>
     <br>
-    <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{page.url|prepend: site.url|url_encode}}&screen_name={{site.author.twitter}}" target="_blank" rel="nofolow" title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{site.author.twitter}} (můj účet)">Twítnout vlastní</a>
+    <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{post_url}}&screen_name={{user_twitter}}" {% comment %}{% endcomment
+        %}title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
+        %}{{link_params}}>Twítnout vlastní</a>
 </div>
