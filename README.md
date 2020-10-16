@@ -1,8 +1,8 @@
 # Jan Andrle – Personal sites / Blog
 This document covers building and managing my pages with [Jekyll](#jekyll). There are two main sections [my blogging info setup](#this-instance) and [general info](#general).
 
-## Corrent progress/state
-- [Technická část](https://github.com/jaandrle/jaandrle.github.io/projects/2?fullscreen=true) for technical beckground.
+## Current progress/state
+- [Technická část](https://github.com/jaandrle/jaandrle.github.io/projects/2?fullscreen=true) for technical background.
 - [Správa příspěvků](https://github.com/jaandrle/jaandrle.github.io/projects/1?fullscreen=true) for posts progress.
 
 ## This instance
