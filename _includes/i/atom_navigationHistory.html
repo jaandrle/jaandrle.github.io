@@ -1,9 +1,9 @@
 <div class="info">
-    V historii: 
-    {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">starší</a>{% endif %}
-    {% if page.previous and page.next %} | {% endif %}
-    {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">novější</a>{% endif %}
+    V historii:<br>
+    {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">Starší</a>{% endif %}
+    {% if page.previous and page.next %} <br>{% endif %}
+    {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">Novější</a>{% endif %}
     {% unless page.previous and page.next %}
-        | <a href="{% link blog/nondev.html %}">přehled článků v kategorii</a>{%
+        <br><a href="{% link blog/nondev.html %}">Přehled článků v kategorii</a>{%
     endunless %}
 </div>
