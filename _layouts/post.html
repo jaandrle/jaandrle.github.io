@@ -10,13 +10,15 @@ layout: default
   </div>
 </article>
 <hr>
-<div class="info">
-  Přejít na: 
-  {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">starší článek</a>{% endif %}
-  {% if page.previous and page.next %} | {% endif %}
-  {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">novější článek</a>{% endif %}
-  {% unless page.previous and page.next %}
-    | <a href="{% link blog/nondev.html %}">přehled článků v kategorii</a>{%
-  endunless %}
+<div class="display__f flexF__rW justifyC__sB">
+  <div class="info">
+    V historii: 
+    {% if page.previous %}<a rel="prev" href="{{page.previous.url}}" title="{{page.previous.title}}">starší</a>{% endif %}
+    {% if page.previous and page.next %} | {% endif %}
+    {% if page.next %}<a rel="next" href="{{page.next.url}}" title="{{page.next.title}}">novější</a>{% endif %}
+    {% unless page.previous and page.next %}
+      | <a href="{% link blog/nondev.html %}">přehled článků v kategorii</a>{%
+    endunless %}
+  </div>
+  {% include molecule_comments.html %}
 </div>
-{% include molecule_staticmanComments.html %}
