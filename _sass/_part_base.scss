@@ -84,6 +84,9 @@ a {
       background-size: 13px;
       background-image: url(/images/internal/link.gif);
   }
+  @include mobile {
+    line-height: 2em;
+  }
 }
 
 ul, ol {
