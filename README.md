@@ -1,6 +1,10 @@
 # Jan Andrle – Personal sites / Blog
 This document covers building and managing my pages with [Jekyll](#jekyll). There are two main sections [my blogging info setup](#this-instance) and [general info](#general).
 
+## Corrent progress/state
+- [Technická část](https://github.com/jaandrle/jaandrle.github.io/projects/2?fullscreen=true) for technical beckground.
+- [Správa příspěvků](https://github.com/jaandrle/jaandrle.github.io/projects/1?fullscreen=true) for posts progress.
+
 ## This instance
 The `master` (`main`) branch reflects current public state of web page. There are some helpers/setups for speed up blogging.
 
