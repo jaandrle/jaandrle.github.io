@@ -11,7 +11,7 @@
     <div class="entry">
       {{ post.excerpt }}
     </div>
-    <a href="{{ site.baseurl }}{{ post.url }}" class="C__button read-more">Přečíst celé »</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="C__button float__r">Přečíst celé »</a>
   </article>{% assign limit= limit | minus: 1 %}{%
     endif %}{%
   endfor %}{% if limit == include.limit or limit == site.posts.size

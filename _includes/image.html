@@ -19,6 +19,6 @@
         <img src="{{ src }}" alt="{{ alt }}" class="maxH__image"/>
     </a>{%
     if include.caption %}
-    <figcaption class="info">{{ include.caption | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" }}</figcaption>{%
+    <figcaption class="info">{{ include.caption | markdownify }}</figcaption>{%
     endif %}
 </figure>

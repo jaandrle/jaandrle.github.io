@@ -181,14 +181,12 @@ a.C__button {
   }
 }
 .C__figureWrapper {
-  @extend %block_hover;
   margin: 0;
-  border-bottom: 1px solid gray;
-  border-top: 1px solid gray;
   background-color: $color_makeDarker;
   text-align: center;
 
   img {
+    @extend %block_hover;
     display: inline-block;
   }
 }
