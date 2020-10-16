@@ -6,6 +6,7 @@ body {
   background-color: $color_highlightMiddle;
   @extend %bg-image;
   font: 18px/1.4 $font_georgia;
+  font-weight: 500;
   color: $color_regularFG;
   min-height: 100vh;
   @include mobile {
