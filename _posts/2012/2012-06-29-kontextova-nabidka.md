@@ -45,7 +45,7 @@ Jak přidat položku do klíče Shell? Prvně se přesuneme na požadovanou polo
     - název `Extended`= zobrazí nabídku pouze při stisknutí tlačítka Shift a pravého tlačítka myši
         - hodnota `1` = aktivováno
         - hodnota `0` = deaktivováno
-    - název `LegacyDisable`= skryje nabídku
+    - název `LegacyDisable`= skryje nabídkěu
         - hodnota `1` = aktivováno
         - hodnota `0` = deaktivováno
 - Přehled klíčů

@@ -39,7 +39,9 @@ In general `{% include file ...options %}` with standarized options
     - [`{% include icon.html …`](./_includes/icon.html)
     - [`{% include image.html …`](./_includes/image.html)
     - [`{% include reference.html …`](./_includes/reference.html)
+    - [`{% include references_list.html …`](./_includes/references_list.html)
     - [`{% include kbd.html …`](./_includes/kbd.html)
+    - ([`{% include show_toc.html …`](./_includes/show_toc.html))
 
 ### Automation
 See [Schedule to Publish Future Posts](https://github.com/jaandrle/jaandrle.github.io/issues/65).

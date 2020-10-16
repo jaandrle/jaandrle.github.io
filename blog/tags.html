@@ -26,7 +26,7 @@ permalink: /blog/tags.html
       {% if post.tags contains t %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>{% if post.category == "dev" %} <small><i>(DEV)</i></small>{% endif %}
-        {% include molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
+        {% include _molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
       </li>
       {% endif %}
     {% endfor %}

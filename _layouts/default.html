@@ -2,7 +2,7 @@
 <html>
   <head>
 {%
-    include molecule_meta.html %}
+    include _molecule_meta.html %}
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
   </head>
@@ -42,7 +42,6 @@
         <a class="fontS__0d5" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
       </footer>
     </div>
-    {% include molecule_svgIcons.html %}
-    {% include molecule_analytics.html %}
+    {% include _molecule_svgIcons.html %}
   </body>
 </html>

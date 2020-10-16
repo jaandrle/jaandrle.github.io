@@ -4,7 +4,7 @@ limit: 10
 ---
     <div class="posts maxW__article margin__0_auto">
       <p class="C__text_highlited">{{site.welcome_text}} Níže je výběr z posledních příspěvků.</p>
-      {% include molecule_postList.html limit=page.limit %}
+      {% include _molecule_postList.html limit=page.limit %}
       <p>Další příspěvky jsou v 
         <a href="{{site.baseurl}}/blog/nondev.html" alt="Přejít na Obecné příspěvky">Blog — Obecné</a> nebo 
         <a href="{{site.baseurl}}/blog/dev.html" alt="Přejít na Dev příspěvky">Blog — Dev</a>.

@@ -1,4 +1,4 @@
-{% include atom_formSearch.html
+{% include _atom_formSearch.html
 %}{%
   assign limit= include.limit | default: site.posts.size %}
   {% for post in site.posts
@@ -7,7 +7,7 @@
     else %}{% if limit == 0 %}{% break %}{% endif 
   %}<article class="post">
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    {% include molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
+    {% include _molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
     <div class="entry">
       {{ post.excerpt }}
     </div>
