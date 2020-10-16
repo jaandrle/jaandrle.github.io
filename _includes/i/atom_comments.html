@@ -1,7 +1,7 @@
 {% assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S" -%}
 {% assign id= "jablog_" | append: id_post -%}
 <div class="info">
-    Komentáře:<br>
+    <h5>Komentáře:</h5>
     <a href="https://twitter.com/search?q=(%23{{id}})(%40jaandrle)&src=typed_query" target="_blank" rel="nofolow" title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @jaandrle (můj účet)">Reakce na Twitteru</a>
     <br>
     <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{page.url|prepend: site.url|url_encode}}&screen_name=jaandrle" target="_blank" rel="nofolow" title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @jaandrle (můj účet)">Twítnout vlastní</a>
