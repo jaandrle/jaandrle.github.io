@@ -40,9 +40,9 @@
         <span class="display__b"> ··· ~ ··· </span>{% for social in site.data.social %}{% assign sp= social | last %}
         <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{% endfor %}
         <span class="display__b"> ··· </span>
-        <a href="#main" role="button" aria-label="Scroll to content begining">↑ Scroll to content begining ↑</a>
+        <a href="#main" role="button" aria-label="Scroll to content begining" class="C__button">↑ Vrátit se na začátek obsahu ↑</a>
         <span class="display__b"> ··· </span>
-        <a class="fontS__0d5" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
+        <a class="fontS__0d75" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
       </footer>
     </div>
     {% include i/molecule_svgIcons.html %}
