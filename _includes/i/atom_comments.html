@@ -2,7 +2,7 @@
 {% assign id= "jablog_" | append: id_post -%}
 <div class="info">
     <h5>Komentáře:</h5>
-    <a href="https://twitter.com/search?q=(%23{{id}})(%40jaandrle)&src=typed_query" target="_blank" rel="nofolow" title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @jaandrle (můj účet)">Reakce na Twitteru</a>
+    <a href="https://twitter.com/search?q=(%23{{id}})(%40{{site.author.twitter}})&src=typed_query" target="_blank" rel="nofolow" title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{site.author.twitter}} (můj účet)">Reakce na Twitteru</a>
     <br>
-    <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{page.url|prepend: site.url|url_encode}}&screen_name=jaandrle" target="_blank" rel="nofolow" title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @jaandrle (můj účet)">Twítnout vlastní</a>
+    <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{page.url|prepend: site.url|url_encode}}&screen_name={{site.author.twitter}}" target="_blank" rel="nofolow" title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{site.author.twitter}} (můj účet)">Twítnout vlastní</a>
 </div>
