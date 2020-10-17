@@ -4,9 +4,7 @@ category: dev
 tags: [JavaScript,snippet]
 ---
 
-*[DOM]: Document Object Model
-
-Na začátek, tento příspěvek je inspirován problémem provedení kódu po změně v DOM u podrobně popsaného v [When DOM Updates Appear to Be Asynchronous](https://macarthur.me/posts/when-dom-updates-appear-to-be-asynchronous). Problémem je, že `window.requestAnimationFrame` volá *callback* před následujícím překreslením viz [dokumentace](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame "Popis API na MDN").
+Na začátek, tento příspěvek je inspirován problémem provedení kódu po změně v {{site.data.abbr.DOM}}u podrobně popsaného v [When DOM Updates Appear to Be Asynchronous](https://macarthur.me/posts/when-dom-updates-appear-to-be-asynchronous). Problémem je, že `window.requestAnimationFrame` volá *callback* před následujícím překreslením viz [dokumentace](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame "Popis API na MDN").
 
 <!--more-->
 

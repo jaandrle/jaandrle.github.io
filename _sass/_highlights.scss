@@ -33,7 +33,7 @@
 }
 
 code {
-  font: .75em 'Bitstream Vera Sans Mono','Courier', monospace;
+  font: .75em $font_monospace;
   border: 1px solid $color_highlightLight;
   background-color: $color_makeDarker;
   border-left-width: .2rem;

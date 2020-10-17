@@ -4,9 +4,7 @@ category: dev
 tags: [JavaScript,DOM,Web API]
 ---
 
-*[DOM]: Document Object Model
-
-[Axel Rauschmayer sdílel na Twitteru](https://twitter.com/rauschma/status/1311717821131431938 "Odkaz na příspšvek na Twitteru") postřeh o tom, že v *JavaScript*u máme dvě třídy reprezentující pole elementů (`NodeList` a `HTMLCollection`) a dvě varianty provázání s DOM em (statický a samoaktualizující). Z tohoto plyne několik vlastností/důsledků…
+[Axel Rauschmayer sdílel na Twitteru](https://twitter.com/rauschma/status/1311717821131431938 "Odkaz na příspšvek na Twitteru") postřeh o tom, že v *JavaScript*u máme dvě třídy reprezentující pole elementů (`NodeList` a `HTMLCollection`) a dvě varianty provázání s {{site.data.abbr.DOM}}em (statický a samoaktualizující). Z tohoto plyne několik vlastností/důsledků…
 
 <!--more-->
 
@@ -33,8 +31,8 @@ Array.from(forms).forEach(
 ```
 ' %}
 
-## Reflektování změn v DOM u
-Rozdíl spočívá hlavně v tom, zda se pole aktualizuje dle změn DOM u (např přidání elementu), viz [Live vs. Static NodeLists](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Live_vs._Static_NodeLists "Příslušná sekce v dokumentaci NodeList na MDN"). Používá se názvosloví *live*/*static* (*živý*/*statický*), které je dostatečně popisné.
+## Reflektování změn v {{site.data.abbr.DOM}}u
+Rozdíl spočívá hlavně v tom, zda se pole aktualizuje dle změn {{site.data.abbr.DOM}}u (např přidání elementu), viz [Live vs. Static NodeLists](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Live_vs._Static_NodeLists "Příslušná sekce v dokumentaci NodeList na MDN"). Používá se názvosloví *live*/*static* (*živý*/*statický*), které je dostatečně popisné.
 
 ## `NodeList` (živý/statický)
 Podrobné informace viz [NodeList - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/NodeList).

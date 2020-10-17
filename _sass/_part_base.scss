@@ -87,6 +87,19 @@ a {
   @include mobile {
     line-height: 2em;
   }
+  abbr &{
+    cursor: help;
+    color: $color_regularFG;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 0;
+    font-family: $font_monospace;
+    font-weight: normal;
+    &[href^="http"]{
+      background: none;
+      padding-right: 1px;
+    }
+  }
 }
 
 ul, ol {
