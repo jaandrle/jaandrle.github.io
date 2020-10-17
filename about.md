@@ -22,6 +22,9 @@ Jmenuji se Jan Andrle, Jsem fyzikální a IT nadšenec. Úspěšně jsem **nedo
 // -->
 </script> (<span style="text-decoration: underline;"><span>a</span>nd<span>rle</span>.jan</span><span style="text-decoration: underline;"><!-- email.email[at]email.email --></span>@<span style="text-decoration: underline;">c<span>en</span>tr<span>u</span>m.cz</span>).
 
+## O mojí práci
+Nyní pracuji jako webový/mobilní (tzv. hybridní aplikace) programátor pro [Indigo.cz](http://www.indigo.cz/ "Oficiální stránky firmy"), kde mám na starosti vývoj hl. [Networking and Communications App](http://www.indigo.cz/networking-communications-app/). Primárně tedy požívám webové technologie ({{site.data.abbr.JS}}, {{site.data.abbr.HTML}}5, {{site.data.abbr.CSS}}, {{site.data.abbr.PHP}} apod.) a [Apache Cordova](https://cordova.apache.org/ "Webové stránky frameworku pro vývoj multiplatformních hybridních aplikací") či [React Native](https://reactnative.dev/ "A framework for building native apps using React").
+
 ## O blogu
 Na tomto blogu budu uveřejňovat hlavně zápisky toho, co bych *nerad zapomněl* a u čeho to tedy také hrozí. Věnovat se však můžu i *aktuálním věcem*, které mně zaujaly. Tématicky pak příspěvky „zakotví“ v oblasti práce s počítačem a případně zabrousím s některými články do fyziky či matematiky.
 
