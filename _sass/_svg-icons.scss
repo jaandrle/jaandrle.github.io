@@ -1,5 +1,6 @@
 .svg-icon {
   @extend %block_hover;
+  font-size: .8em;
   letter-spacing: -1px;
   border-radius: 5px;
   color: white;
@@ -7,7 +8,10 @@
   font-style: normal;
   display: inline-block;
   padding: .1em .75em;
-  vertical-align: middle;
+
+  &[href^="http"]{ //default a
+    padding-left: .75em;
+  }
 
   &.account_twitter {
     background: #0092c7;

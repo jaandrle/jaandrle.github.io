@@ -38,6 +38,7 @@
   }
 }
 .C__button {
+  font-size: .8em;
   display: inline-block;
   text-decoration: none;
   background: $color_regularBG;
@@ -84,7 +85,7 @@ a.C__button {
   flex-flow: column;
   margin: 0 auto 0 0;
   @include is_flex {
-    max-width: 25rem;
+    max-width: 17.5rem;
   }
   @include mobile {
     flex: 0;
@@ -125,10 +126,6 @@ a.C__button {
   }
 }
 
-.C__sidebarSocial {
-    margin-top: .5rem;
-}
-
 .C__sidebarInfo_name {
   text-align: center;
   width: 100%;
@@ -167,7 +164,6 @@ a.C__button {
     flex-direction: row;
     align-items: flex-end;
     order: 1;
-    width: 100%; //without flex
   }
 
   a {
