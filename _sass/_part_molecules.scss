@@ -110,6 +110,9 @@ a.C__button {
     display: block;
     width: 5em;
     margin: 0 0 0 1em;
+    @include is_flex{
+      margin: 0;
+    }
   }
 
   img {
