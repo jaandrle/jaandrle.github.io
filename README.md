@@ -30,6 +30,9 @@ The default options are saved in [_config.yml](./_config.yml).
 | updated           	| posts     	|                           	| In form `YYYY-MM-DD`                                                                                                                              	|
 
 ### Helpers
+My partials/data for simplify creating posts.
+
+#### Include
 In general `{% include file ...options %}` with standarized options
 - `href`, `src` for links/images/…
 - `title`, `alt` for links/images/…
@@ -42,6 +45,10 @@ In general `{% include file ...options %}` with standarized options
     - [`{% include references_list.html …`](./_includes/references_list.html)
     - [`{% include kbd.html …`](./_includes/kbd.html)
     - ([`{% include show_toc.html …`](./_includes/show_toc.html))
+
+#### Data/Snippets
+- [`{{ site.data.abbr.* }}`](./_data/abbr.yml) for using abbreviation
+- [`<embed src="soubor.pdf" type="application/pdf" width="100%" height="500px" />`](https://www.maxiorel.cz/jak-zdarma-vlozit-pdf-do-webove-stranky-hned-nekolika-zpusoby "Jak zdarma vložit PDF do webové stránky? Hned několika způsoby | Maxiorel.cz") – see [<embed> | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed "<embed>: The Embed External Content element - HTML: HyperText Markup Language | MDN"); it is also possible append to `src` (separated by `#`) combination of `page`, `chapter`, `zoom`, `view`, …
 
 ### Automation
 See [Schedule to Publish Future Posts](https://github.com/jaandrle/jaandrle.github.io/issues/65).
