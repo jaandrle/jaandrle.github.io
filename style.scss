@@ -22,6 +22,9 @@
   padding: .5em;
   background: $color_makeLighter;
 }
+figcaption.info p:only-child{
+  margin: .25em 0;
+}
 
 .date {
   font-style: italic;

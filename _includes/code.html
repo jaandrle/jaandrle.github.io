@@ -1,4 +1,5 @@
 {% comment %}
+    Převedení '```' zápisu na \{\% highlight \%\} (aby šlo kontrolovat v markdown prohlížeči) + vylepšení
     Pouziti: `include code.html code={string} [caption={string|markdown}]`
         - `code`: GitHub code started and ended with new line
         - `caption`: popisek (jeden paragraf)
@@ -6,11 +7,25 @@
 %}{% assign pre_code= include.code | split: "
 " %}{% assign lines= pre_code | size %}{% capture code %}{% for line in pre_code %}{% if forloop.index > 2 and forloop.index < lines %}{{line}}
 {% endif %}{% endfor %}{% endcapture %}{%
-    if pre_code[1] == "```JavaScript" %}{%
-        highlight JavaScript linenos %}{{code}}{% endhighlight %}{%
-    elsif pre_code[1] == "```js" %}{%
-        highlight JavaScript linenos %}{{code}}{% endhighlight %}{%
+capture post_code %}{%
+    assign type= pre_code[1] | replace: "```", "" | replace: "JavaScript", "js" | replace: "JS", "js" | replace: "bash", "console" %}{%
+    if type == "js" %}{%
+        highlight js linenos %}{{code}}{% endhighlight %}{%
+    else if type == "JSON" %}{%
+        highlight json linenos %}{{code}}{% endhighlight %}{%
+    else if type == "CSS" %}{%
+        highlight css linenos %}{{code}}{% endhighlight %}{%
+    else if type == "HTML" %}{%
+        highlight html linenos %}{{code}}{% endhighlight %}{%
+    else if type == "PHP" %}{%
+        highlight php linenos %}{{code}}{% endhighlight %}{%
+    else if type == "console" %}{%
+        highlight console %}{{code}}{% endhighlight %}{%
     else  %}{%
         highlight text %}{{code}}{% endhighlight %}{%
-    endif %}{% if include.caption %}
-<p class="info">{{ include.caption | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" }}</p>{% endif %}
+    endif %}{%
+endcapture %}{%
+assign caption= "" %}{% if include.caption %}{% capture caption %}
+<figcaption class="info">{{ include.caption | markdownify }}</figcaption>{%
+endcapture %}{% endif %}
+{{ post_code | replace: "</figure>", caption | append: "</figure>" }}
