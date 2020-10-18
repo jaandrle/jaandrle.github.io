@@ -3,14 +3,12 @@
 # Blog/Website sourse code
 #   - code version (name) / repository
 #   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
-__code: &code_common
+code:
+  version: 2020.10a
+  name: Breezy Badger
+  hosted: "https://github.com/"
   repository: "jaandrle/jaandrle.github.io"
   branch: "master"
-code:
-  <<: *code_common
-  version: 2020.09c
-  name: Hoary Hedgehog
-  hosted: "https://github.com/"
 
 # Main site settings
 #   - language, (base)url
@@ -34,14 +32,8 @@ welcome_text: Vítejte na osobních stránkách Jana Andrle.
 author:
   name: Jan Andrle
   email: andrle.jan@centrum.cz
+  twitter: jaandrle
 avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
-
-# Comments (Staticman), analytics
-#   - see https://staticman.net/docs/configuration
-#   - (unused) Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking » google_analytics:
-#   - (unused) Disqus (set your Disqus shortname – not username) » disqus:
-staticman:
-  <<: *code_common
 
 # Posts
 #   - related to markdown (kramdown) see https://jekyllrb.com/docs/configuration/markdown/

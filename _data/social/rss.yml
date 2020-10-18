@@ -1,4 +1,4 @@
-name: "All posts RSS"
+name: "RSS (nondev)"
 title: "My atom/rss feed — Regular posts"
 account: "nondev.xml"
 href: "/feeds/"

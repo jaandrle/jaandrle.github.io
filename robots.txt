@@ -1,5 +1,13 @@
 ---
 ---
-User-agent: *
-Disallow: {% link blog/tags.html %}
+User-agent: *{%
+    assign nodes= site.pages | concat: site.posts
+%}{% for node in nodes %}{%
+    if node.noindex %}{% assign isset = true %}
+Disallow: {{ node.url }}{%
+    endif %}{%
+endfor %}{%
+    if isset != true
+        %}Disallow:{%
+endif %}
 Sitemap:  {% link sitemap.xml %}

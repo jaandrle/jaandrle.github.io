@@ -7,7 +7,6 @@ category: nondev
 ---
 <div class="posts maxW__article margin__0_auto">
   <p class="C__text_highlited">Zde jsou příspěvky netýkající se programování.</p>
-  <p>Další příspěvky jsou v <a href="{{site.baseurl}}/blog/dev.html" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
-  <hr>
-  {% include molecule_postList.html category=page.category %}
+  {% include i/molecule_postList.html category=page.category %}
+  <p>Další příspěvky jsou v <a href="{% link blog/dev.html %}" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
 </div>

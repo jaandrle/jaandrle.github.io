@@ -20,17 +20,20 @@
   color: white;
   font-size: .75em;
   padding: .5em;
-  background: rgba(255,255,255,.05);
+  background: $color_makeLighter;
+}
+figcaption.info p:only-child{
+  margin: .25em 0;
 }
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $color_highlightLight;
 }
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $color_highlightMiddle;
 }
 
 .posts > .post:last-child {
@@ -41,9 +44,9 @@
 .post {
   blockquote {
     margin: .5em 0;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $color_highlightLight;
     padding: .5em .5em;
-    color: $gray;
+    color: $color_highlightLight;
     font-style: italic;
   }
 
@@ -51,7 +54,6 @@
     margin-top: 10px;
   }
 }
-@import "comments";
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

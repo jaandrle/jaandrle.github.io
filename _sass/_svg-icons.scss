@@ -1,5 +1,6 @@
 .svg-icon {
   @extend %block_hover;
+  font-size: .8em;
   letter-spacing: -1px;
   border-radius: 5px;
   color: white;
@@ -7,18 +8,21 @@
   font-style: normal;
   display: inline-block;
   padding: .1em .75em;
-  vertical-align: middle;
 
-  &.twitter {
-    background: #00ACED;
+  &[href^="http"]{ //default a
+    padding-left: .75em;
   }
-  &.github {
+
+  &.account_twitter {
+    background: #0092c7;
+  }
+  &.account_github {
     background: black;
   }
   &.rss {
-    background: #ffab00;
+    background: #e49800;
   }
   &.rss_dev {
-    background: #ffab00;
+    background: #e49800;
   }
 }

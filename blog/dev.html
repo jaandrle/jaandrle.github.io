@@ -7,7 +7,6 @@ category: dev
 ---
 <div class="posts maxW__article margin__0_auto">
   <p class="C__text_highlited">Zde jsou příspěvky spíše o programování (primárně <strong>JavaScript</strong>u).</p>
-  <p>Další příspěvky jsou v <a href="{{site.baseurl}}/blog/nondev.html" alt="Přejít na Obecné příspěvky">Blog — Obecné</a>.</p>
-  <hr>
-  {% include molecule_postList.html category=page.category %}
+  {% include i/molecule_postList.html category=page.category %}
+  <p>Další příspěvky jsou v <a href="{% link blog/nondev.html %}" alt="Přejít na Obecné příspěvky">Blog — Obecné</a>.</p>
 </div>

@@ -9,7 +9,10 @@
 */
 .flex__1 { flex: 1; }
 .flex__4 { flex: 4; }
+.flexF__rW { flex-flow: row wrap; }
+.flexF__cN { flex-flow: column nowrap; }
 .justifyC__fE { justify-content: flex-end; }
+.justifyC__sB { justify-content: space-between; }
 /*
     float
 */
@@ -31,7 +34,7 @@
 */
 .textA__c { text-align: center; }
 .textA__j { text-align: justify; }
-.fontS__0d5 { font-size: .5rem; }
+.fontS__0d75 { font-size: .75rem; }
 /*
     margin
 */

@@ -1,8 +1,0 @@
-{% comment %}
-    pouziti: "include molecule_articleInfo.html content={String} date={Date} tags={String[]}"
-{% endcomment
-%}<div class="info">{%
-    include icon.html icon="icon-clock" %} {% include atom_readingTime.html content=include.content %} | 
-    <b>Publikováno:</b> {% include atom_months.html date=include.date %}{%
-    if include.tags[0] %} | <b>Štítky:</b> {% include atom_tags.html tags=include.tags %}{% endif 
-%}</div>

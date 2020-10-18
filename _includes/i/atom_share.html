@@ -1,0 +1,12 @@
+{%  assign user_twitter= site.author.twitter %}{%
+    assign post_url= page.url | prepend: site.url | url_encode %}{%
+    assign post_title= page.title | url_encode %}{%
+    assign link_params= 'target="_blank" rel="nofolow" ' %}
+<div class="info">
+    <h5>Sdílet článek:</h5>
+    <a href="https://twitter.com/intent/tweet?text={{post_title}}&url={{post_url}}&via={{user_twitter}}&related={{user_twitter}}" {% comment %}{% endcomment
+        %}{{link_params}}title="Sdílet na Twitteru">Twitter</a>
+    <br>
+    <a href="https://facebook.com/sharer.php?u={{post_url}}" {% comment %}{% endcomment
+        %}{{link_params}}title="Sdílet na Facebooku">Facebook</a>
+</div>

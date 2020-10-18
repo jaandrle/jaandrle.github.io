@@ -33,7 +33,7 @@ Obrázek:
 {% include image.html
     caption='Popisek obrázku'
     alt='Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)'
-    src='https://raw.githubusercontent.com/jaandrle/jaandrle.github.io/master/images/jekyll-now-theme-screenshot.jpg'
+    src='https://raw.githubusercontent.com/jaandrle/jaandrle.github.io/master/images/internal/404.jpg'
 %}
 
 Ukázka referencí (viz {% include reference.html target='generovani referenci' %}):

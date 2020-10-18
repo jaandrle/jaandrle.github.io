@@ -4,20 +4,21 @@
 //
 
 // Colors
-$blue: #f06d78;
-
-// Grays
-$black: #000;
-$darkerGray: #e8e8e8;
-$darkGray: #f0e7d5;
-$gray: #e8e8e8;
-$lightGray: #424242;
-$white: #252525;
+$color_regularBG: #252525;
+$color_regularFG: #f0e7d5;
+$color_highlight: #f06d78;
+$color_highlightLight: #e8e8e8;
+$color_highlightDark: #000;
+$color_highlightMiddle: #424242;
+// Alpha
+$color_makeDarker: rgba(0,0,0,.25);
+$color_makeLighter: rgba(255,255,255,.1);
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+//$font_helvetica: Helvetica, Arial, sans-serif;
+$font_helveticaNeue: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_georgia: 'Vollkorn', Georgia, serif;
+$font_monospace: 'Bitstream Vera Sans Mono','Courier', monospace;
 
 %bg-image {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23151515' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -30,7 +31,7 @@ $georgia: Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 799px) {
     @content;
   }
 }
