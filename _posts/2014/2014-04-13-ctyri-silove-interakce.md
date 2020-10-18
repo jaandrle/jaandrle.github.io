@@ -41,7 +41,7 @@ Mluvíme tedy o tzv. **silné jaderné síle** nebo obecně o **silné interakci
 
 ## Slabá interakce (_W_)
 
-Posledním jevem, který si měl zasloužit vlastní sílu, je _rozpad_ některých i/atomových jader_ na jádra jiná. Při těchto reakcí z jádra vyletují elektrony či pozitrony (antičástice k elektronům, které mají stejnou hmotnost ale opačný náboj).
+Posledním jevem, který si měl zasloužit vlastní sílu, je _rozpad_ některých _atomových jader_ na jádra jiná. Při těchto reakcí z jádra vyletují elektrony či pozitrony (antičástice k elektronům, které mají stejnou hmotnost ale opačný náboj).
 
 Slabá interakce je „jen“ 10<sup>25</sup> krát _silnější než gravitace_ a je tedy _slabší_ než síla _elektromagnetická_. Také má velmi _krátký dosah_ a působí pouze na **kvarky** a **leptony**. Avšak za rozpady 95% částic _stojí_ právě slabá interakce.
 
