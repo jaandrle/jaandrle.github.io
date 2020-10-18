@@ -5,7 +5,7 @@ title: "Reklama na internetu, reklama v televizi, reklama …, reklama …"
 excerpt_separator: <!--more-->
 category: nondev
 redirect_from:
-  - /blog/2013-08/reklama-na-internetu-reklama-v-televizi-reklama-reklama-
+  - "/blog/2013-08/reklama-na-internetu-reklama-v-televizi-reklama-reklama-"
 ---
 
 Nadpis článku může evokovat mnohé, ale myslím si, že pro mnohé bude opravdu překvapující o čem všem tento článek ve skutečnosti je. Pravdou je, že se budu spíše držet reklamy na internetu a v televizi. Avšak o hlavním motivu článku chvíli pomlčím navzdory konvencím a zavedeným zvyklostem. Pojďme si nejprve vyslechnou jeden příběh.
