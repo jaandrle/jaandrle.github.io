@@ -55,7 +55,7 @@ Interakci mezi experimentátory **zprostředkovával** míč resp. bumerang. A *
 
 Tak tedy, u **elektromagnetické interakce** je prostředníkem částice **foton** a prostředkem je **elektrický náboj**, u **silné** je prostředníkem **gluon** a prostředkem tzv. **barevný náboj**, u **slabé** **bosony W<sup>±</sup> a Z** a prostředkem je tzv. **vůně**, u **gravitace** je pak prostředníkem **graviton** a prostředkem interakce je **hmotnost**.
 
-Hmotnost je zajímavá v tom, že dle slavné rovnice ![Energie je rovna hmotnosti krát rychlost světla na druhou](/images/2014-04/emc2.png) má _spojitost s energií_. Co víc, hmotnost převážně „vzniká“ z _energie interakcí mezi kvarky a gluony_. Má tedy spojitost se **silnou interakcí**. Gluony, které ji zprostředkovávají, neustále vznikají a zanikají a s jejich pomocí jsou k sobě vázány kvarky, které vytváří protony a neutrony. Energie jejich _fluktuací_ je tedy _zahrnuta_ v _celkové hmotnosti_ protonu a neutronu, ti pak tvoří atomy a … Hmotnost elementárních částic pak „vysvětluje“ tzv. **Higgsův boson**.
+Hmotnost je zajímavá v tom, že dle slavné rovnice <img class="display__i" alt="Energie je rovna hmotnosti krát rychlost světla na druhou" src="http://andrle-jan.4fan.cz/images/2014-04/emc2.png" /> má _spojitost s energií_. Co víc, hmotnost převážně „vzniká“ z _energie interakcí mezi kvarky a gluony_. Má tedy spojitost se **silnou interakcí**. Gluony, které ji zprostředkovávají, neustále vznikají a zanikají a s jejich pomocí jsou k sobě vázány kvarky, které vytváří protony a neutrony. Energie jejich _fluktuací_ je tedy _zahrnuta_ v _celkové hmotnosti_ protonu a neutronu, ti pak tvoří atomy a … Hmotnost elementárních částic pak „vysvětluje“ tzv. **Higgsův boson**.
 
 ## Jednotná teorie
 
