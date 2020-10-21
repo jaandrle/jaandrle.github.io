@@ -1,0 +1,6 @@
+;!@Install@!UTF-8!
+Title="SETUP"
+ExtractTitle="SETUP - exctracting..."
+RunProgram="run.bat"
+InstallPath="setup"
+;!@InstallEnd@!
