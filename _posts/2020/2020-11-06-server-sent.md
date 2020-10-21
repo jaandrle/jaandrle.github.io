@@ -14,7 +14,7 @@ reference:
             caption: WebSockets vs. Server-Sent events/EventSource
             href: https://stackoverflow.com/questions/5195452/websockets-vs-server-sent-events-eventsource/5326159#5326159
             title: Odpověď na otázku na StackOverflow
-            description: Hezký docela dost vyčerávající informace o vlastnostech SSE a srovnání s `WebSockets`
+            description: Docela dost vyčerávající informace o vlastnostech SSE a srovnání s `WebSockets`
         rauschma:
             caption: Poznámky o SSE – Axel Rauschmayer
             href: https://gist.github.com/rauschma/5ac9c3b8ed708f244ad1f3ef6e6721cb
