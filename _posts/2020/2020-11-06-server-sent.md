@@ -58,7 +58,7 @@ function eventEmmit($id, $event= "", $data= ""){
     $data= is_array($data) ? json_encode($data) : $data;
     if($id)     echo "id: $id\n";
     if($event)  echo "event: $event\n";
-    if($data)   echo "data: $data\n";
+    echo "data: $data\n";
     echo "\n";
     ob_end_flush();
     flush();
