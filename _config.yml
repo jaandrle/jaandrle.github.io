@@ -4,17 +4,18 @@
 #   - code version (name) / repository
 #   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
 code:
-  version: 2020.10a
+  version: 2020.10b
   name: Breezy Badger
   hosted: "https://github.com/"
   repository: "jaandrle/jaandrle.github.io"
   branch: "master"
 
 # Main site settings
-#   - language, (base)url
+#   - (base)url
+#   - language (see https://www.w3schools.com/tags/ref_language_codes.asp)
 url: https://jaandrle.github.io
 baseurl: ""
-locale: cs
+lang: cs
 sass:
   style: :compressed # You might prefer to minify using :compressed || :expanded
 defaults:

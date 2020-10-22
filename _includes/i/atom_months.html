@@ -1,6 +1,6 @@
 {%- assign m = include.date | date: "%-m" -%}
-{{ include.date | date: "%-d" }}. 
-{% case m -%}
+{{ include.date | date: "%-d" }}. {%
+case m -%}
   {%- when '1' -%}ledna
   {%- when '2' -%}února
   {%- when '3' -%}března

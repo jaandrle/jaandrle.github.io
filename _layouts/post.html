@@ -1,19 +1,22 @@
 ---
 layout: default
 ---
-<article class="post maxW__article margin__0_auto">
-  <h1 class="C__text_highlited">{{ page.title }}</h1>
-  {% include i/molecule_articleInfo.html content=content date=page.date updated=page.updated tags=page.tags %}
-  <div class="entry">{{ page.excerpt }}<hr/>{%
-    include show_toc.html show_toc=page.show_toc html=content
-    %}{{ content | remove_first:page.excerpt }}
-  </div>
-</article>
-<hr>
-<aside class="display__f flexF__rW justifyC__sB">
-  {% include i/molecule_navigationRelated.html %}
-  {% include i/atom_navigationHistory.html %}
-  {% include i/atom_share.html %}
-  {% include i/atom_comments.html %}
-  {% include i/atom_navigationSource.html %}
-</aside>
+        <article class="post maxW__article margin__0_auto">
+          <h1 class="C__text_highlited">{{ page.title }}</h1>
+          {% include i/molecule_articleInfo.html content=content date=page.date updated=page.updated tags=page.tags %}
+          <div class="entry">{{ page.excerpt }}<hr/>{%
+            include show_toc.html show_toc=page.show_toc html=content
+            %}
+<!-- »»» Vlastni clanek — Zacatek ««« -->
+{{ content | remove_first:page.excerpt }}
+<!-- »»» Vlastni clanek — Konec ««« -->
+          </div>
+        </article>
+        <hr>
+        <aside class="display__f flexF__rW justifyC__sB">
+          {% include i/molecule_navigationRelated.html %}
+          {% include i/atom_navigationHistory.html %}
+          {% include i/atom_share.html %}
+          {% include i/atom_comments.html %}
+          {% include i/atom_navigationSource.html %}
+        </aside>

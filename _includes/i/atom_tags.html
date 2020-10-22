@@ -1,4 +1,1 @@
-{% for tag in include.tags %}
-{% if forloop.index0!=0 %}, {% endif %}
-<a href="/blog/tags.html#tag_anchor_{{ tag | downcase | replace:' ','-' }}">{{tag}}</a>
-{% endfor %}
+{% for tag in include.tags %}{% if forloop.index0!=0 %}, {% endif %}<a href="/blog/tags.html#tag_anchor_{{ tag | downcase | replace:' ','-' }}">{{tag}}</a>{% endfor %}

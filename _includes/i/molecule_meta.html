@@ -1,38 +1,38 @@
+    {% comment %}{% endcomment -%}
+{% assign description= page.excerpt | default: site.description | strip_html | strip_newlines -%}
+{% assign full_baseurl= site.baseurl | prepend: site.url -%}
+    <!-- ❕ -->
     <meta charset="utf-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>{%
-        if page.path == "blog/tags.html" %}
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+{%- if page.noindex %}
     <meta name="robots" content="noindex">{%
-        endif %}
-    
+endif %}
+    <!-- © (Jekyll & GitHub Pages) -->
     <meta name="author" content="{{ site.author.name }}" />
-    <meta name="generator" content="Jekyll" /> <!-- Created with Jekyll & GitHub Pages -->
-{%
-    if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html | strip_newlines }}" />
-    {%- else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    {%- endif -%}
-{%
-    if page.title %}
+    <meta name="generator" content="Jekyll" />
+    <!-- ℹ 🔗 📜 -->
+    <link rel="canonical" href="{{ full_baseurl }}{{ page.url | replace:'index.html','' }}" />
+    <meta property="og:url" content="{{ full_baseurl }}{{ page.url }}">
+    <meta name="description" content="{{ description }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    {% if page.title -%}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
     {%- endif %}
-
-    <link rel="shortcut icon" href="/files/internal/favicon.ico">
-
+    <meta name="twitter:site" content="@{{ site.author.twitter }}">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <link rel="canonical" href="{{ site.baseurl }}{{ page.url | replace:'index.html','' }}" />
-
+    <!-- 🎨 🔗 -->
+    <link rel="shortcut icon" href="/files/internal/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
-{%
-    for feed in site.pages %}{% if feed.layout=='feed' %}
+{%- for feed in site.pages %}{% if feed.layout=='feed' %}
     <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
-    endfor %}
+endfor %}
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <!-- 💬 -->
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>

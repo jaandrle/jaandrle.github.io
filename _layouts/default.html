@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
 {%
     include i/molecule_meta.html %}
-
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
   </head>
   <body class="C__with_sidebar display__f">
     <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to content">Scroll to content</a>
@@ -32,7 +30,7 @@
 
     <div class="container flex__4">
       <div id="main" role="main" aria-label="Hlavní obsah">
-        {{ content }}
+{{ content }}
       </div>
   
       <footer class="C__targetHighlite textA__c" role="contentinfo" aria-labelledby="foot-heading" id="foot-section">
