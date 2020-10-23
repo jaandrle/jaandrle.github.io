@@ -28,7 +28,6 @@ endif %}
     <![endif]-->
     <!-- 🎨 🔗 -->
     <link rel="shortcut icon" href="/files/internal/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
     <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
