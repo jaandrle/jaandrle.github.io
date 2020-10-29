@@ -15,7 +15,7 @@ Obě třídy jsou podobné polím, ale nedědí z `Array`. Primárně to tedy sp
 ```JavaScript
 const { forms }= document;
 // Klasické procházení
-for(let i=0, forms_lenght= forms.lengt; i<forms_length; i++){
+for(let i=0, { lenght }= forms; i<length; i++){
     forms[i].className= "just-example";
 }
 // Novější
