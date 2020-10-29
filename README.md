@@ -28,6 +28,7 @@ The default options are saved in [_config.yml](./_config.yml).
 | noindex           	| all       	| null                       	| See [robots.txt](./robots.txt) and [sitemap.xml](./sitemap.xml).                                                                                           	|
 | date              	| all       	| based on filename           	| In form `YYYY-MM-DD HH:MM:SS`                                                                                                                              	|
 | updated           	| posts     	|                           	| In form `YYYY-MM-DD`                                                                                                                              	|
+| MathJax           	| all        	| null                        	| Use MathJax for processing page including mathematics, see [_inclused/i/molecule_scriptsBody.html](./_inclused/i/molecule_scriptsBody.html)                                                                                                                 	|
 
 ### Helpers
 My partials/data for simplify creating posts.

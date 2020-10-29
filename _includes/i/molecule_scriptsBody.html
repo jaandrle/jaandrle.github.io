@@ -1,0 +1,8 @@
+{%- if page.MathJax
+%}    <script>(function(supportsES6){
+          if(!supportsES6) return false;
+          document.body.appendChild(Object.assign(
+               document.createElement("script"),
+               { id: "MathJax-script", src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", async: true }));
+     })(function(){try{new Function("(a = 0) => a");return true;}catch(e){return false;}}())</script>{% 
+     endif %}
