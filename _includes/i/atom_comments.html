@@ -4,7 +4,7 @@
     assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S" -%}{%
     assign id= "jablog_" | append: id_post -%}
 <div class="info">
-    <h5>Komentáře:</h5>
+    <h5>:speech_balloon:</h5>
     <a href="https://twitter.com/search?q=(%23{{id}})(%40{{user_twitter}})&src=typed_query" {% comment %}{% endcomment
         %}title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
         %}{{link_params}}>Reakce na Twitteru</a>

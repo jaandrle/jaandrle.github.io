@@ -49,6 +49,7 @@ kramdown:
 # Plugins & Exclude from production (_site)
 plugins:
   - jekyll-redirect-from
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock
