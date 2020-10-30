@@ -1,5 +1,6 @@
 
 .highlight {
+  position: relative;
   background-color: $color_makeDarker;
   border-left: 2px solid $color_highlightLight;
   margin: .5rem 0 .5rem 0;
@@ -30,6 +31,26 @@
     margin-top: -.5rem;
     border-bottom: 1px solid gray;
     text-indent: 0;
+  }
+  [data-lang]::before {
+      font-size: .75em;
+      font-weight: bold;
+      position: absolute;
+      top: .25em;
+      left: .5em;
+  }
+  [data-lang="php"]::before{
+      content: "php";
+      color: #c6acff;
+  }
+  [data-lang="js"]::before,
+  [data-lang="json"]::before{
+      content: "js";
+      color: #fff6ac;
+  }
+  [data-lang="console"]::before{
+      content: ">_";
+      color: #a6e1d9;
   }
 }
 
