@@ -1,0 +1,37 @@
+<style>/*atom_criticalCSS.html{% capture critical_css %}*/
+.float__l{
+  float: left}
+.hidden{
+  display: none;}
+/*{%comment%}
+  clearfix
+    Nicolas Gallagher's micro clearfix hack
+    http://nicolasgallagher.com/micro-clearfix-hack/
+{%endcomment%}*/
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;}
+.clearfix:after{
+  clear: both;}
+
+.C__header{
+  width: 100%;}
+.C__sidebarAvatar{
+  width:5rem;}
+.C__svgIcon{
+  display: inline-block;
+  vertical-align: top;
+  width: 1.5em;
+  height: 1.5em;}
+
+body, select, input{
+  color: #eee;
+  background: #2b2b2b;}
+a{
+    filter: brightness(200%) hue-rotate(70deg);}
+a:hover{
+  color: white;}
+img{
+  max-width: 100%;}
+/*{% endcapture %}{{ critical_css | strip_newlines | replace: "  ", " " | replace: ": ", ":" | replace: "{ ", "{" }}*/</style>

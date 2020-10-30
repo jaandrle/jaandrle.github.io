@@ -28,7 +28,8 @@ endif %}
     <![endif]-->
     <!-- 🎨 🔗 -->
     <link rel="shortcut icon" href="/files/internal/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
+    {% include i/atom_criticalCSS.html %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/main.css?v={{ site.code.version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
     <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
 endfor %}
