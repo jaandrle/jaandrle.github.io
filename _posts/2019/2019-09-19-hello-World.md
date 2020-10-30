@@ -32,8 +32,9 @@ Obrázek:
 
 {% include image.html
     caption='Popisek obrázku'
-    alt='Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)'
-    src='/files/internal/404.jpg'
+    img='
+![Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)](/files/internal/404.jpg)
+'
     attributes='height="896" width="896"'
 %}
 

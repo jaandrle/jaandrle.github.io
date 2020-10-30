@@ -1,5 +1,6 @@
 {% comment %}
-    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}] [attributes={string}]`
+    Pouziti: `include image.html [img={string}] src={string} [href={string}] alt={string} title={string} [caption={string|markdown}] [attributes={string}]`
+        - `img`: Stejně jako u `code.html` umožňuje zadání obrázku pomocí markdown zápisu `![]()`.
         - `src`, `href`: jsou cesty k obrazku (obrazkum nahled/plny)
         - `alt`: popis obsahu obrazku
         - `title`: titulek obrazku
@@ -19,11 +20,17 @@
 %}{%    else
 %}{%        assign attributes= attributes | trim | prepend: " "
 %}{%    endif
-%}{%    assign src= include.src
+%}{%    if include.img
+%}{%        assign image= include.img | strip | replace: "![", "" | replace: ")", "" | split: "]("
+%}{%        assign src= image[1]
+%}{%        assign alt= image[0]
+%}{%    else
+%}{%        assign src= include.src
+%}{%        assign alt= include.alt | default: "Obrázek v článku"
+%}{%    endif
 %}{%    assign href= include.href | default: src
 %}{%    assign title= include.title | default: "Otěvřít obrázek samostatně (ve vyšší kvalitě pokud možno)"
 %}{%    assign relative_url= src | first
-%}{%    assign alt= include.alt | default: "Obrázek v článku"
 %}{%    if relative_url == "\/"
 %}{%        assign src= src | prepend: site.baseurl
 %}{%        assign href= href | prepend: site.baseurl

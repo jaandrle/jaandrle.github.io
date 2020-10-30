@@ -35,6 +35,7 @@ My partials/data for simplify creating posts.
 
 #### Include
 In general `{% include file ...options %}` with standarized options
+- `code`, `img` and similar tags supproted by Markdown (the idea is to extend these, but still at least particually be able see that in `.md`). So, example: `{% include image.html img='![alt](src)'`.
 - `href`, `src` for links/images/…
 - `title`, `alt` for links/images/…
 - `caption` for description (eg. `<figcaption>`)
