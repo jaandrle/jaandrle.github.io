@@ -1,3 +1,2 @@
-{% assign type= include.type | default: "svg" %}{%
-if type == "svg" %}<svg class="C__svgIcon"><use xlink:href="#{{include.icon}}"></use></svg>{%
-endif %}
+{%      assign type= include.type | default: "svg"
+%}{%    if type == "svg" %}<svg class="C__svgIcon"><use xlink:href="#{{include.icon}}"></use></svg>{% endif %}

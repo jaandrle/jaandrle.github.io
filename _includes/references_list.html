@@ -22,33 +22,29 @@
                     title: pro linky
                     description: za referencí
             ```
-{% endcomment
-%}{%
-    assign references_src= include.references
-%}{% if references_src %}
-<ol>{%
-    for ref_src in references_src
-        %}{% if ref_src.first.first %}{%
-            assign references= ref_src.first.last
-        %}{%
-            else
-        %}{%
-            assign references= site.data.reference[ref_src]
-        %}{% endif %}{%
-            for reference in references
-        %}{%
-            assign name= reference.first %}{%
-            assign params= reference.last
-        %}<li id="ref_{{ name | url_encode }}" ><b>[{{ name }}]</b> {% if params.href
-        %}<a href="{{params.href}}" title="{{params.title}}">{{params.caption}}</a>{%
-        else
-        %}{{ params.caption }}{%
-        endif
-        %}{% if params.description
-        %} – {{params.description | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" }}{%
-        endif
-        %}</li>{%
-        endfor %}{%
-    endfor %}
+{%  endcomment
+%}{%    assign references_src= include.references
+%}{%    if references_src %}
+<ol>{%      for ref_src in references_src
+%}{%            if ref_src.first.first
+%}{%                assign references= ref_src.first.last
+%}{%            else
+%}{%                assign references= site.data.reference[ref_src]
+%}{%            endif
+%}{%            for reference in references
+%}{%                assign name= reference.first
+%}{%                assign params= reference.last
+                    %}<li id="ref_{{ name | url_encode }}" ><b>[{{ name }}]</b> {%
+                    if params.href
+                        %}<a href="{{params.href}}" title="{{params.title}}">{{params.caption}}</a>{%
+                    else
+                        %}{{ params.caption
+}}{%                endif
+%}{%                if params.description
+%}{{                    params.description | markdownify | remove_first: "<p>" | split: "" | reverse | join: "" | remove_first: ">p/<" | split: "" | reverse | join: "" | prepend: " – "
+}}{%                endif
+                    %}</li>{%
+                endfor
+%}{%        endfor %}
 </ol>{%
 endif %}
