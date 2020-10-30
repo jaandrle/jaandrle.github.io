@@ -1,10 +1,24 @@
 {% comment %}
-    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}]`
+    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}] [attributes={string}]`
         - `src`, `href`: jsou cesty k obrazku (obrazkum nahled/plny)
         - `alt`: popis obsahu obrazku
         - `title`: titulek obrazku
         - `caption`: popisek (jeden paragraf)
+        - `attributes`: HTML atributy pro `<img>` (primárně výška/šířka). Pokud nedefinováno, pokusí se získat ze `src`.
 {% endcomment
+%}{%    assign attributes= include.attributes | default: ""
+%}{%    if attributes == ""
+%}{%        assign pre_attributes= include.src | split: "?" | last | split: "&"
+%}{%        for pre_par in pre_attributes
+%}{%            assign par= pre_par | split: "="
+%}{%            if par[0] != "width" and par[0] != "height"
+%}{%                continue
+%}{%            endif
+%}{%            assign attributes= attributes | append: " " | append: par[0] | append: '="' | append: par[1] | append: '"'
+%}{%        endfor
+%}{%    else
+%}{%        assign attributes= attributes | trim | prepend: " "
+%}{%    endif
 %}{%    assign src= include.src
 %}{%    assign href= include.href | default: src
 %}{%    assign title= include.title | default: "Otěvřít obrázek samostatně (ve vyšší kvalitě pokud možno)"
@@ -16,7 +30,7 @@
 %}{%    endif
 %}<figure class="C__figureWrapper">
     <a href="{{ href }}" title="{{ title }}" target="_blank">
-        <img src="{{ src }}" alt="{{ alt }}" class="maxH__image"/>
+        <img src="{{ src }}" alt="{{ alt }}" class="maxH__image" loading="lazy"{{attributes}}/>
     </a>{%
     if include.caption %}
     <figcaption class="info">{{ include.caption | markdownify }}</figcaption>{%

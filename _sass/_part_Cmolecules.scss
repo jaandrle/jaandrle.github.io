@@ -179,6 +179,7 @@ a.C__button {
   img {
     @extend %block_hover;
     display: inline-block;
+    object-fit: contain;
   }
 }
 .C__tagsCloud {

@@ -34,6 +34,7 @@ Obrázek:
     caption='Popisek obrázku'
     alt='Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)'
     src='/files/internal/404.jpg'
+    attributes='height="896" width="896"'
 %}
 
 Ukázka referencí (viz {% include reference.html target='generovani referenci' %}):
