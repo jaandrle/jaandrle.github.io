@@ -11,18 +11,18 @@
 %}{%    comment %}V nasledujicim cyklus preskoci "```" casti{% endcomment
 %}{%    capture code %}{% for line in pre_code %}{% if forloop.index > 2 and forloop.index < lines %}{{ line | append: new_line }}{% endif %}{% endfor %}{% endcapture
 %}{%    capture post_code
-%}{%        assign type= pre_code[1] | replace: "```", "" | replace: "JavaScript", "js" | replace: "JS", "js" | replace: "bash", "console"
-%}{%        if type == "js"
+%}{%        assign type= pre_code[1] | replace: "```", "" | replace: "JavaScript", "JS" | replace: "js", "JS" | replace: "bash", "console"
+%}{%        if type == "JS"
 %}{%            highlight js linenos %}{{code}}{% endhighlight
-%}{%        else if type == "JSON"
-%}{%            highlight json linenos %}{{code}}{% endhighlight
-%}{%        else if type == "CSS"
-%}{%            highlight css linenos %}{{code}}{% endhighlight
-%}{%        else if type == "HTML"
-%}{%            highlight html linenos %}{{code}}{% endhighlight
-%}{%        else if type == "PHP"
+%}{%        elsif type == "PHP"
 %}{%            highlight php linenos %}{{code}}{% endhighlight
-%}{%        else if type == "console"
+%}{%        elsif type == "JSON"
+%}{%            highlight json linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "CSS"
+%}{%            highlight css linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "HTML"
+%}{%            highlight html linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "console"
 %}{%            highlight console %}{{code}}{% endhighlight
 %}{%        else
 %}{%            highlight text %}{{code}}{% endhighlight
