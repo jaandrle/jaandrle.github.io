@@ -168,7 +168,13 @@ a.C__button {
     }
   }
 }
-.C__figureWrapper {
+.C__tagsCloud {
+  text-align: center;
+  a {
+    position: relative;
+  }
+}
+.C__figureObject {
   margin: 0;
   background-color: $color_makeDarker;
   text-align: center;
@@ -179,12 +185,8 @@ a.C__button {
     object-fit: contain;
   }
 }
-.C__tagsCloud {
-  text-align: center;
-  a {
-    position: relative;
-  }
-}
-.C__textBox{
-  @extend blockquote;
+.C__figureText{
+  margin: .5em 0;
+  border-left: 2px solid $color_highlightLight;
+  padding: .5em .5em;
 }
