@@ -2,12 +2,10 @@
   background-color: transparentize($color_highlight, .85);
   transition: all 2s;
 }
+/*
 .C__svgIcon {
-  display: inline-block;
-  vertical-align: top;
-  width: 1.5em;
-  height: 1.5em;
-}
+  viz atom_criticalCSS.html
+*/
 .C__visuallyHide {
   border: 0;
   clip: rect(0 0 0 0);
