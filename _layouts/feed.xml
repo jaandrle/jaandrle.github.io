@@ -6,7 +6,7 @@
  <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
- <title>{{ site.author.name }} — {{ page.subtitle | xml_escape }}</title>
+ <title>{{ site.author.name }} – {{ page.subtitle | xml_escape }}</title>
  <subtitle>{{ site.description | xml_escape }}</subtitle>
 <author>
   <name>{{ site.author.name | xml_escape }}</name>
