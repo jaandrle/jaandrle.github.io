@@ -185,3 +185,6 @@ a.C__button {
     position: relative;
   }
 }
+.C__textBox{
+  @extend blockquote;
+}

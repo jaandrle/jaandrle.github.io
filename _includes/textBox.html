@@ -1,0 +1,5 @@
+{% comment %}
+    Pouziti: `include block.html text={markdown}
+        - `text`: Markdown zápis pomocí `> …`
+{% endcomment
+%}{{ include.text | markdownify | replace: "</blockquote>", "</div>" | replace: "<blockquote>", '<div class="C__textBox">' }}
