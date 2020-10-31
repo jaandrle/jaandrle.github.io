@@ -4,6 +4,7 @@ title: O mně
 permalink: /about/
 in_menu: O mně
 show_toc: 3
+description: Obecné informace o mně a těchto stránkách
 ---
 
 ## O autorovi

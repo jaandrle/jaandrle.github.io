@@ -13,7 +13,8 @@
           assign pages= site.pages | sort: "in_menu"
             %}{% for page_i in pages %}{% if page_i.in_menu %}
           <a {% comment %}{% endcomment
-                  %}href="{{ site.baseurl }}{{ page_i.permalink }}" {% comment %}{% endcomment
+                  %}href="{{ page_i.url }}" {% comment %}{% endcomment
+                  %}title="{{ page_i.description | strip_html }}" {% comment %}{% endcomment
                   %}class="C__button{%
                     if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
                       %} C__sidebarNav_active{%
@@ -23,8 +24,8 @@
       </nav>
 
       <div class="C__sidebarInfo float__l margin__1_auto textA__j">
-        <h1 class="C__sidebarInfo_name C__text_highlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></h1>
-        <p class="C__sidebarInfo_description C__text_highlited">{{ site.description }}</p>
+        <p class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></p>
+        <p class="C__sidebarInfo_description C__textHighlited">{{ site.description }}</p>
       </div>
     </header>
 

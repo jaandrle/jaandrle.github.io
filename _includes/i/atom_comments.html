@@ -1,10 +1,10 @@
-{%  assign user_twitter= site.author.twitter %}{%
-    assign post_url= page.url | prepend: site.url | url_encode %}{%
-    assign link_params= ' target="_blank" rel="nofolow"' %}{%
-    assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S" -%}{%
-    assign id= "jablog_" | append: id_post -%}
-<div class="info">
-    <h5>:speech_balloon:</h5>
+{%      assign user_twitter= site.author.twitter
+%}{%    assign post_url= page.url | prepend: site.url | url_encode
+%}{%    assign link_params= ' target="_blank" rel="nofolow"'
+%}{%    assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S"
+%}{%    assign id= "jablog_" | append: id_post -%}
+<div class="info display__f flexF__cN">
+    {% include i/atom_asideHeadline.html headline="Komentáře" icon=":speech_balloon:" %}
     <a href="https://twitter.com/search?q=(%23{{id}})(%40{{user_twitter}})&src=typed_query" {% comment %}{% endcomment
         %}title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
         %}{{link_params}}>Reakce na Twitteru</a>
