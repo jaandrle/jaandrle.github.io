@@ -65,8 +65,8 @@ a.C__button {
       padding: .5em 0;
     }
 }
-.C__text_highlited {
-  background: $color_makeDarker;
+.C__textHighlited {
+  background: $color_makeDark;
   padding: .25rem .5rem;
   box-decoration-break: clone;
   display: inline-block;
@@ -122,16 +122,14 @@ a.C__button {
 }
 
 .C__sidebarInfo_name {
+  font: 2rem $font_sans;
   text-align: center;
   width: 100%;
-  margin-top: 0;
-  padding-top: 0;
   color: $color_highlight;
   cursor: pointer;
   text-shadow: 1px 1px $color_regularBG, -1px 1px $color_regularBG, 1px -1px $color_regularBG, -1px -1px $color_regularBG;
   @include mobile {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    font-size: 1.5rem;
     background: none; 
     min-width: 7em;
     display: block; //flex fallback
@@ -142,6 +140,7 @@ a.C__button {
   display: inline;
   color: $color_highlightLight;
   font-size: .75em;
+  line-height: 1.75em;
   @include mobile {
     display: none;
   }

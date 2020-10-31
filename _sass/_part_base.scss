@@ -5,7 +5,7 @@ html {
 body {
   background-color: $color_highlightMiddle;
   @extend %bg-image;
-  font: 500 1rem/1.4 $font_georgia;
+  font: 500 1rem/1.4 $font_serif;
   color: $color_regularFG;
   min-height: 100vh;
   text-underline-offset: 3px;
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font_helveticaNeue;
+  font-family: $font_sans;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -78,7 +78,7 @@ ul ul, ol ul {
 }
 
 input, textarea{
-  background: $color_makeLighter;
+  background: $color_makeDarker;
   color: $color_regularFG;
   border-radius: 5px;
   margin-bottom: 1em;
@@ -111,7 +111,7 @@ a {
     cursor: help;
     color: $color_regularFG;
     text-decoration: none;
-    font-family: $font_helveticaNeue;
+    font-family: $font_sans;
     font-weight: normal;
     &[href^="http"]{ //default a
       background: none;
