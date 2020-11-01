@@ -1,5 +1,9 @@
-{% assign link_main_part= site.code.hosted | append: site.code.repository | append: "/tree/master/" | append: page.path -%}
+{% assign link_repo= site.code.hosted | append: site.code.repository -%}
+{% assign link_file= "/tree/master/" | append: page.path -%}
 <div class="info display__f flexF__cN">
     {% include i/atom_asideHeadline.html headline="Upravit/Nahlásit chybu" icon=":pencil2:" %}
-    <a href="{{link_main_part}}" target="_blank" rel="nofolow" title="Odkaz na zdrojový soubor na GitHubu">Zdrojový soubor</a>
+{%- if page.issue %}
+    <a href="{{link_repo}}/issues/{{ page.issue }}" target="_blank" rel="nofolow" title="Odkaz na „zadání” tohoto příspěvku v Github Issues">#{{ page.issue }}</a>
+{%- endif %}
+    <a href="{{link_repo}}{{link_file}}" target="_blank" rel="nofolow" title="Odkaz na zdrojový soubor na GitHubu">Zdrojový soubor</a>
 </div>

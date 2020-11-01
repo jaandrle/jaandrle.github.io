@@ -1,4 +1,5 @@
 ---
+issue: 41
 title: "Provedení kódu po příštím překreslením stránky"
 category: dev
 tags: [JavaScript,snippet]

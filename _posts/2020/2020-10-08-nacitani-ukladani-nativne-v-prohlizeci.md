@@ -1,4 +1,5 @@
 ---
+issue: 53
 title: "Načítání/ukládání soborů (a složek) nativně v prohlížeči"
 category: dev
 tags : [fs,JavaScript,chrome,Web API]

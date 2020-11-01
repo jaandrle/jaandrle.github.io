@@ -1,4 +1,5 @@
 ---
+issue: 46
 title: "Klávesa Compose a typografický exkurz z rychlíku"
 category: nondev
 tags: [Compose,typografie,tipy,triky,návody]

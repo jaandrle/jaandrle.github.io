@@ -1,4 +1,5 @@
 ---
+issue: 51
 title: "Postřehy ke kolekcím DOM elementů"
 category: dev
 tags: [JavaScript,DOM,Web API]
