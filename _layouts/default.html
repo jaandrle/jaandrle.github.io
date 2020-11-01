@@ -5,7 +5,7 @@
     include i/molecule_meta.html %}
   </head>
   <body class="C__with_sidebar display__f">
-    <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to content">Scroll to content</a>
+    <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to main content begining">Scroll to content</a>
     <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
       <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img alt="User avatar photo" src="{{ site.avatar }}"/></a>
       <nav class="C__sidebarNav display__f float__l" aria-labelledby="nav-heading" role="navigation">
@@ -23,23 +23,23 @@
             endif %}{% endfor %}
       </nav>
 
-      <div class="C__sidebarInfo float__l margin__1_auto textA__j">
-        <p class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></p>
+      <div class="C__sidebarInfo float__l margin__1_auto">
+        <div class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></div>
         <p class="C__sidebarInfo_description C__textHighlited">{{ site.description }}</p>
       </div>
     </header>
 
     <div class="container flex__4">
-      <div id="main" role="main" aria-label="Hlavní obsah">
+      <main role="main" id="main" aria-label="Hlavní obsah">
 {{ content }}
-      </div>
+      </main>
   
       <footer class="C__targetHighlite textA__c" role="contentinfo" aria-labelledby="foot-heading" id="foot-section">
         <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>
         <span class="display__b"> ··· ~ ··· </span>{% for social in site.data.social %}{% assign sp= social | last %}
         <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{% endfor %}
         <span class="display__b"> ··· </span>
-        <a href="#main" role="button" aria-label="Scroll to content begining" class="C__button">↑ Vrátit se na začátek obsahu ↑</a>
+        <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">↑ Vrátit se na začátek obsahu ↑</a>
         <span class="display__b"> ··· </span>
         <a class="fontS__0d75" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
       </footer>

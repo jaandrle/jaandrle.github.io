@@ -25,8 +25,12 @@
 %}{%        assign post_params= post | split: "|||"
 %}{%        assign post_text= post_params[2]
 %}{%        assign ellipsis= post_text | size | minus: post_text_limit | at_least: 0 | at_most: 1 | replace: 0, "" | replace: 1, "…"
+%}{%        assign post_title= ""
+%}{%        unless ellipsis==""
+%}{%            assign post_title= post_text | prepend: ' title="' | append: '"'
+%}{%        endunless
 %}
-    <a href="{{ post_params[3] }}" title="{{ post_text }}">{{ post_text | slice: 0, post_text_limit }}{{ellipsis}}</a>{%
+    <a href="{{ post_params[3] }}"{{ post_title }}>{{ post_text | slice: 0, post_text_limit }}{{ellipsis}}</a>{%
         endfor
 %}
 </div>
