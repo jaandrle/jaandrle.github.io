@@ -1,4 +1,6 @@
-{%- assign m = include.date | date: "%-m" -%}
+{%-   capture strip_atom %}
+{%    assign m = include.date | date: "%-m" %}
+{%    capture time_inner -%}
 {{ include.date | date: "%-d" }}. {%
 case m -%}
   {%- when '1' -%}ledna
@@ -13,4 +15,8 @@ case m -%}
   {%- when '10' -%}října
   {%- when '11' -%}listopadu
   {%- when '12' -%}prosince
-{%- endcase %} {{ include.date | date: "%Y" }}
+{%-   endcase %} {{ include.date | date: "%Y" }}
+{%-    endcapture
+%}{%  endcapture
+%}{%  assign strip_atom= nill
+%}<time datetime="{{ include.date | date: '%Y-%m-%d' }}">{{ time_inner }}</time>
