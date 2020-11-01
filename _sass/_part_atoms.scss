@@ -1,4 +1,8 @@
 /*
+    background
+*/
+.background__dark { background: $color_makeDark; }
+/*
     display
 */
 .display__f { display: flex; }
@@ -43,7 +47,7 @@
 /*
     padding
 */
-.padding__1 { padding: 1rem }
+.padding__1 { padding: 1rem; }
 /*
     ...mobile
 */

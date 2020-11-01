@@ -36,12 +36,19 @@
   
       <footer class="C__targetHighlite textA__c" role="contentinfo" aria-labelledby="foot-heading" id="foot-section">
         <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>
-        <span class="display__b"> ··· ~ ··· </span>{% for social in site.data.social %}{% assign sp= social | last %}
-        <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{% endfor %}
+        <span class="display__b background__dark"> ··· ~ ··· </span>
+        <div class="display__f justifyC__sB">
+        <div>{%
+        for social in site.data.social %}{% assign sp= social | last %}
+        <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{%
+        endfor %}</div>
+        <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">Vrátit se na začátek obsahu</a>
+        </div>
         <span class="display__b"> ··· </span>
-        <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">↑ Vrátit se na začátek obsahu ↑</a>
-        <span class="display__b"> ··· </span>
-        <a class="fontS__0d75" target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze">Verze blogu: {{ site.code.name }}</a>
+        <span class="fontS__0d75">
+        {% assign dates= site.posts | map: "date" %}{{ dates | last | date: "%Y" }} – {{ dates | first | date: "%Y"
+        }} (<a target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze blogu">{{ site.code.name }}</a>)
+        </span>
       </footer>
     </div>
     {% include i/molecule_scriptsBody.html %}
