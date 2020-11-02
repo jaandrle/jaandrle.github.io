@@ -1,4 +1,4 @@
-hr, .info, .highlight, .page__comments, .comment {
+hr, .info, .highlight {
     clip-path: polygon(var(--eff-clip-top), var(--eff-clip-bottom));
     --eff-clip-size: .25em;
     --eff-clip-top: 0 var(--eff-clip-size, .5em), 100% 0;

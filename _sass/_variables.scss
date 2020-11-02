@@ -28,6 +28,12 @@ $font_monospace: "Lucida Console", Monaco, monospace;
     opacity: .75;
   }
 }
+%focus{
+  &:focus{
+    outline: 1px dotted $color_highlightLight;
+    outline-offset: -4px;
+  }
+}
 
 // Mobile breakpoints
 @mixin mobile {

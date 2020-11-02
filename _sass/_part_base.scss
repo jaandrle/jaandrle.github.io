@@ -71,18 +71,16 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+
 input, textarea{
+  @extend %focus;
   background: $color_makeDarker;
   color: $color_regularFG;
   border-radius: 5px;
   margin-bottom: 1em;
-  border: 1px solid transparent;
-  border-left: 2px solid $color_highlight;
+  border: 1px solid $color_highlight;
+  border-left-width: 2px;
   padding: .5em;
-  &:focus {
-      outline: none;
-      border-color: $color_highlight;
-  }
 }
 
 a {

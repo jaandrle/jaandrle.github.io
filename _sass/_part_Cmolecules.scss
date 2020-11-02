@@ -30,6 +30,7 @@
   }
 }
 .C__button {
+  @extend %focus;
   font-size: .8em;
   display: inline-block;
   text-decoration: none;
@@ -58,7 +59,7 @@ a.C__button {
   }
 }
 
-.C__with_sidebar {
+.C__contentFirst { /* typicky prohozeni header<>main */
     flex-direction: row-reverse;
     @include mobile {
       flex-direction: column;
@@ -84,7 +85,7 @@ a.C__button {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding: 0 .25em;
+    padding: 0 .1em;
     margin: 0 auto;
     width: 100%;
   }
@@ -123,13 +124,14 @@ a.C__button {
 
 .C__sidebarInfo_name {
   font: 2rem $font_sans;
+  font-weight: bold;
   text-align: center;
   width: 100%;
   color: $color_highlight;
   cursor: pointer;
   text-shadow: 1px 1px $color_regularBG, -1px 1px $color_regularBG, 1px -1px $color_regularBG, -1px -1px $color_regularBG;
   @include mobile {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     background: none; 
     min-width: 7em;
     display: block; //flex fallback
