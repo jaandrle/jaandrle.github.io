@@ -2,14 +2,16 @@
 %}    <script>(function(supportsES6){
           if(!supportsES6) return false;
 {%- for script in page.scripts %}
+     {%- if script=="/files/internal/404.js" %}
           document.body.appendChild(Object.assign(
                document.createElement("script"),
-               { src: "{% link {{ script }} %}", async: true }));
+               { src: "{% link /files/internal/404.js %}", async: true }));
+     {%- endif %}
 {%- endfor %}
 {%- if page.MathJax %}
           document.body.appendChild(Object.assign(
                document.createElement("script"),
                { id: "MathJax-script", src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", async: true }));
 {%- endif %}
-     })(function(){try{new Function("(a = 0) => a");return true;}catch(e){return false;}}())</script>{% 
-     endif %}
+     })(function(){try{new Function("(a = 0) => a");return true;}catch(e){return false;}}())</script>
+{%- endif %}
