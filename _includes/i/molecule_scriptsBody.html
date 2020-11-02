@@ -1,8 +1,15 @@
-{%- if page.MathJax
+{%- if page.MathJax or page.scripts
 %}    <script>(function(supportsES6){
           if(!supportsES6) return false;
+{%- for script in page.scripts %}
+          document.body.appendChild(Object.assign(
+               document.createElement("script"),
+               { src: "{% link {{ script }} %}", async: true }));
+{%- endfor %}
+{%- if page.MathJax %}
           document.body.appendChild(Object.assign(
                document.createElement("script"),
                { id: "MathJax-script", src: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", async: true }));
+{%- endif %}
      })(function(){try{new Function("(a = 0) => a");return true;}catch(e){return false;}}())</script>{% 
      endif %}
