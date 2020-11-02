@@ -2,7 +2,7 @@
 %}{%    assign post_url= page.url | prepend: site.url | url_encode
 %}{%    assign post_title= page.title | url_encode
 %}{%    assign link_params= 'target="_blank" rel="nofolow" ' %}
-<div class="info display__f flexF__cN">
+<div class="C__asideInfo">
     {% include i/atom_asideHeadline.html headline="Sdílet" icon=":link:" %}
     <a href="https://twitter.com/intent/tweet?text={{post_title}}&url={{post_url}}&via={{user_twitter}}&related={{user_twitter}}" {% comment %}{% endcomment
         %}{{link_params}}title="Sdílet na Twitteru">Twitter</a>

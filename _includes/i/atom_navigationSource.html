@@ -1,6 +1,6 @@
 {% assign link_repo= site.code.hosted | append: site.code.repository -%}
 {% assign link_file= "/tree/master/" | append: page.path -%}
-<div class="info display__f flexF__cN">
+<div class="C__asideInfo">
     {% include i/atom_asideHeadline.html headline="Upravit/Nahlásit chybu" icon=":pencil2:" %}
 {%- if page.issue %}
     <a href="{{link_repo}}/issues/{{ page.issue }}" target="_blank" rel="nofolow" title="Odkaz na „zadání” tohoto příspěvku v Github Issues">#{{ page.issue }}</a>

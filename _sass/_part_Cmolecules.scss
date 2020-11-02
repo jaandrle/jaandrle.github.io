@@ -192,3 +192,11 @@ a.C__button {
   border-left: 2px solid $color_highlightLight;
   padding: .5em .5em;
 }
+.C__asideInfo{
+  @extend .info;
+  @extend .display__f;
+  @extend .flexF__cN;
+  a{
+    margin-top: .5em;
+  }
+}
