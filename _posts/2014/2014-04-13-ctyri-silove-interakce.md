@@ -68,6 +68,6 @@ Tento, článek je spíše takovým prvním seznámením. Doufám tedy, že jsme
 
 *   [AVČR - Kdo polapí Higgse?](http://ojs.ujf.cas.cz/~wagner/popclan/higgs/higgs.html "Populárně naučný článek z webu Ústavu jaderné fyziky AVČR")
 *   [Wikipedia - Higgsův boson](http://cs.wikipedia.org/wiki/Higgsův_boson "Článek z wikipedie o Higgsově bosonu")
-*   [FyzWeb - Slabá jaderná síla a něco navíc! :-)](http://fyzweb.mff.cuni.cz/odpovedna/odpovednashort.htm "Populárně-naučný článek z FyzWebu - MFF UK")
+*   [FyzWeb - Slabá jaderná síla a něco navíc! :smile:](http://fyzweb.mff.cuni.cz/odpovedna/odpovednashort.htm "Populárně-naučný článek z FyzWebu - MFF UK")
 *   [MEF - Interakce mezi částicemi](http://fyzika.jreichl.com/main.article/view/893-interakce-mezi-casticemi "Multimedialní Encyklopedie Fyziky - Část 'Interakce mezi částicemi'")
 *   [VTM - Gravitace je síla silná i slabá](http://vtm.e15.cz/gravitace-je-sila-silna-i-slaba "Článek z webu Vědecko-technického magazínu")

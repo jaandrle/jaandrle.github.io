@@ -1,0 +1,12 @@
+{% comment %}
+    Pouziti: `include blockquote.html blockquote={markdown} caption={markdown}`
+        - `blockquote`: Markdown zápis pomocí `> …`
+        - `caption`: popisek (jeden paragraf!), případně obsahující `<cite>` (doporučeno vč. linku viz *)
+    *!:
+        `<cite>` ve tvaru: `<cite>[kniha/…](link)</cite> od autora`
+{% endcomment
+%}{%    assign new_line= "
+"
+%}{%    assign caption= include.caption | markdownify | replace: "<p>", "<p>— " | prepend: "<figcaption>" | append: "</figcaption>"
+%}{%    assign blockquote= include.blockquote | markdownify
+%}<figure class="C__figureText">{{ blockquote }}{{ caption }}{{ new_line }}</figure>

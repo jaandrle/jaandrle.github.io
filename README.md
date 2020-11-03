@@ -35,17 +35,24 @@ My partials/data for simplify creating posts.
 
 #### Include
 In general `{% include file ...options %}` with standarized options
+- `code`, `img` and similar tags supproted by Markdown (the idea is to extend these, but still at least particually be able see that in `.md`). So, example: `{% include image.html img='![alt](src)'`.
 - `href`, `src` for links/images/…
 - `title`, `alt` for links/images/…
 - `caption` for description (eg. `<figcaption>`)
 - `file`s
     - [`{% include code.html …`](./_includes/code.html)
-    - [`{% include icon.html …`](./_includes/icon.html)
     - [`{% include image.html …`](./_includes/image.html)
+    - [`{% include textBox.html …`](./_includes/textBox.html)
     - [`{% include reference.html …`](./_includes/reference.html)
     - [`{% include references_list.html …`](./_includes/references_list.html)
     - [`{% include kbd.html …`](./_includes/kbd.html)
+    - [`{% include blockquote.html …`](./_includes/blockquote.html)
+    - [`{% include q.html …`](./_includes/q.html)
+    - [`{% include icon.html …`](./_includes/icon.html)
     - ([`{% include show_toc.html …`](./_includes/show_toc.html))
+- **Important note:** It isn't supported to neste `include` components
+    - Instead of: `{% include textBox.html text="{% include kbd.html keys='Ctrl A' %}" %}`
+    - Use workaround: `{% capture tmp_kbd %}{% include kbd.html keys='Ctrl A' %}{% endcapture %}{% include textBox.html text=tmp_kbd %}`
 
 #### Data/Snippets
 - [`{{ site.data.abbr.* }}`](./_data/abbr.yml) for using abbreviation

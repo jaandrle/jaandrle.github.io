@@ -37,28 +37,22 @@ Podobné funkcionality lze dosáhnout v Opeře/Chrome pomocí rozšíření  [VI
 
 Podobně jako u Firefoxu rozšíření přidá položku do kontextové nabídky pojmenovanou _View link later_. Rozšíření však funguje jako tzv. TODO list, tedy takto přidané odkazy zapisuje do interní paměti - seznamu (neotvírá přímo panely). K rozšíření lze však přidat klávesovou zkratku pro otevření prvního odkazu na seznamu (v nastavení však možná nešťastně pojmenováno jako „opens the latest added page“), čímž lze dosáhnout podobného chování jako ve Firefoxu.
 
-{% include image.html
-    caption='Sekce Zkratky v nastavení Opery'
-    alt='Screenshot/výřez z nastavení Opery zobrazující sekci Zkratky'
-    src='https://dm2302files.storage.live.com/y3pjO1o0mGQ6QNCfxTRTQakLmizB0SweiTBjMgKpMM7wffKEYOuFGdBBd4KafdlJbLbIlP920eDFdrij2lucdwxehFLuIw89IZ1nsrlheT_84126IIbchHpVTPVV31AYgvsvEh0YIBLoJ8-wRCWXO8HCA/O-zkratky.png?psid=1&width=364&height=152'
+{% include image.html caption='Sekce Zkratky v nastavení Opery'
+    img='![Screenshot/výřez z nastavení Opery zobrazující sekci Zkratky](https://dm2302files.storage.live.com/y3pjO1o0mGQ6QNCfxTRTQakLmizB0SweiTBjMgKpMM7wffKEYOuFGdBBd4KafdlJbLbIlP920eDFdrij2lucdwxehFLuIw89IZ1nsrlheT_84126IIbchHpVTPVV31AYgvsvEh0YIBLoJ8-wRCWXO8HCA/O-zkratky.png?psid=1&width=364&height=152)'
 %}
 
 ![]()
-{% include image.html
-    caption='Rozšíření VIEW LATER lze přiřadit 3 zkratky'
-    alt='Ukázka části nastavení zkratek rozšíření VIEW LATER'
-    src='https://dm2302files.storage.live.com/y3ppffrU50e7Vfm542JfT4-o8oRYldprUXib6-gK_uTUNAxh7-TXZQH4vMeQjMleH1bkkKsukgF2ULqZS4NRjQM3Yt6ho6_L-hJn-m3dcMYIq30fhYkjiLQGfrK-jlmkua9tn4SOnRxlumE8otU5t_MHw/O-zkratky01.png?psid=1&width=464&height=108'
+{% include image.html caption='Rozšíření VIEW LATER lze přiřadit 3 zkratky'
+    img='![Ukázka části nastavení zkratek rozšíření VIEW LATER](https://dm2302files.storage.live.com/y3ppffrU50e7Vfm542JfT4-o8oRYldprUXib6-gK_uTUNAxh7-TXZQH4vMeQjMleH1bkkKsukgF2ULqZS4NRjQM3Yt6ho6_L-hJn-m3dcMYIq30fhYkjiLQGfrK-jlmkua9tn4SOnRxlumE8otU5t_MHw/O-zkratky01.png?psid=1&width=464&height=108)'
 %}
 
 Kde se nastavují zkratky v Opeře
 
 Abychom dosáhly kýženého efektu, je ještě potřeba poupravit nastavení rozšíření. Pro ukázku připojuji svoje:
 
-{% include image.html
-    caption='Ukázka nastavení VIEW LATER (vyšší kvalita po kliknutí)'
-    alt='Nastavení VIEW LATER: kromě třetí položky vše zaškrtnuto'
+{% include image.html caption='Ukázka nastavení VIEW LATER (vyšší kvalita po kliknutí)'
+    img='![Nastavení VIEW LATER: kromě třetí položky vše zaškrtnuto](https://dm2302files.storage.live.com/y3prKieQNiaj3kssGBMixOK3tocT2Ggi9LdGO3pMipo6UCWGpLHF3lPCMXm9Vx1hJ0VR7DRZ1H6HBvi3LWxRBLBlZ5M-1JYVLQvK74mtD7_7V9rxCE1uySYOHnTm3B3Yi46Cz8tWITLHLXDOwkRWaYL1A/O-vievlater.png?psid=1&width=319&height=166)'
     href='https://ddg2jq.dm2302.livefilestore.com/y3mQbHdxZCZR2DzOF4bWreTXSLtfyNN-jrW6fF36Cm7S9ej9dnqaL7Yk5wkoa9iXG3wKwWNbOxH1U0GNhm_1V0lYKfK-iU7qeZkBkZVAbDUZ8r2LqAI3SQXSITiJ8tlRRM8fbPvzTlbtgnjI-G8ZvJxFrit4WcBmaqquXPJoqBY35w?width=795&height=413&cropmode=none'
-    src='https://dm2302files.storage.live.com/y3prKieQNiaj3kssGBMixOK3tocT2Ggi9LdGO3pMipo6UCWGpLHF3lPCMXm9Vx1hJ0VR7DRZ1H6HBvi3LWxRBLBlZ5M-1JYVLQvK74mtD7_7V9rxCE1uySYOHnTm3B3Yi46Cz8tWITLHLXDOwkRWaYL1A/O-vievlater.png?psid=1&width=319&height=166'
 %}
 
 ### O Tab Mix Plus a Skupinách ve Firefoxu

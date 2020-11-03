@@ -4,28 +4,34 @@
         - `code`: GitHub code started and ended with new line
         - `caption`: popisek (jeden paragraf)
 {% endcomment
-%}{% assign pre_code= include.code | split: "
-" %}{% assign lines= pre_code | size %}{% capture code %}{% for line in pre_code %}{% if forloop.index > 2 and forloop.index < lines %}{{line}}
-{% endif %}{% endfor %}{% endcapture %}{%
-capture post_code %}{%
-    assign type= pre_code[1] | replace: "```", "" | replace: "JavaScript", "js" | replace: "JS", "js" | replace: "bash", "console" %}{%
-    if type == "js" %}{%
-        highlight js linenos %}{{code}}{% endhighlight %}{%
-    else if type == "JSON" %}{%
-        highlight json linenos %}{{code}}{% endhighlight %}{%
-    else if type == "CSS" %}{%
-        highlight css linenos %}{{code}}{% endhighlight %}{%
-    else if type == "HTML" %}{%
-        highlight html linenos %}{{code}}{% endhighlight %}{%
-    else if type == "PHP" %}{%
-        highlight php linenos %}{{code}}{% endhighlight %}{%
-    else if type == "console" %}{%
-        highlight console %}{{code}}{% endhighlight %}{%
-    else  %}{%
-        highlight text %}{{code}}{% endhighlight %}{%
-    endif %}{%
-endcapture %}{%
-assign caption= "" %}{% if include.caption %}{% capture caption %}
-<figcaption class="info">{{ include.caption | markdownify }}</figcaption>{%
-endcapture %}{% endif %}
+%}{%    assign new_line= "
+"
+%}{%    assign pre_code= include.code | split: new_line
+%}{%    assign lines= pre_code | size
+%}{%    comment %}V nasledujicim cyklus preskoci "```" casti{% endcomment
+%}{%    capture code %}{% for line in pre_code %}{% if forloop.index > 2 and forloop.index < lines %}{{ line | append: new_line }}{% endif %}{% endfor %}{% endcapture
+%}{%    capture post_code
+%}{%        assign type= pre_code[1] | replace: "```", "" | replace: "JavaScript", "JS" | replace: "js", "JS" | replace: "bash", "console"
+%}{%        if type == "JS"
+%}{%            highlight js linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "PHP"
+%}{%            highlight php linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "JSON"
+%}{%            highlight json linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "CSS"
+%}{%            highlight css linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "HTML"
+%}{%            highlight html linenos %}{{code}}{% endhighlight
+%}{%        elsif type == "console"
+%}{%            highlight console %}{{code}}{% endhighlight
+%}{%        else
+%}{%            highlight text %}{{code}}{% endhighlight
+%}{%        endif
+%}{%    endcapture
+%}{%    assign caption= ""
+%}{%    if include.caption
+%}{%        capture caption %}<figcaption class="info">{{ include.caption | markdownify }}</figcaption>{% endcapture
+%}{%        assign caption= caption | prepend: new_line
+%}{%    endif
+%}
 {{ post_code | replace: "</figure>", caption | append: "</figure>" }}

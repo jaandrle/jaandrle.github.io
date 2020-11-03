@@ -1,4 +1,4 @@
-hr, .info, .highlight, .page__comments, .comment {
+hr, .info, .highlight {
     clip-path: polygon(var(--eff-clip-top), var(--eff-clip-bottom));
     --eff-clip-size: .25em;
     --eff-clip-top: 0 var(--eff-clip-size, .5em), 100% 0;
@@ -17,7 +17,7 @@ hr, .info, .highlight, .page__comments, .comment {
     }
 }
 
-code, .info, .C__text_highlited {
+code, .info, .C__textHighlited {
     $radius: .5rem;
     border-radius: var(--eff-br-lt, 0) var(--eff-br-rt, 0) var(--eff-br-rb, 0) var(--eff-br-lb, 0);
     &:nth-of-type(2n)   { --eff-br-lt: #{$radius}; }

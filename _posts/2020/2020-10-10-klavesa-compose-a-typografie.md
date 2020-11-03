@@ -1,4 +1,5 @@
 ---
+issue: 46
 title: "Klávesa Compose a typografický exkurz z rychlíku"
 category: nondev
 tags: [Compose,typografie,tipy,triky,návody]
@@ -70,7 +71,10 @@ Tečku využijeme pro zápis výpustky takto {% include kbd.html keys='⎄ . . .
 ## Pár dalších tipů
 Středová tečka `•` se zapíše pomocí {% include kbd.html keys='⎄ . =' %}, násobící tečka pak {% include kbd.html keys='⎄ . -' %}.
 
-> Než pokročíme dále, ukážeme si zápis dvou diakritický znamének na české klávesnici ve Windows (*WČ*) a Ubuntu (*UČ*). Zápis se provádí pomocí {% include kbd.html keys='AltGr' %} (klávesa vpravo od mezerníku) a v *WČ* je potřeba zmáčknout druhou klávesu dvakrát – systém ví, že se jedná o diakritické znaménko, takže ho nenapíše rovnou a čeká na další znak (my ho trochu podvedeme, uděláme vlastně diakritické znaménko znaménka ;-D). Gravis (tedy <code>`</code>) zapíšeme na klávesnici pomocí {% include kbd.html keys='AltGr ýý' %} (*WČ*) resp. {% include kbd.html keys='AltGr ;' %} (*UČ*). Stříšku `^` zapíšeme {% include kbd.html keys='AltGr šš' %} (*WČ*) resp. {% include kbd.html keys='AltGr ž' %} (*UČ*).
+{%- capture tmp_poznamka %}
+> Než pokročíme dále, ukážeme si zápis dvou diakritický znamének na české klávesnici ve Windows (*WČ*) a Ubuntu (*UČ*). Zápis se provádí pomocí {% include kbd.html keys='AltGr' %} (klávesa vpravo od mezerníku) a v *WČ* je potřeba zmáčknout druhou klávesu dvakrát – systém ví, že se jedná o diakritické znaménko, takže ho nenapíše rovnou a čeká na další znak (my ho trochu podvedeme, uděláme vlastně diakritické znaménko znaménka :wink:). Gravis (tedy \`) zapíšeme na klávesnici pomocí {% include kbd.html keys='AltGr ýý' %} (*WČ*) resp. {% include kbd.html keys='AltGr ;' %} (*UČ*). Stříšku ^ zapíšeme {% include kbd.html keys='AltGr šš' %} (*WČ*) resp. {% include kbd.html keys='AltGr ž' %} (*UČ*).
+{% endcapture -%}
+{% include textBox.html text=tmp_poznamka %}
 
 Hornní/dolní indexy: {% include kbd.html keys='⎄ ^ *' %}/{% include kbd.html keys='⎄ _ *' %} (kde \* uznačuje číslici).
 

@@ -1,0 +1,10 @@
+{% comment %}
+    Pouziti: `include q.html q={markdown}
+        - `q`: Pouze markdown link!
+{% endcomment
+%}{%    assign link= include.q | remove: "[" | remove: ")" | split: "]("
+%}{%    assign cite= link | last | split: ' "' | first
+%}{%    capture final_link
+%}[<q cite="{{cite}}">{{link[0]}}</q>]({{link[1]}}){%
+         endcapture
+%}{{ final_link | markdownify | remove: "<p>" | remove: "</p>" }}

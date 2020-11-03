@@ -1,17 +1,17 @@
-<div class="info">
-    <h5>V historii:</h5>{%
-    assign previous_name= "Předchozí" %}{%
-    assign previous= page.previous %}{%
-    unless previous %}{%
-        assign previous_name= "Nejnovější" %}{%
-        assign previous= site.posts | first %}{%
-    endunless %}{%
-    assign next_name= "Následující" %}{%
-    assign next= page.next %}{%
-    unless next %}{%
-        assign next_name= "Nejstarší" %}{%
-        assign next= site.posts | last %}{%
-    endunless %}
+<div class="C__asideInfo">
+    {% include i/atom_asideHeadline.html headline="Předchozí/Následující" icon=":calendar:"
+%}{%    assign previous_name= "Předchozí"
+%}{%    assign previous= page.previous
+%}{%    unless previous
+%}{%        assign previous_name= "Nejnovější"
+%}{%        assign previous= site.posts | first
+%}{%    endunless
+%}{%    assign next_name= "Následující"
+%}{%    assign next= page.next
+%}{%    unless next
+%}{%        assign next_name= "Nejstarší"
+%}{%        assign next= site.posts | last
+%}{%    endunless %}
     <a rel="prev" href="{{previous.url}}" title="{{previous.title}}">{{previous_name}}</a>
     <br>
     <a rel="next" href="{{next.url}}" title="{{next.title}}">{{next_name}}</a>

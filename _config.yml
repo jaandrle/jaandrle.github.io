@@ -4,8 +4,8 @@
 #   - code version (name) / repository
 #   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
 code:
-  version: 2020.10b
-  name: Breezy Badger
+  version: 2020.11a
+  name: Dapper Drake LTS
   hosted: "https://github.com/"
   repository: "jaandrle/jaandrle.github.io"
   branch: "master"
@@ -34,6 +34,7 @@ author:
   name: Jan Andrle
   email: andrle.jan@centrum.cz
   twitter: jaandrle
+  twitter_id: 272926176
 avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
 
 # Posts
@@ -49,6 +50,7 @@ kramdown:
 # Plugins & Exclude from production (_site)
 plugins:
   - jekyll-redirect-from
+  - jemoji
 exclude:
   - Gemfile
   - Gemfile.lock

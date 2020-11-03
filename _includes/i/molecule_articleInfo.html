@@ -1,9 +1,9 @@
 {% comment %}
     pouziti: "include i/molecule_articleInfo.html content={String} date={Date} tags={String[]} [updated={Date}]"
 {% endcomment
-%}<div class="info">{%
+%}<footer class="info">{%
     include icon.html icon="icon-clock" %} {% include i/atom_readingTime.html content=include.content %} | {% comment %}{% endcomment
-    %}<b>Publikováno:</b> {% include i/atom_months.html date=include.date %}{%
-    if include.updated %} | <b>Aktualizováno:</b> {% include i/atom_months.html date=include.updated %}{% endif %}{%
+    %}<b>Publikováno:</b> {% include i/atom_dateFullCzech.html date=include.date %}{%
+    if include.updated %} | <b>Aktualizováno:</b> {% include i/atom_dateFullCzech.html date=include.updated %}{% endif %}{%
     if include.tags[0] %} | <b>Štítky:</b> {% include i/atom_tags.html tags=include.tags %}{% endif 
-%}</div>
+%}</footer>

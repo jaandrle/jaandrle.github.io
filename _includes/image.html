@@ -1,22 +1,43 @@
 {% comment %}
-    Pouziti: `include image.html src={string} [href={string}] alt={string} title={string} [caption={string|markdown}]`
+    Pouziti: `include image.html [img={string}] src={string} [href={string}] alt={string} title={string} [caption={string|markdown}] [attributes={string}]`
+        - `img`: Stejně jako u `code.html` umožňuje zadání obrázku pomocí markdown zápisu `![]()`.
         - `src`, `href`: jsou cesty k obrazku (obrazkum nahled/plny)
         - `alt`: popis obsahu obrazku
         - `title`: titulek obrazku
         - `caption`: popisek (jeden paragraf)
+        - `attributes`: HTML atributy pro `<img>` (primárně výška/šířka). Pokud nedefinováno, pokusí se získat ze `src`.
 {% endcomment
-%}{%    assign src= include.src
+%}{%    if include.img
+%}{%        assign image= include.img | strip | replace: "![", "" | replace: ")", "" | split: "]("
+%}{%        assign src= image[1]
+%}{%        assign alt= image[0]
+%}{%    else
+%}{%        assign src= include.src
+%}{%        assign alt= include.alt | default: "Obrázek v článku"
+%}{%    endif
+%}{%    assign attributes= include.attributes | default: ""
+%}{%    if attributes == ""
+%}{%        assign pre_attributes= src | split: "?" | last | split: "&"
+%}{%        for pre_par in pre_attributes
+%}{%            assign par= pre_par | split: "="
+%}{%            if par[0] != "width" and par[0] != "height"
+%}{%                continue
+%}{%            endif
+%}{%            assign attributes= attributes | append: " " | append: par[0] | append: '="' | append: par[1] | append: '"'
+%}{%        endfor
+%}{%    else
+%}{%        assign attributes= attributes | trim | prepend: " "
+%}{%    endif
 %}{%    assign href= include.href | default: src
 %}{%    assign title= include.title | default: "Otěvřít obrázek samostatně (ve vyšší kvalitě pokud možno)"
 %}{%    assign relative_url= src | first
-%}{%    assign alt= include.alt | default: "Obrázek v článku"
 %}{%    if relative_url == "\/"
 %}{%        assign src= src | prepend: site.baseurl
 %}{%        assign href= href | prepend: site.baseurl
 %}{%    endif
-%}<figure class="C__figureWrapper">
+%}<figure class="C__figureObject">
     <a href="{{ href }}" title="{{ title }}" target="_blank">
-        <img src="{{ src }}" alt="{{ alt }}" class="maxH__image"/>
+        <img src="{{ src }}" alt="{{ alt }}" class="maxH__image" loading="lazy"{{attributes}}/>
     </a>{%
     if include.caption %}
     <figcaption class="info">{{ include.caption | markdownify }}</figcaption>{%

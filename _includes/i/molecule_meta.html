@@ -1,10 +1,10 @@
     {% comment %}{% endcomment -%}
 {% assign description= page.excerpt | default: site.description | strip_html | strip_newlines -%}
 {% assign full_baseurl= site.baseurl | prepend: site.url -%}
+{% assign full_url= full_baseurl | append: page.url | replace: "index.html", "" -%}
     <!-- ❕ -->
     <meta charset="utf-8" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 {%- if page.noindex %}
     <meta name="robots" content="noindex">{%
@@ -13,25 +13,33 @@ endif %}
     <meta name="author" content="{{ site.author.name }}" />
     <meta name="generator" content="Jekyll" />
     <!-- ℹ 🔗 📜 -->
-    <link rel="canonical" href="{{ full_baseurl }}{{ page.url | replace:'index.html','' }}" />
-    <meta property="og:url" content="{{ full_baseurl }}{{ page.url }}">
     <meta name="description" content="{{ description }}" />
-    <meta property="og:description" content="{{ description }}" />
-    <meta property="twitter:description" content="{{ description }}" />
+    <link rel="canonical" href="{{ full_url }}" />
+    <meta property="og:url" content="{{ full_url }}">
+    <meta property="og:image" content="{{ site.avatar }}">
     {% if page.title -%}
     <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
     {%- endif %}
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- 🎨 🔗 -->
-    <link rel="shortcut icon" href="/files/internal/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?v={{ site.code.version }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/internal/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/files/internal/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/files/internal/favicon-16x16.png">
+    <link rel="manifest" href="/files/internal/site.webmanifest">
+    <meta name="msapplication-config" content="/files/internal/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#A03232">
+    <meta name="theme-color" content="#A03232">
+    {% include i/atom_criticalCSS.html %}
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/main.css?v={{ site.code.version }}" />
+    <link rel="stylesheet" type="text/css" media="print" href="{{ site.baseurl }}/print.css?v={{ site.code.version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
     <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
 endfor %}
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ full_baseurl }}{{ '/sitemap.xml' }}" />
     <!-- 💬 -->
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>

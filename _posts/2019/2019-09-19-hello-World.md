@@ -1,9 +1,8 @@
 ---
-layout: post
 tags : [first]
 title: První příspěvek znovuobnoveného blogu (Hello World)
-excerpt_separator: <!--more-->
 category: dev
+show_toc: 3
 reference:
     - lokální:
         generovani referenci:
@@ -17,7 +16,9 @@ Tento blok využívá statický generátor stránek **Jekyll**. Pro více inform
 <!--more-->
 
 ## Demonstrace
-Kus kódu:
+Pár ukázek.
+
+### Kus kódu
 
 {% include code.html
     caption='Ukázka kódu'
@@ -28,18 +29,38 @@ console.log("HI", \'honza\');
 '
 %}
 
-Obrázek:
+### Obrázek
 
 {% include image.html
     caption='Popisek obrázku'
-    alt='Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)'
-    src='/files/internal/404.jpg'
+    img='
+![Jen demonstrace (na obrázku je stará? homepage Jekyll projektu)](/files/internal/404.jpg)
+'
+    attributes='height="896" width="896"'
 %}
 
-Ukázka referencí (viz {% include reference.html target='generovani referenci' %}):
+### Ukázka textového boxu
+
+{% include textBox.html text="
+> Toto je zvýrazněná část (např. poznámka).
+" %}
+
+### Ukázka citace `<blockquote>`
+
+{% include blockquote.html caption="První věta v <cite>[Nineteen Eighty-Four](http://www.george-orwell.org/1984/0.html)</cite>: George Orwell (Part 1, Chapter 1)" blockquote="
+> It was a bright cold day in April, and the clocks were striking thirteen.
+" %}
+
+### Ukázka citace `<q>`
+
+Dle MDN stačí napsat {% include q.html q='[`<q>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q "MDN dokumentace")' %}.
+
+### Ukázka referencí (viz {% include reference.html target='generovani referenci' %})
 
 {% include references_list.html
     references=page.reference
 %}
 
-To je zatím vše.
+To je zatím vše. [^1]
+
+[^1]: Test

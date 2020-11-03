@@ -1,12 +1,13 @@
 ---
 layout: default
 permalink: /blog/nondev.html
-title: Blog — Obecné
-in_menu: Blog — Obecné
+title: Blog – Obecné
+in_menu: Blog – Obecné
 category: nondev
+description: Zde jsou příspěvky netýkající se programování.
 ---
 <div class="posts maxW__article margin__0_auto">
-  <p class="C__text_highlited">Zde jsou příspěvky netýkající se programování.</p>
+  <h1 class="C__visuallyHide">{{ page.title }}</h1>
+  <p class="C__textHighlited">{{page.description}}</p>
   {% include i/molecule_postList.html category=page.category %}
-  <p>Další příspěvky jsou v <a href="{% link blog/dev.html %}" alt="Přejít na Dev příspěvky">Blog — Dev</a>.</p>
 </div>

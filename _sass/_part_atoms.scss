@@ -1,4 +1,8 @@
 /*
+    background
+*/
+.background__dark { background: $color_makeDark; }
+/*
     display
 */
 .display__f { display: flex; }
@@ -7,12 +11,12 @@
 /*
     flex
 */
-.flex__1 { flex: 1; }
-.flex__4 { flex: 4; }
-.flexF__rW { flex-flow: row wrap; }
-.flexF__cN { flex-flow: column nowrap; }
-.justifyC__fE { justify-content: flex-end; }
-.justifyC__sB { justify-content: space-between; }
+.flex__1        { flex: 1; }
+.flex__4        { flex: 4; }
+.flexF__rW      { flex-flow: row wrap; }
+.flexF__cN      { flex-flow: column nowrap; }
+.justifyC__fE   { justify-content: flex-end; }
+.justifyC__sB   { justify-content: space-between; }
 /*
     float
 */
@@ -21,8 +25,10 @@
 /*
     width & height
 */
-.width__100 { width: 100%; }
-.minW__bar { min-width: 15rem; }
+.width__100      { width: 100%; }
+.minW__75       { min-width: 75%; }
+.minW__bar      { min-width: 15rem; }
+.maxW__50       { max-width: 50%; }
 .maxW__article  { max-width: 40rem; }
 .maxH__image    { max-height: 25rem; }
 /*
@@ -33,18 +39,19 @@
     text & font
 */
 .textA__c { text-align: center; }
-.textA__j { text-align: justify; }
 .fontS__0d75 { font-size: .75rem; }
 /*
     margin
 */
+.marginTB__1    { margin-top: 1rem; margin-bottom: 1rem; }
+.marginL__1     { margin-left: 1rem; }
 .margin__0      { margin: 0; }
 .margin__0_auto { margin: 0 auto; }
 .margin__1_auto { margin: 1rem auto; }
 /*
     padding
 */
-.padding__1 { padding: 1rem }
+.padding__1 { padding: 1rem; }
 /*
     ...mobile
 */
@@ -52,17 +59,4 @@
     @include mobile {
         padding: 0;
     }
-}
-/*
-    clearfix
-        Nicolas Gallagher's micro clearfix hack
-        http://nicolasgallagher.com/micro-clearfix-hack/
-*/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
 }
