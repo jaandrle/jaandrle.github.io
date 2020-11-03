@@ -30,8 +30,9 @@ $font_monospace: "Lucida Console", Monaco, monospace;
 }
 %focus{
   &:focus{
-    outline: 1px dotted $color_highlightLight;
+    outline: 2px dotted $color_highlightLight;
     outline-offset: -4px;
+    transition: outline .15s;
   }
 }
 

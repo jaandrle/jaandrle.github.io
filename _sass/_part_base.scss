@@ -93,6 +93,11 @@ a {
     text-decoration: none;
     color: $color_highlightLight;
   }
+  &:focus{
+    outline: 2px dotted currentColor;
+    outline-offset: 2px;
+    transition: outline .15s;
+  }
   p > &[href^="http"] {
       background: left center no-repeat;
       padding-left: 14px;
