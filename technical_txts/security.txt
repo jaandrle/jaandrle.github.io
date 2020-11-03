@@ -1,0 +1,6 @@
+---
+permalink: .well-known/security.txt
+---
+Contact: {% capture tmp_url %}{% link about.md %}{% endcapture %}{{ tmp_url | absolute_url }}
+Contact: https://twitter.com/messages/compose?recipient_id={{ site.author.twitter_id }}
+Preferred-Languages: cs, en

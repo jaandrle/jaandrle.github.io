@@ -1,0 +1,8 @@
+---
+permalink: humans.txt
+---
+/* TEAM */
+    Author: {{ site.author.name }}
+    Contact: {{ site.author.email | replace: "@", " [·at·sign·] " }}
+    Twitter: @jaandrle
+    From: Prague, Czechia
