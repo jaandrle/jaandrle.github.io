@@ -18,5 +18,5 @@ case m -%}
 {%-   endcase %} {{ include.date | date: "%Y" }}
 {%-    endcapture
 %}{%  endcapture
-%}{%  assign strip_atom= nill
+%}{%  assign strip_atom= nil
 %}<time datetime="{{ include.date | date: '%Y-%m-%d' }}">{{ time_inner }}</time>
