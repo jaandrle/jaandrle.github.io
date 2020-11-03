@@ -4,6 +4,7 @@
     {% include i/atom_asideHeadline.html headline="Upravit/Nahlásit chybu" icon=":pencil2:" %}
 {%- if page.issue %}
     <a href="{{link_repo}}/issues/{{ page.issue }}" target="_blank" rel="nofolow" title="Odkaz na „zadání” tohoto příspěvku v Github Issues">#{{ page.issue }}</a>
+    <br>
 {%- endif %}
     <a href="{{link_repo}}{{link_file}}" target="_blank" rel="nofolow" title="Odkaz na zdrojový soubor na GitHubu">Zdrojový soubor</a>
 </div>

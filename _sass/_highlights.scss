@@ -27,8 +27,6 @@
     padding-left: 1rem;
   }
   .info{
-    margin: 0;
-    margin-top: -.5rem;
     text-indent: 0;
   }
   [data-lang]::before {
@@ -55,7 +53,7 @@
 
 code {
   white-space: pre-line;
-  font: .8em $font_monospace;
+  font: .75rem $font_monospace;
   border: 1px solid $color_highlightMiddle;
   background-color: $color_makeDarker;
   border-left-width: .2rem;
