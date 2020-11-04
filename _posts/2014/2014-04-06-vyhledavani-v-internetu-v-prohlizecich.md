@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [chrome, chromium, firefox, internet_explorer, návody, opera, tipy]
+tags: [ Chrome, Chromium, Firefox, Internet Explorer, pokročilejší návody, Opera, pokročilejší seznámení, web ]
 title: "Vyhledávání v Internetu v prohlížečích"
 show_toc: 3
 excerpt_separator: <!--more-->

@@ -1,5 +1,4 @@
 ---
-tags : [first]
 title: První příspěvek znovuobnoveného blogu (Hello World)
 category: dev
 show_toc: 3

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [git]
+tags: [ vývojářské tipy, git ]
 title: "Git: Ignorování souborů a změn v textu"
 excerpt_separator: <!--more-->
 category: dev

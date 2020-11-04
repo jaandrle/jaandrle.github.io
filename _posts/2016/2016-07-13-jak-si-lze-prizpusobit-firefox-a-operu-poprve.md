@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [chrome, chromium, firefox, návody, opera, tipy, web]
+tags: [ Chrome, Chromium, Firefox, pokročilejší tipy, Opera, web ]
 title: "Jak si lze přizpůsobit Firefox a Operu (Chrome) - Poprvé"
 show_toc: 3
 excerpt_separator: <!--more-->

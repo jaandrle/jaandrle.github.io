@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [e_knihy, e_čtečka, internet, kindle, návody, pocketbook, první_seznámení, tipy]
+tags: [ e-knihy, e-čtečka, web, Kindle, návody, PocketBook, seznámení, tipy, webové služby ]
 title: "Rychlokurz pro Instapaper"
 show_toc: 3
 excerpt_separator: <!--more-->

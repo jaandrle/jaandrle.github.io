@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [návody, tipy, triky, windows]
+tags: [ pokročilejší návody, Windows, systémové registry ]
 title: "Kontextová nabídka"
 show_toc: 3
 excerpt_separator: <!--more-->

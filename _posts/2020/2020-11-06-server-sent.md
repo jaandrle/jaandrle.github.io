@@ -1,7 +1,7 @@
 ---
 issue: 49
 title: Připomenutí existence „server-sent events” (SSE)
-tags: [JavaScript, PHP, Web API, SSE]
+tags: [ vývojářské tipy, vývojářské seznámení, JavaScript, PHP, Web API, SSE ]
 category: dev
 show_toc: 3
 reference:

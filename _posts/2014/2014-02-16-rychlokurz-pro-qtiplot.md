@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [návody, programy, první_seznámení, qtiplot, tipy]
+tags: [ návody, aplikace, seznámení, QtiPlot, tipy ]
 title: "Rychlokurz pro QtiPlot"
 show_toc: 3
 excerpt_separator: <!--more-->

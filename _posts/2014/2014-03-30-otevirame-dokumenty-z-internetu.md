@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [chrome, chromium, internet, internet_explorer, návody, opera, tipy]
+tags: [ Chrome, Chromium, web, Internet Explorer, pokročilejší seznámení, Opera, pokročilejší tipy ]
 title: "Otevíráme dokumenty z Internetu"
 show_toc: 3
 excerpt_separator: <!--more-->

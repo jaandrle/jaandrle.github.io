@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [návody, tipy, tisk, triky, wifi, windows, wmp]
+tags: [ pokročilejší tipy, pokročilejší návody, tisk, WiFi, Windows, Windows Media Player ]
 title: "Užitečné tipy - Po druhé"
 show_toc: 3
 excerpt_separator: <!--more-->

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [capek, citáty, clarke, kant, tolkien]
+tags: [ Čapek, citáty, Clarke, Kant, Tolkien, myšlenky ]
 title: "Citáty - Po prvé"
 date: 2014-02-22 08:00:00
 show_toc: 3

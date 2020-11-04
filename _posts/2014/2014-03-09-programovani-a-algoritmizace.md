@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [algoritmizace, návody, pascal, programování, programy, první_seznámení]
+tags: [ algoritmizace, Object Pascal, programování, pokročilejší návody ]
 title: "Programování a algoritmizace"
 excerpt_separator: <!--more-->
 category: dev

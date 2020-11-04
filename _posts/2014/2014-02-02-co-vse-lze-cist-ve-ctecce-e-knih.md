@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [e_knihy, e_čtečka, kindle, pocketbook, tipy]
+tags: [ e-knihy, e-čtečka, Kindle, PocketBook, tipy ]
 title: "Co vše lze číst ve čtečce e-knih"
 show_toc: 3
 excerpt_separator: <!--more-->

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [email, internet, návody, tipy]
+tags: [ e-mail, web, webové služby, návody, tipy ]
 title: "Vylepšujeme si správu emailů"
 show_toc: 3
 excerpt_separator: <!--more-->

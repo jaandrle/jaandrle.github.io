@@ -2,7 +2,7 @@
 issue: 44
 title: "Android „drop”"
 category: nondev
-tags: [android,opensource,software,pwa]
+tags: [ seznámení, návod, Android, OpenSource, aplikace, PWA, tipy, pokročilejší tipy ]
 ---
 
 Jak název evokuje, jde o otázku alternativy k [AirDrop](https://en.wikipedia.org/wiki/AirDrop "Článek na Wikipedii")u na zařízeních s (nejenom) Androidem. Rychlá odpověď je, že podobného (vl. lepšího) chování napříč platformami a zařízeními lze dosáhnout pomocí **otevřeného softwaru [Snapdrop](https://snapdrop.net/)**.

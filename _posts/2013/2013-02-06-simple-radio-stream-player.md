@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [aplikace, miniaplikace, rádia]
+tags: [ aplikace, miniaplikace, rádia ]
 title: "Simple Radio Stream Player"
 excerpt_separator: <!--more-->
 category: nondev

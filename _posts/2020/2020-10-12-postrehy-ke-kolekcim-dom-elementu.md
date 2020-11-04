@@ -2,7 +2,7 @@
 issue: 51
 title: "Postřehy ke kolekcím DOM elementů"
 category: dev
-tags: [JavaScript,DOM,Web API]
+tags: [ vývojářské seznámení, JavaScript, DOM, Web API ]
 ---
 
 [Axel Rauschmayer sdílel na Twitteru](https://twitter.com/rauschma/status/1311717821131431938 "Odkaz na příspšvek na Twitteru") postřeh o tom, že v *JavaScript*u máme dvě třídy reprezentující pole elementů (`NodeList` a `HTMLCollection`) a dvě varianty provázání s {{site.data.abbr.DOM}}em (statický a samoaktualizující). Z tohoto plyne několik vlastností/důsledků…

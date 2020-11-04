@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [internet, internet_explorer, tipy, triky]
+tags: [ návody, tipy, web, Internet Explorer ]
 title: "Jak připnout web k ikonce (aplikaci) Internet Explorer 9"
 excerpt_separator: <!--more-->
 category: nondev

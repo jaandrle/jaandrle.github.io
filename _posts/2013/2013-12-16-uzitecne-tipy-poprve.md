@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [chrome, chromium, ms_word, office, opera, programy, tipy, triky, ubuntu, windows]
+tags: [ pokročilejší návody, pokročilejší tipy, aplikace, Chrome, Chromium, Opera, MS Word, Office, Ubuntu (linux), Windows ]
 title: "Užitečné tipy - Poprvé"
 show_toc: 3
 excerpt_separator: <!--more-->

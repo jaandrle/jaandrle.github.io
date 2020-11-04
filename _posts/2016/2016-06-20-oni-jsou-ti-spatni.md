@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [světonázor, úvahy]
+tags: [ úvahy, myšlenky ]
 title: "„Oni“ jsou ti špatní!"
 show_toc: 3
 excerpt_separator: <!--more-->

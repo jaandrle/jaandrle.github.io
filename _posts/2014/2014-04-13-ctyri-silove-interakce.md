@@ -1,6 +1,6 @@
 ---
 title: "Čtyři silové interakce"
-tags : [populárně_naučně, první_seznámení, silové_interakce, částice]
+tags: [ populárně naučně, pokročilejší seznámení, silové interakce, částice, fyzika ]
 category: nondev
 show_toc: 3
 MathJax: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [barevne, internet, reklama]
+tags: [ úvahy, web, reklama ]
 title: "Reklama na internetu, reklama v televizi, reklama …, reklama …"
 excerpt_separator: <!--more-->
 category: nondev

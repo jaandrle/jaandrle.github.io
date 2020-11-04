@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [internet, návody, opera_mini, tipy]
+tags: [ pokročilejší návody, pokročilejší tipy, web, Opera Mini ]
 title: "Internet na počítač přes mobil"
 show_toc: 3
 excerpt_separator: <!--more-->

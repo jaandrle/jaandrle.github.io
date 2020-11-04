@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [citáty]
+tags: [ citáty, myšlenky ]
 title: "Citáty - Po druhé"
 date: 2014-02-22 18:00:00
 excerpt_separator: <!--more-->

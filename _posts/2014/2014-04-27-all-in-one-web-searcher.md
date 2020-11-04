@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [chrome, chromium, internet, opera, první_seznámení, tipy]
+tags: [ Chrome, Chromium, web, Opera, tipy ]
 title: "All in one web Searcher"
 show_toc: 3
 excerpt_separator: <!--more-->

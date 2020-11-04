@@ -1,6 +1,6 @@
 ---
 layout: post
-tags : [e_knihy, e_čtečka, pocketbook, první_seznámení, tipy, triky]
+tags: [ tipy, seznámení, návody, e-knihy, e-čtečka, PocketBook ]
 title: "PocketBook 613 & První seznámení"
 show_toc: 3
 excerpt_separator: <!--more-->
