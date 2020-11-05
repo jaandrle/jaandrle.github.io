@@ -45,7 +45,7 @@ Prvně je dobré se zamyslet, **zda** toto opravdu chcete **podstupovat**. Úpra
 
 Některá {{ site.data.abbr.IDE }}[^2] tento postup umožňují, přičemž někdy podporují i detekci konfliktů. Osobně s tím ale dobrou zkušenost nemám.
 
-Korektní postup samozřejmě je, spravovat vývojářskou část odděleně vč. verzování[^1] a používat například nějaký script pro publikaci. Pro inspiraci {% include reference.html target="deploy_script" %} nebo {% include reference.html target="gulp-deploy-ftp" %}.
+Korektní postup samozřejmě je, spravovat vývojářskou část odděleně vč. verzování[^1] a používat například nějaký script pro publikaci. Pro inspiraci můžete následovat {% include reference.html target="deploy_script" %} nebo {% include reference.html target="gulp-deploy-ftp" %}.
 
 ## Můj Notepad++ workflow
 Ideální postup/program by fungoval tak, že při ukládání by rozpoznal rozdíly a zobrazil porovnání souborů při kterém by šlo změny sloučit. Bohužel, něco takového a 100% funkčního se mi nalézt či zprovoznit nepodařilo.
@@ -62,7 +62,7 @@ Postupuji pak tak, že po provedení změn u sebe, uložím text souboru do *sc
 {% endcapture %}{% include textBox.html text=tmp_textBox %}
 
 ## Jiné možnosti ke zmínění
-Šlo by samozřejmě napsat script, který by danou věc zautomatizoval, jen to tolik nepotřebuji. Jinak pro vzdálené připojení existují i další rozšíření např. pro VSCode viz [K dalšímu zkoumání](#k-dalšímu-zkoumání). Respective, pomocí {{ site.data.abbr.WSL }}, VSCode umožňuje vzdálenou editaci nativně, viz {% include reference.html target="VSCode Native Remote" %}.
+Šlo by samozřejmě napsat script, který by danou věc zautomatizoval, jen to tolik nepotřebuji. Jinak pro vzdálené připojení existují i další postupy, např. pro VSCode viz [K dalšímu zkoumání](#k-dalšímu-zkoumání). Respective, pomocí {{ site.data.abbr.WSL }}, VSCode umožňuje vzdálenou editaci nativně, viz {% include reference.html target="VSCode Native Remote" %}.
 
 ## K dalšímu zkoumání
 {% include references_list.html references=page.reference %}
