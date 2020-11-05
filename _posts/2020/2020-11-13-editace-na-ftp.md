@@ -41,7 +41,7 @@ Zde popíšu moje workflow pro editování souborů na {{ site.data.abbr.FTP }} 
 <!--more-->
 
 ## Zamyšlení
-Prvně je dobré se zamyslet, **zda** toto opravdu chcete **podstupovat**. Úpravy na vzdáleném serveru *jsou problematické* sami o sobě, natož pokud na nněm pracuje více lidí. Navíc, u takto položené otázky, to skoro vypadá, že se nepoužívá žádné verzování[^1], že?
+Prvně je dobré se zamyslet, **zda** toto opravdu chcete **podstupovat**. Úpravy na vzdáleném serveru *jsou problematické* sami o sobě, natož pokud na něm pracuje více lidí. Navíc, u takto položené otázky, to skoro vypadá, že se nepoužívá žádné verzování[^1], že?
 
 Některá {{ site.data.abbr.IDE }}[^2] tento postup umožňují, přičemž někdy podporují i detekci konfliktů. Osobně s tím ale dobrou zkušenost nemám.
 
