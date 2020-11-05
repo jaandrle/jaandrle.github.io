@@ -50,7 +50,7 @@ Korektní postup samozřejmě je, spravovat vývojářskou část odděleně vč
 ## Můj Notepad++ workflow
 Ideální postup/program by fungoval tak, že při ukládání by rozpoznal rozdíly a zobrazil porovnání souborů při kterém by šlo změny sloučit. Bohužel, něco takového a 100% funkčního se mi nalézt či zprovoznit nepodařilo.
 
-Nejblíže jsem se k tomuto ideálu dostal pomocí programu Notepad++ s rozšířeními {% include reference.html target="NppFTP" %} a {% include reference.html target="Compare plugin" %}.
+Nejblíže jsem se k tomuto ideálu přiblížil pomocí programu **Notepad++** s rozšířeními {% include reference.html target="NppFTP" %} a {% include reference.html target="Compare plugin" %}.
 
 Postupuji pak tak, že po provedení změn u sebe, uložím text souboru do *schránky* a **stáhnu** si vzdálenou verzi[^3]. Ze schránky obnovím svoje změny a pomocí {% include kbd.html keys="Ctrl Alt d" %} vyvolám *porovnání změn*. Změny sloučím a soubor uložím na vzdálený server.
 
