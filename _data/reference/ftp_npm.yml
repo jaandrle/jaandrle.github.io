@@ -1,0 +1,6 @@
+gulp-deploy-ftp:
+    caption: "NPM balíček „gulp-deploy-ftp” pro Gulp (překvapivě)"
+    href: "https://www.npmjs.com/package/gulp-deploy-ftp"
+vinyl-ftp:
+    caption: "NPM balíček „vinyl-ftp” pro práci s FTP"
+    href: "https://www.npmjs.com/package/vinyl-ftp"

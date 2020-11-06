@@ -4,14 +4,12 @@ title: Trochu bezpečnější přímá editace souborů na vzdáleném serveru
 tags: [ vývojářské tipy, FTP, Notepad++ ]
 category: dev
 reference:
+    - ftp_npm
     - lokální:
         deploy_script:
             caption: "Jednoduchý deploy skript nejen pro web v Silexu"
             href: "https://www.maxiorel.cz/jednoduchy-deploy-skript-nejen-pro-web-v-silexu"
             title: "Článek na Maxiorel.cz"
-        gulp-deploy-ftp:
-            caption: "NPM balíček „gulp-deploy-ftp” pro Gulp (překvapivě)"
-            href: "https://www.npmjs.com/package/gulp-deploy-ftp"
         NppFTP:
             caption: "Rozšíření „NppFTP” pro Notepad++"
             href: "https://ashkulz.github.io/NppFTP/"
@@ -20,20 +18,7 @@ reference:
             caption: "Rozšíření „Compare plugin” pro Notepad++"
             href: "https://github.com/jsleroy/compare-plugin"
             description: "umožňující porovnávání souborů, případně aktuálně neuložené úpravy."
-        VSCode Native Remote:
-            caption: "Nativní podpora pro vzdálenou editaci ve VSCode"
-            href: "https://code.visualstudio.com/docs/remote/remote-overview"
-        ftp-simple:
-            caption: "ftp-simple - Visual Studio Marketplace"
-            href: "https://marketplace.visualstudio.com/items?itemName=humy2833.ftp-simple"
-        Remote FS:
-            caption: "Remote FS - Visual Studio Marketplace"
-            href: "https://marketplace.visualstudio.com/items?itemName=liximomo.remotefs"
-            description: "Working with any file in everywhere like they are in local with vscdoe."
-        Remote Development:
-            caption: "Remote Development - Visual Studio Marketplace"
-            href: "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack"
-            description: "An extension pack that lets you open any folder in a container, on a remote machine, or in WSL and take advantage of VS Code's full feature set."
+    - ftp_vscode
 ---
 
 Zde popíšu moje workflow pro editování souborů na {{ site.data.abbr.FTP }} serveru, kde hrozí kolize s dalšími programátory.

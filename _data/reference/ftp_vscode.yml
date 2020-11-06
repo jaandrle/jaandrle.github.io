@@ -1,0 +1,14 @@
+VSCode Native Remote:
+    caption: "Nativní podpora pro vzdálenou editaci ve VSCode"
+    href: "https://code.visualstudio.com/docs/remote/remote-overview"
+ftp-simple:
+    caption: "ftp-simple - Visual Studio Marketplace"
+    href: "https://marketplace.visualstudio.com/items?itemName=humy2833.ftp-simple"
+Remote FS:
+    caption: "Remote FS - Visual Studio Marketplace"
+    href: "https://marketplace.visualstudio.com/items?itemName=liximomo.remotefs"
+    description: "Working with any file in everywhere like they are in local with vscdoe."
+Remote Development:
+    caption: "Remote Development - Visual Studio Marketplace"
+    href: "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack"
+    description: "An extension pack that lets you open any folder in a container, on a remote machine, or in WSL and take advantage of VS Code's full feature set."
