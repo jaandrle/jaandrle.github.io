@@ -29,3 +29,7 @@ tridactyl:
   caption: "Rozšíření „tridactyl” pro Firefox"
   href: "https://github.com/tridactyl/tridactyl"
   caption: "Přidává Vimu podobnou navigaci a klávesové zkratky, také tzv. „easymotion” resp. „vimperator” navigaci."
+arabesque:
+  caption: "Články o VIM tipech na blogu Arabesque (EN)"
+  href: "https://sanctum.geek.nz/arabesque/category/vim/"
+  description: "Například [Special characters in Vim](https://sanctum.geek.nz/arabesque/special-characters-in-vim/)."
