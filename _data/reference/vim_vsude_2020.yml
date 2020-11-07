@@ -1,0 +1,37 @@
+Chocolatey:
+  caption: "Odkaz na návod k projektu „Chocolatey”"
+  href: "https://ondrej-sika.cz/navody/chocolatey/"
+  description: "Pro potřeby tohoto článku nás zajímají balíčky [Vim](https://chocolatey.org/packages/vim) a [Vifm](https://chocolatey.org/packages/vifm)."
+Best Vim:
+  caption: "Odkaz na Wiki projekt shrnujcí návody a rady k VIMu"
+  href: "https://vim.fandom.com/wiki/Vim_Tips_Wiki"
+  descritpion: "K nalákání také doporučuji [Best Vim Tips](https://vim.fandom.com/wiki/Best_Vim_Tips)."
+my-vim-dotfiles:
+  caption: "Můj repozitář pro „dotfiles”"
+  href: "https://github.com/jaandrle/dotfiles"
+  description: "Pro potřeby tohoto příspěvku:
+    [.vimrc](https://github.com/jaandrle/dotfiles/blob/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/vim),
+    [vifm](https://github.com/jaandrle/dotfiles/tree/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/vifm),
+    [PowerShell (vi mód)](https://github.com/jaandrle/dotfiles/blob/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/powershell/Microsoft.PowerShell_profile.ps1#L3),
+    [bash (vi mód)](https://github.com/jaandrle/dotfiles/blob/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/bash/.bashrc#L9),
+    [.inputrc](https://github.com/jaandrle/dotfiles/blob/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/bash/.inputrc),
+    [firefox](https://github.com/jaandrle/dotfiles/tree/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/firefox) a 
+    [VSCode (část nastavení zkratek)](https://github.com/jaandrle/dotfiles/blob/2624d8cb079c071f3c1ba9975f652c4f1d694f3c/vscode/settings.json#L167)."
+VSCodeVim:
+  caption: "Rozšíření „VSCodeVim” pro editor VS Code"
+  href: "https://github.com/VSCodeVim/Vim"
+VSCodeVimCS:
+  caption: "VSCode and Vim - Cheatsheet"
+  href: "https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/cheatsheet/"
+  title: "Boost Your Coding Fu With VSCode and Vim - Cheatsheet | Barbarian Meets Coding"
+  description: "Přehledový článek k [VSCodeVim] v angličtině"
+tridactyl:
+  caption: "Rozšíření „tridactyl” pro Firefox"
+  href: "https://github.com/tridactyl/tridactyl"
+  description: "
+    Přidává do Vimu podobnou navigaci a klávesové zkratky, také tzv. „easymotion” resp. „vimperator” navigaci.
+    Defaultní verze modifikuje stránku „Nový panel”! Alternativní verze je dostupná v [tridactyl_no_new_tab_beta-latest](https://tridactyl.cmcaine.co.uk/betas/nonewtab/tridactyl_no_new_tab_beta-latest.xpi)."
+arabesque:
+  caption: "Články o VIM tipech na blogu Arabesque (EN)"
+  href: "https://sanctum.geek.nz/arabesque/category/vim/"
+  description: "Například [Special characters in Vim](https://sanctum.geek.nz/arabesque/special-characters-in-vim/)."
