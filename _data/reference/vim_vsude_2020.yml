@@ -28,7 +28,9 @@ VSCodeVimCS:
 tridactyl:
   caption: "Rozšíření „tridactyl” pro Firefox"
   href: "https://github.com/tridactyl/tridactyl"
-  caption: "Přidává Vimu podobnou navigaci a klávesové zkratky, také tzv. „easymotion” resp. „vimperator” navigaci."
+  description: "
+    Přidává do Vimu podobnou navigaci a klávesové zkratky, také tzv. „easymotion” resp. „vimperator” navigaci.
+    Defaultní verze modifikuje stránku „Nový panel”! Alternativní verze je dostupná v [tridactyl_no_new_tab_beta-latest](https://tridactyl.cmcaine.co.uk/betas/nonewtab/tridactyl_no_new_tab_beta-latest.xpi)."
 arabesque:
   caption: "Články o VIM tipech na blogu Arabesque (EN)"
   href: "https://sanctum.geek.nz/arabesque/category/vim/"
