@@ -8,6 +8,15 @@ This document covers building and managing my pages with [Jekyll](#jekyll). Ther
 ## This instance
 The `master` (`main`) branch reflects current public state of web page. There are some helpers/setups for speed up blogging.
 
+### Generic Tags
+- aplikace, miniaplikace, webové služby
+- úvahy
+- návody, pokročilejší návody, vývojářské návody
+- tipy, pokročilejší tipy, vývojářské tipy
+- seznámení, pokročilejší seznámení, vývojářské seznámení
+- Windows, Ubuntu (linux), web
+- Internet Explorer, Chrome, Chromium, Firefox, Opera
+
 ### Pages/Posts options
 The default options are saved in [_config.yml](./_config.yml).
 
