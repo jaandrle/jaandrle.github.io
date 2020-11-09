@@ -65,6 +65,10 @@ code {
     content: "php";
     color: #c6acff;
   }
+  [data-lang="html"]::before{
+    content: "html";
+    color: #e17255;
+  }
   [data-lang="js"]::before,
   [data-lang="json"]::before{
     content: "js";
