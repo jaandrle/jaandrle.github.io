@@ -14,10 +14,17 @@ Kombinací dvou `window.requestAnimationFrame` zařídíme zavolání *callback*
 {% include code.html caption="Funkce pro zavolání *callback*u po příštím překreslení stránky (podtržítko mám jako úzus pro funkce vracející `Promise`)" code="
 ```JavaScript
 function requestNextAnimationFrame(callback){
-    return requestAnimationFrame(requestAnimationFrame.bind(null, callback));
+    return requestAnimationFrame(
+        requestAnimationFrame.bind(null,
+            callback
+    ));
 }
 function requestNextAnimationFrame_(){
-    return new Promise(resolve=> requestAnimationFrame(requestAnimationFrame.bind(null, resolve)));
+    return new Promise(resolve=>
+        requestAnimationFrame(
+            requestAnimationFrame.bind(null,
+                resolve
+    )));
 }
 ```
 " %}
