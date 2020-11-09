@@ -14,7 +14,7 @@ V článku se nachází mnou posbírané odkazy na lepší návody.
 ## Sumarizace
 React je již delší dobu možné psát bez „staršího” zápisu pomocí tříd. A to díky [React Function Components](https://reactjs.org/docs/components-and-props.html) (<abbr title="React Function Components">RFC</abbr>) resp. {% include reference.html target="RH_official" caption="React Hooks" %} (<abbr title="React Hooks">RH</abbr>).
 
-Z referencích bych primárně bych vypíchl minimalistický startovací projekt {% include reference.html target="minimal_react" %}. Zápis pomocí {{ site.data.abbr.JSX }}[^1] nahrazuje projektem [developit/htm](https://github.com/developit/htm), který používá podobnou syntaxi s využitím [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals "Dokumentace na MDN"). Podobně u dalších rozhodnutí, obecně by měli stačit jen *znalosti JavaScriptu, {{ site.data.abbr.DOM }}u a npm (resp. node)*.
+Z referencích bych primárně vypíchl minimalistický startovací projekt {% include reference.html target="minimal_react" %}. Zápis pomocí {{ site.data.abbr.JSX }}[^1] nahrazuje projektem [developit/htm](https://github.com/developit/htm), který používá podobnou syntaxi s využitím [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals "Dokumentace na MDN"). Podobně u dalších rozhodnutí, obecně by měli stačit jen *znalosti JavaScriptu, {{ site.data.abbr.DOM }}u a npm (resp. node)*.
 
 ## Reference
 {% include references_list.html references=page.reference %}
