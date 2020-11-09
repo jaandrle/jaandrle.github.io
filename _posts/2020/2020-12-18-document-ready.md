@@ -21,7 +21,7 @@ reference:
             description: "Například „zfunkčnění” i na starších prohlížečích. Měla by fungovat po vzoru jQuery kódu: `$(document).ready()`."
 ---
 
-Článek jen rychle shrnuje události `document.DOMContentLoaded`, `window.onload` a Vanilla JavaScript „alternativu” k `$(document).ready()`.
+Článek jen rychle shrnuje události `DOMContentLoaded` (v `document`), `onload` (ve `window`) a Vanilla JavaScript „alternativu” k `$(document).ready()`.
 
 <!--more-->
 
@@ -35,14 +35,14 @@ Stačí přejít na {% include reference.html target="docReady" %}.
         <meta charset="utf-8">
         <script>
             window.addEventListener("load",
-                ()=> void( el.textContent= "Nadpis změněn") );
+                ()=> void(el.textContent= "Nadpis změněn") );
         </script>
     </head>
     <body>
         <script>
             var el;
             document.addEventListener("DOMContentLoaded",
-                ()=> void( el= document.getElementById("test") ));
+                ()=> void(el= document.getElementById("test") ));
         </script>
         <h1 id="test">Nadpis</h1>
     </body>
@@ -55,7 +55,19 @@ Stačí přejít na {% include reference.html target="docReady" %}.
 
 V ukázce, když prohlížeč zpracuje stránku zavolá funkci pro uložení elementu `el`, následně volá dříve definovanou funkci pro změnu textu.
 
-Pro praktické použití je potřeba dbát i toho, že naše knihovna může být inicializována např. až na vyžádání. Tedy, pomocí {% include reference.html target="readyState" %} zkontrolovat, zda již události nenastaly.
+Pro praktické použití je lepší umožnit také inicializaci našeho kódu (či knihovny) až na vyžádání. Tedy, pomocí {% include reference.html target="readyState" %} zkontrolovat, zda již požadované události nenastaly a případně až podom navěsit naslouchač.
+
+{% include code.html caption="Jen ukázka podmíněného navěšení `DOMContentLoaded` události dle `document.readyState`." code='
+```JavaScript
+(function knihovna(d){
+    if(d.readyState!=="loading") return void(main());
+    d.addEventListener("DOMContentLoaded", main);
+
+    function main(){ /* … */ }
+    /* … */
+})(document);
+```
+' %}
 
 Knihovna {% include reference.html target="docReady" %} toto bere v potaz, navíc přidává podporu pro straší prohlížeče. Primárně pracuje s událostí `DOMContentLoaded`, `load` je jen fallback!
 
