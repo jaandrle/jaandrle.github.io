@@ -1,56 +1,5 @@
-
-.highlight {
-  position: relative;
-  background-color: $color_makeDarker;
-  border-left: 2px solid $color_highlightLight;
-  margin: .5rem 0 .5rem 0;
-  .lineno {
-    text-align: right;
-  }
-  pre {
-    margin: 0;
-    white-space: pre;
-  }
-  >pre {
-    padding: 1rem 1rem .5rem .5rem;
-    margin-bottom: .5rem;
-    max-height:15em;
-    overflow:auto;
-    code {
-      color: #cdced6;
-      border: none;
-      background: none;
-      padding: 0;
-    }
-  }
-  .code {
-    padding-left: 1rem;
-  }
-  .info{
-    text-indent: 0;
-  }
-  [data-lang]::before {
-      font-size: .75em;
-      font-weight: bold;
-      position: absolute;
-      top: .25em;
-      left: .5em;
-  }
-  [data-lang="php"]::before{
-      content: "php";
-      color: #c6acff;
-  }
-  [data-lang="js"]::before,
-  [data-lang="json"]::before{
-      content: "js";
-      color: #fff6ac;
-  }
-  [data-lang="console"]::before{
-      content: ">_";
-      color: #a6e1d9;
-  }
-}
-
+// Inspiration by https://github.com/AleksandrHovhannisyan/aleksandrhovhannisyan.com/blob/master/src/_sass/components/codeBlock.scss
+// Code general
 code {
   white-space: pre-line;
   font: .75rem $font_monospace;
@@ -60,73 +9,135 @@ code {
   padding: .1rem .25rem;
   border-radius: .5rem;
 }
+// Figure - base style
+.highlight {
+  position: relative;
+  background-color: $color_makeDarker;
+  border-left: 2px solid $color_highlightLight;
+  margin: .5rem 0 .5rem 0;
+  .lineno {
+    text-align: right;
+  }
+  *::selection {
+    background-color: $color_codeSelection;
+    // This will be overriden by more specific styles but retained for normal text and labels
+    color: $color_codeText;
+  }
+  pre {
+    font: .75rem $font_monospace;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 0px;
+    white-space: pre;
+  }
+  >pre {
+    padding: 1rem 1rem .5rem .5rem;
+    margin-bottom: .5rem;
+    max-height: 25em;
+    overflow:auto;
+    code {
+      line-height: 1.1em;
+      font-weight: bold;
+      color: #cdced6;
+      border: none;
+      background: none;
+      padding: 0;
+      padding-top: .5rem;
+      display: block;
+    }
+  }
+  .code {
+    padding-left: 1rem;
+  }
+  .info{
+    text-indent: 0;
+  }
+  [data-lang]::before {
+    background: $color_makeDarker;
+    font-size: .75rem;
+    font-weight: bold;
+    position: absolute;
+    padding: .15rem .25rem;
+    top: .5em;
+    left: .5em;
+  }
+  [data-lang="php"]::before{
+    content: "php";
+    color: #c6acff;
+  }
+  [data-lang="js"]::before,
+  [data-lang="json"]::before{
+    content: "js";
+    color: #fff6ac;
+  }
+  [data-lang="console"]::before{
+    content: ">_";
+    color: #a6e1d9;
+  }
+}
+// My colors inspired VS Code Dark Theme and modified for use with Rouge.
+.highlight {
+  // Comments
+  .c, .cm, .cp, .c1, .cs {
+    @include selectionResistantColor($color_codeComment);
+  }
 
-.highlight .c { color: #84CE99 } /* Comment */
-.highlight .k { color: #DE84FF } /* Keyword */
-.highlight .o { color: #FFFFFF } /* Operator */
-.highlight .x { color: #CC704A } /* Other */
-.highlight .cm { color: #84CE99 } /* Comment.Multiline */
-.highlight .cp { color: #DE84FF } /* Comment.Preproc */
-.highlight .c1 { color: #84CE99 } /* Comment.Single */
-.highlight .cs { color: #DE84FF } /* Comment.Special */
-.highlight .gd { color: #8C8FFF } /* Generic.Deleted */
-.highlight .ge { color: #93A1A1; font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #DC322F } /* Generic.Error */
-.highlight .gh { color: #CC704A } /* Generic.Heading */
-.highlight .gi { color: #DE84FF } /* Generic.Inserted */
-.highlight .gs { color: #93A1A1; font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #CC704A } /* Generic.Subheading */
-.highlight .kc { color: #CC704A } /* Keyword.Constant */
-.highlight .kd { color: #DE84FF } /* Keyword.Declaration */
-.highlight .kn { color: #DE84FF } /* Keyword.Namespace */
-.highlight .kp { color: #DE84FF } /* Keyword.Pseudo */
-.highlight .kr { color: #DE84FF } /* Keyword.Reserved */
-.highlight .kt { color: #DC322F } /* Keyword.Type */
-.highlight .m { color: #8C8FFF } /* Literal.Number */
-.highlight .s { color: #8C8FFF } /* Literal.String */
-.highlight .nb { color: #e9b414 } /* Name.Builtin */
-.highlight .nc { color: #DE84FF } /* Name.Class */
-.highlight .no { color: #CC704A } /* Name.Constant */
-.highlight .nd { color: #DE84FF } /* Name.Decorator */
-.highlight .ni { color: #CC704A } /* Name.Entity */
-.highlight .ne { color: #CC704A } /* Name.Exception */
-.highlight .nf { color: #DE84FF } /* Name.Function */
-.highlight .nx { color: #bbb } /* Name.Other */
-.highlight .nt { color: #DE84FF } /* Name.Tag */
-.highlight .nv { color: #DE84FF } /* Name.Variable */
-.highlight .ow { color: #DE84FF } /* Operator.Word */
-.highlight .mf { color: #8C8FFF } /* Literal.Number.Float */
-.highlight .mh { color: #8C8FFF } /* Literal.Number.Hex */
-.highlight .mi { color: #8C8FFF } /* Literal.Number.Integer */
-.highlight .mo { color: #8C8FFF } /* Literal.Number.Oct */
-.highlight .sb { color: #84CE99 } /* Literal.String.Backtick */
-.highlight .sc { color: #8C8FFF } /* Literal.String.Char */
-.highlight .s2 { color: #8C8FFF } /* Literal.String.Double */
-.highlight .se { color: #CC704A } /* Literal.String.Escape */
-.highlight .si { color: #8C8FFF } /* Literal.String.Interpol */
-.highlight .sx { color: #8C8FFF } /* Literal.String.Other */
-.highlight .sr { color: #DC322F } /* Literal.String.Regex */
-.highlight .s1 { color: #8C8FFF } /* Literal.String.Single */
-.highlight .ss { color: #8C8FFF } /* Literal.String.Symbol */
-.highlight .bp { color: #DE84FF } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #DE84FF } /* Name.Variable.Class */
-.highlight .vg { color: #DE84FF } /* Name.Variable.Global */
-.highlight .vi { color: #DE84FF } /* Name.Variable.Instance */
-.highlight .il { color: #8C8FFF } /* Literal.Number.Integer.Long */
+  // Functions
+  .nf, .nx {
+    @include selectionResistantColor($color_codeFunction);
+  }
 
-/* .highlight .err { color: #93A1A1 } Error */
-/* .highlight .g { color: #93A1A1 } Generic */
-/* .highlight .l { color: #93A1A1 } Literal */
-/* .highlight .n { color: #93A1A1 } Name */
-/* .highlight .p { color: #93A1A1 } Punctuation */
-/* .highlight .go { color: #93A1A1 } Generic.Output */
-/* .highlight .gp { color: #93A1A1 } Generic.Prompt */
-/* .highlight .gt { color: #93A1A1 } Generic.Traceback */
-/* .highlight .ld { color: #93A1A1 } Literal.Date */
-/* .highlight .na { color: #93A1A1 } Name.Attribute */
-/* .highlight .nl { color: #93A1A1 } Name.Label */
-/* .highlight .nn { color: #93A1A1 } Name.Namespace */
-/* .highlight .py { color: #93A1A1 } Name.Property */
-/* .highlight .w { color: #93A1A1 } Text.Whitespace */
-/* .highlight .sd { color: #93A1A1 } Literal.String.Doc */
-/* .highlight .sh { color: #93A1A1 } Literal.String.Heredoc */
+  // Attributes
+  .na {
+    @include selectionResistantColor($color_codeAttribute);
+  }
+
+  // Variables
+  .bp, .nv, .vc, .vg, .vi, .err {
+    @include selectionResistantColor($color_codeVariable);
+  }
+
+  // Numbers
+  .m, .mf, .mh, .mi, .mo, .il {
+    @include selectionResistantColor($color_codeNumber);
+  }
+
+  // Keywords
+  .k, .kd, .kn, .kr, .kt {
+    @include selectionResistantColor($color_codeKeyword);
+  }
+
+  // Constants
+  .kc {
+    @include selectionResistantColor($color_codeConstant);
+  }
+
+  // Pseudo
+  .kp, .nb {
+    @include selectionResistantColor($color_codeSupport);
+  }
+
+  // Strings
+  .s, .sb, .sc, .s1, .s2 {
+    @include selectionResistantColor($color_codeString);
+  }
+
+  // Classes/tags
+  .nc, .nt, .nl {
+    @include selectionResistantColor($color_codeTag);
+  }
+
+  // Punctuation
+  .p {
+    @include selectionResistantColor($color_codePunctuation);
+  }
+
+  .o {
+    @include selectionResistantColor($color_codeOperator);
+  }
+
+  // Operators
+  .ow {
+    @include selectionResistantColor($color_codeOperatorWord);
+  }
+}
