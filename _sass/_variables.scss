@@ -10,6 +10,21 @@ $color_highlight: #f06d78;
 $color_highlightLight: #e8e8e8;
 $color_highlightDark: #000;
 $color_highlightMiddle: #424242;
+$color_codeSelection: #add6ff26;
+$color_codeComment: #9ED49A;
+$color_codeText: #b3b9c5;
+$color_codeFunction: #eeb76f;
+$color_codeVariable: #e4e5d8;
+$color_codeNumber: #b5cea8;
+$color_codeAttribute: #eec691;
+$color_codeKeyword: #d0bcf0;
+$color_codeString: #91aaee;
+$color_codeTag: #d0bcf0;
+$color_codeConstant: #d0bcf0;
+$color_codeSupport: #eec691;
+$color_codeOperator: #ffffff;
+$color_codePunctuation: #ffffff;
+$color_codeOperatorWord: #d0bcf0;
 // Alpha
 $color_makeDarker: rgba(0,0,0,.25);
 $color_makeDark: rgba(0,0,0,.5);
@@ -46,5 +61,11 @@ $font_monospace: "Lucida Console", Monaco, monospace;
 @mixin is_flex {
   @supports (display: flex){
     @content;
+  }
+}
+@mixin selectionResistantColor($color) {
+  &,
+  &::selection {
+    color: $color;
   }
 }
