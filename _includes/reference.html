@@ -4,7 +4,10 @@
         - `title`: titulek odkazu – defaultne "Odkaz na referenci"
         - `caption`: popisek (jeden paragraf)
 {% endcomment
-%}{%    assign caption= include.target
+%}{%    assign caption= include.caption
+%}{%    if caption
+%}{%        assign caption= caption | append: " "
+%}{%    endif
 %}{%    assign target= include.target | url_encode
 %}{%    assign title= "Odkaz na referenci"
-%}<a href="#ref_{{ target }}" title="{{ title }}">[{{ caption }}]</a>
+%}<a href="#ref_{{ target }}" title="{{ title }}">{{ caption }}[{{ include.target }}]</a>
