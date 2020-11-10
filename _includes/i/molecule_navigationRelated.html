@@ -1,5 +1,5 @@
-<div class="C__asideInfo">
-    {% include i/atom_asideHeadline.html headline="Nejpodobnější články" icon=":point_down:"
+{{_S}}<div class="C__asideInfo">
+{{_S}} {% include i/atom_asideHeadline.html headline="Nejpodobnější články" icon=":point_down:"
 %}{%    assign related_posts= ""
 %}{%    for post in site.posts
 %}{%    assign relationCount = 0
@@ -30,7 +30,7 @@
 %}{%            assign post_title= post_text | prepend: ' title="' | append: '"'
 %}{%        endunless
 %}
-    <a href="{{ post_params[3] }}"{{ post_title }}>{{ post_text | slice: 0, post_text_limit }}{{ellipsis}}</a>{%
+{{_S}} <a href="{{ post_params[3] }}"{{ post_title }}>{{ post_text | slice: 0, post_text_limit }}{{ellipsis}}</a>{%
         endfor
 %}
-</div>
+{{_S}}</div>

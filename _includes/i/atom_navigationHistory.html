@@ -1,5 +1,5 @@
-<div class="C__asideInfo">
-    {% include i/atom_asideHeadline.html headline="Předchozí/Následující" icon=":calendar:"
+{{_S}}<div class="C__asideInfo">
+{{_S}} {% include i/atom_asideHeadline.html headline="Předchozí/Následující" icon=":calendar:"
 %}{%    assign previous_name= "Předchozí"
 %}{%    assign previous= page.previous
 %}{%    unless previous
@@ -12,7 +12,7 @@
 %}{%        assign next_name= "Nejstarší"
 %}{%        assign next= site.posts | last
 %}{%    endunless %}
-    <a rel="prev" href="{{previous.url}}" title="{{previous.title}}">{{previous_name}}</a>
-    <br>
-    <a rel="next" href="{{next.url}}" title="{{next.title}}">{{next_name}}</a>
-</div>
+{{_S}} <a rel="prev" href="{{previous.url}}" title="{{previous.title}}">{{previous_name}}</a>
+{{_S}} <br>
+{{_S}} <a rel="next" href="{{next.url}}" title="{{next.title}}">{{next_name}}</a>
+{{_S}}</div>

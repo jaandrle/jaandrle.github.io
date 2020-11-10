@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-        <article class="page maxW__article margin__0_auto">
-          <h1 class="C__textHighlited">{{ page.title }}</h1>
-          {% include show_toc.html show_toc=page.show_toc html=content %}
-          <div class="entry">
-            {{ content }}
-          </div>
-        </article>
+{% assign _S= "    " %}{{
+  _S}}<article class="page maxW__article margin__0_auto">
+{{_S}} <h1 class="C__textHighlited">{{ page.title }}</h1>
+{{_S}} {% include show_toc.html show_toc=page.show_toc html=content %}
+{{_S}} <div class="entry">
+<!-- 🏁 📝 (raw spacing!) -->
+{{ content }}
+<!-- 🔚 📝 (raw spacing!) -->
+{{_S}} </div>
+{{_S}}</article>

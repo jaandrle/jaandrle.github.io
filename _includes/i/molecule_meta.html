@@ -1,47 +1,47 @@
-    {% comment %}{% endcomment -%}
+{% comment %}{% endcomment %}
 {% assign description= page.excerpt | default: site.description | strip_html | strip_newlines -%}
 {% assign full_baseurl= site.baseurl | prepend: site.url -%}
 {% assign full_url= full_baseurl | append: page.url | replace: "index.html", "" -%}
 {% assign assets= "files/internal/" | relative_url -%}
-    <!-- ❕ -->
-    <meta charset="utf-8" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+{{_S}}<!-- ❕ -->
+{{_S}}<meta charset="utf-8" />
+{{_S}}<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+{{_S}}<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 {%- if page.noindex %}
-    <meta name="robots" content="noindex">{%
+{{_S}}<meta name="robots" content="noindex">{%
 endif %}
-    <!-- © (Jekyll & GitHub Pages) -->
-    <meta name="author" content="{{ site.author.name }}" />
-    <meta name="generator" content="Jekyll" />
-    <!-- ℹ 🔗 📜 -->
-    <meta name="description" content="{{ description }}" />
-    <link rel="canonical" href="{{ full_url }}" />
-    <meta property="og:url" content="{{ full_url }}">
-    <meta property="og:image" content="{{ 'android-chrome-512x512.png' | prepend: assets | absolute_url }}">
-    {% if page.title -%}
-    <meta property="og:title" content="{{ page.title }}" />
-    {%- endif %}
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.author.twitter }}">
-    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- 🎨 🔗 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ assets }}apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ assets }}favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ assets }}favicon-16x16.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="manifest" href="{{ assets }}site.webmanifest">
-    <meta name="msapplication-config" content="{{ assets }}browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#A03232">
-    <meta name="theme-color" content="#A03232">
-    {% include i/atom_criticalCSS.html %}
-    <link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/main.css?v={{ site.code.version }}" />
-    <link rel="stylesheet" type="text/css" media="print" href="{{ site.baseurl }}/print.css?v={{ site.code.version }}" />
+{{_S}}<!-- © (Jekyll & GitHub Pages) -->
+{{_S}}<meta name="author" content="{{ site.author.name }}" />
+{{_S}}<meta name="generator" content="Jekyll" />
+{{_S}}<!-- ℹ 🔗 📜 -->
+{{_S}}<meta name="description" content="{{ description }}" />
+{{_S}}<link rel="canonical" href="{{ full_url }}" />
+{{_S}}<meta property="og:url" content="{{ full_url }}">
+{{_S}}<meta property="og:image" content="{{ 'android-chrome-512x512.png' | prepend: assets | absolute_url }}">
+{{_S}}{% if page.title -%}
+{{_S}}<meta property="og:title" content="{{ page.title }}" />
+{{_S}}{%- endif %}
+{{_S}}<meta name="twitter:card" content="summary">
+{{_S}}<meta name="twitter:site" content="@{{ site.author.twitter }}">
+{{_S}}<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{{_S}}<!--[if lt IE 9]>
+{{_S}} <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+{{_S}}<![endif]-->
+{{_S}}<!-- 🎨 🔗 -->
+{{_S}}<link rel="apple-touch-icon" sizes="180x180" href="{{ assets }}apple-touch-icon.png">
+{{_S}}<link rel="icon" type="image/png" sizes="32x32" href="{{ assets }}favicon-32x32.png">
+{{_S}}<link rel="icon" type="image/png" sizes="16x16" href="{{ assets }}favicon-16x16.png">
+{{_S}}<link rel="shortcut icon" href="/favicon.ico">
+{{_S}}<link rel="manifest" href="{{ assets }}site.webmanifest">
+{{_S}}<meta name="msapplication-config" content="{{ assets }}browserconfig.xml">
+{{_S}}<meta name="msapplication-TileColor" content="#A03232">
+{{_S}}<meta name="theme-color" content="#A03232">
+{{_S}}{% include i/atom_criticalCSS.html %}
+{{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/main.css?v={{ site.code.version }}" />
+{{_S}}<link rel="stylesheet" type="text/css" media="print" href="{{ site.baseurl }}/print.css?v={{ site.code.version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
-    <link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
+{{_S}}<link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
 endfor %}
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ full_baseurl }}{{ '/sitemap.xml' }}" />
-    <!-- 💬 -->
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
+{{_S}}<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ full_baseurl }}{{ '/sitemap.xml' }}" />
+{{_S}}<!-- 💬 -->
+{{_S}}<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
