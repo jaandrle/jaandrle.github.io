@@ -2,6 +2,7 @@
 {% assign description= page.excerpt | default: site.description | strip_html | strip_newlines -%}
 {% assign full_baseurl= site.baseurl | prepend: site.url -%}
 {% assign full_url= full_baseurl | append: page.url | replace: "index.html", "" -%}
+{% assign assets= "files/internal/" | relative_url -%}
     <!-- ❕ -->
     <meta charset="utf-8" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -16,7 +17,7 @@ endif %}
     <meta name="description" content="{{ description }}" />
     <link rel="canonical" href="{{ full_url }}" />
     <meta property="og:url" content="{{ full_url }}">
-    <meta property="og:image" content="{{ site.avatar }}">
+    <meta property="og:image" content="{{ 'android-chrome-512x512.png' | prepend: assets | absolute_url }}">
     {% if page.title -%}
     <meta property="og:title" content="{{ page.title }}" />
     {%- endif %}
@@ -27,11 +28,12 @@ endif %}
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- 🎨 🔗 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/files/internal/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/files/internal/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/files/internal/favicon-16x16.png">
-    <link rel="manifest" href="/files/internal/site.webmanifest">
-    <meta name="msapplication-config" content="/files/internal/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ assets }}apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ assets }}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ assets }}favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="{{ assets }}site.webmanifest">
+    <meta name="msapplication-config" content="{{ assets }}browserconfig.xml">
     <meta name="msapplication-TileColor" content="#A03232">
     <meta name="theme-color" content="#A03232">
     {% include i/atom_criticalCSS.html %}
