@@ -29,10 +29,9 @@ $color_codeOperatorWord: #d0bcf0;
 $color_makeDarker: rgba(0,0,0,.25);
 $color_makeDark: rgba(0,0,0,.5);
 
-// Font stacks
-//old safe fonts: sans (Helvetica, Arial, sans-serif;), serif (Georgia, serif;)
+// Font stacks (safe fonts)
 $font_sans: "Trebuchet MS", Helvetica, sans-serif;
-$font_serif: "Courier New", Courier, monospace;
+$font_serif: Georgia, serif;
 $font_monospace: "Lucida Console", Monaco, monospace;
 
 %bg-image {
