@@ -53,7 +53,7 @@ Stačí přejít na {% include reference.html target="docReady" %}.
 ## Průřez
 `document` událost `DOMContentLoaded` je volána v situaci, kdy bylo zparsováno {{ site.data.abbr.HTML }} (tj. je dostuplný {{ site.data.abbr.DOM }}), zatímco `window` událost `load` je volána až jsou zpracovány i externí zdroje.
 
-{% capture temp_html %}{% highlight html %}<body onload="/* … */">{% endhighlight %}{% endcapture -%}
+{% capture temp_html %}{% highlight html %}<body onload="…">{% endhighlight %}{% endcapture -%}
 {% capture temp_js %}{% highlight js %}document.body.onload= /* funkce */;{% endhighlight %}{% endcapture -%}
 {% capture temp_textBox %}
 <blockquote><em>Tip</em>: Naslouchač na <code>load</code> událost lze zaregistrovat i: {{ temp_html }} {{ temp_js }}</blockquote>
