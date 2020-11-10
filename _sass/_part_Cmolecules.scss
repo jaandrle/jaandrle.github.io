@@ -31,7 +31,7 @@
 }
 .C__button {
   @extend %focus;
-  font-size: .8em;
+  font: .8em $font_serif;
   display: inline-block;
   text-decoration: none;
   background: $color_regularBG;

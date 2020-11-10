@@ -108,7 +108,7 @@ a {
     cursor: help;
     color: $color_regularFG;
     text-decoration: none;
-    font-family: $font_sans;
+    font-family: $font_serif;
     font-weight: normal;
     &[href^="http"]{ //default a
       background: none;
