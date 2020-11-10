@@ -53,6 +53,12 @@ Stačí přejít na {% include reference.html target="docReady" %}.
 ## Průřez
 `document` událost `DOMContentLoaded` je volána v situaci, kdy bylo zparsováno {{ site.data.abbr.HTML }} (tj. je dostuplný {{ site.data.abbr.DOM }}), zatímco `window` událost `load` je volána až jsou zpracovány i externí zdroje.
 
+{% capture temp_html %}{% highlight html %}<body onload="/* … */">{% endhighlight %}{% endcapture -%}
+{% capture temp_js %}{% highlight js %}document.body.onload= /* … */;{% endhighlight %}{% endcapture -%}
+{% capture temp_textBox %}
+<blockquote><em>Tip</em>: Naslouchač na <code>load</code> událost lze zaregistrovat i: {{ temp_html }} {{ temp_js }}</blockquote>
+{% endcapture %}{% include textBox.html text=temp_textBox %}
+
 V ukázce, když prohlížeč zpracuje stránku zavolá funkci pro uložení elementu `el`, následně volá dříve definovanou funkci pro změnu textu.
 
 Pro praktické použití je lepší umožnit také inicializaci našeho kódu (či knihovny) až na vyžádání. Tedy, pomocí {% include reference.html target="readyState" %} zkontrolovat, zda již požadované události nenastaly a případně až podom navěsit naslouchač.
