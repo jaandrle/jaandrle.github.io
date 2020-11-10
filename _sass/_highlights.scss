@@ -36,6 +36,7 @@ code {
     max-height: 25em;
     overflow:auto;
     code {
+      font: .75rem $font_monospace;
       line-height: 1.1em;
       font-weight: bold;
       color: #cdced6;
