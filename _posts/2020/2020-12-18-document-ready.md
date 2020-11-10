@@ -21,7 +21,7 @@ reference:
             description: "Například „zfunkčnění” i na starších prohlížečích. Měla by fungovat po vzoru jQuery kódu: `$(document).ready()`."
 ---
 
-Článek jen rychle shrnuje události `DOMContentLoaded` (v `document`), `onload` (ve `window`) a Vanilla JavaScript „alternativu” k `$(document).ready()`.
+Článek jen rychle shrnuje události `DOMContentLoaded` (v `document`), `load` (ve `window`) a Vanilla JavaScript „alternativu” k `$(document).ready()`.
 
 <!--more-->
 
@@ -51,7 +51,7 @@ Stačí přejít na {% include reference.html target="docReady" %}.
 ' %}
 
 ## Průřez
-`document` událost `DOMContentLoaded` je volána v situaci, kdy byl zparsován {{ site.data.abbr.HTML }} (tj. je dostuplný {{ site.data.abbr.DOM }}), zatímco `window` událost `load` je volána až jsou zpracovány i externí zdroje.
+`document` událost `DOMContentLoaded` je volána v situaci, kdy bylo zparsováno {{ site.data.abbr.HTML }} (tj. je dostuplný {{ site.data.abbr.DOM }}), zatímco `window` událost `load` je volána až jsou zpracovány i externí zdroje.
 
 V ukázce, když prohlížeč zpracuje stránku zavolá funkci pro uložení elementu `el`, následně volá dříve definovanou funkci pro změnu textu.
 
