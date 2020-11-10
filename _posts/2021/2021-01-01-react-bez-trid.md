@@ -2,7 +2,7 @@
 issue: 93
 title: React JS bez tříd – Odkazy na aktualizované postupy
 category: dev
-tags: [ vývojářské tipy, JavaScript, React JS ]
+tags: [ vývojářské tipy, JavaScript, React JS, node ]
 reference:
     - react_2020
 ---
