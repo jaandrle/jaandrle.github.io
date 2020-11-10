@@ -4,7 +4,7 @@
 #   - code version (name) / repository
 #   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
 code:
-  version: 2020.11a
+  version: 2020.11b
   name: Dapper Drake LTS
   hosted: "https://github.com/"
   repository: "jaandrle/jaandrle.github.io"
