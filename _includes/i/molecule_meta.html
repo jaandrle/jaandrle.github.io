@@ -38,7 +38,7 @@ endif %}
 {{_S}}<meta name="msapplication-TileColor" content="#A03232">
 {{_S}}<meta name="theme-color" content="#A03232">
 {{_S}}{% include i/atom_criticalCSS.html %}
-{{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ '/files/internal/fonts/fonts.css' | relative_url | append: files_version }}" />
+{{_S}}<link rel="stylesheet" type="text/css" media="all" rel="preload" href="{{ '/files/internal/fonts/fonts.css' | relative_url | append: files_version }}" />
 {{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ '/main.css' | relative_url | append: files_version }}" />
 {{_S}}<link rel="stylesheet" type="text/css" media="print" href="{{ '/print.css' | relative_url | append: files_version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
