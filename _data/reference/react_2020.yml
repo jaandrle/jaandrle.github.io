@@ -1,0 +1,22 @@
+minimal_react:
+  caption: "Minimal React: getting started with the frontend library"
+  href: "https://2ality.com/2020/08/minimal-react.html"
+  description: "
+    Článek popisuje jak začít s Reactem s co nejmenším počtem knihoven (např. bez JSX).
+    Idea je, aby to bylo co nejvíce vstřícné pro „začátečníky”.
+    Autorem je [Dr. Axel Rauschmayer](http://dr-axel.de/)."
+thinking_react_2020:
+  caption: "Thinking in React: The 2020 version"
+  href: "https://dev.to/lukeshiru/thinking-in-react-the-2020-version-4c18"
+  description: "Série článků popisující tvorbu React JS aplikací již bez tříd („2020 verze”)."
+RFS_alternative_docs:
+  caption: "Alternativní „kopie” oficiální dokumentace s příklady již bez tříd."
+  href: "https://reactwithhooks.netlify.app/tutorial/tutorial.html"
+RH_official:
+  caption: "Introducing Hooks"
+  href: "https://reactjs.org/docs/hooks-intro.html"
+  description: "Oficiální dokumentace věnovaná *Hooks*."
+RFS_guide:
+  caption: "React Function Components"
+  href: "https://www.robinwieruch.de/react-function-component"
+  description: "Již komplexnější návod, který už mlčky předpokládá některé znalosti „staršího” Reactu."

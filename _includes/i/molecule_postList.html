@@ -1,4 +1,4 @@
-{%    include i/atom_formSearch.html
+{%    include i/atom_formSearch.html spaces="      "
 %}{%  assign limit= include.limit | default: site.posts.size
 %}{%  assign category= include.category | default: ""
 %}{%  for post in site.posts
@@ -9,14 +9,14 @@
 %}{%      break
 %}{%    endif 
 %}
-  <article class="post">
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    {% include i/molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
-    <a href="{{ site.baseurl }}{{ post.url }}" class="C__button float__r">Přečíst celé »</a>
-  </article>
+      <article class="post">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        {% include i/molecule_articleInfo.html content=post.content date=post.date tags=post.tags %}
+        <div class="entry">
+          {{ post.excerpt | rstrip }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="C__button float__r" tabindex="-1">Přečíst celé »</a>
+      </article>
 {%-     assign limit= limit | minus: 1
 %}{%  endfor
 %}{%  if limit == include.limit or limit == site.posts.size

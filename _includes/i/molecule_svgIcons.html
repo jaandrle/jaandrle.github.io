@@ -1,3 +1,6 @@
-<div class="hidden">
-    <svg id="icon-clock" viewBox="0 0 31 31" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><title>"Clock" icon</title><circle cx="15" cy="15" r="13" /><path d="M15 8 L15 16 18.5 18.5" /></svg>
-</div>
+<div class="hidden">{% capture build_svg %}
+    <svg id="icon-clock" viewBox="0 0 31 31" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><title>"Clock" icon</title> <circle cx="15" cy="15" r="13" /><path d="M15 8 L15 16 18.5 18.5" /></svg>{% endcapture
+%}{{ build_svg | replace: "
+    <", "
+___SPACES___ <" | replace: "___SPACES___", _S }}
+{{_S}}</div>

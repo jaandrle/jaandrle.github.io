@@ -1,5 +1,5 @@
 {%-   capture strip_atom %}
-{%    assign m = include.date | date: "%-m" %}
+{%    assign m = include.date | date: "%-m" -%}
 {%    capture time_inner -%}
 {{ include.date | date: "%-d" }}. {%
 case m -%}
