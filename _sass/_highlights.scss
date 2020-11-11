@@ -2,7 +2,7 @@
 // Code general
 code {
   white-space: pre-line;
-  font: .8em $font_monospace;
+  font: .9em $font_monospace;
   border: 1px solid $color_highlightMiddle;
   background-color: $color_makeDarker;
   border-left-width: .2rem;
@@ -24,7 +24,7 @@ code {
     color: $color_codeText;
   }
   pre {
-    font: .75rem $font_monospace;
+    font: .7rem $font_monospace;
     line-height: 1.5em;
     font-weight: bold;
     margin: 0px;
@@ -36,7 +36,7 @@ code {
     max-height: 25em;
     overflow:auto;
     code {
-      font: .75rem $font_monospace;
+      font: .7rem $font_monospace;
       line-height: 1.1em;
       font-weight: bold;
       color: #cdced6;
@@ -55,7 +55,7 @@ code {
   }
   [data-lang]::before {
     background: $color_makeDarker;
-    font-size: .75rem;
+    font-size: .7rem;
     font-weight: bold;
     position: absolute;
     padding: .15rem .25rem;

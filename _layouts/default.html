@@ -36,7 +36,7 @@
    <footer class="C__targetHighlite textA__c" aria-labelledby="foot-heading" id="foot-section">
     <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>
     <span class="display__b background__dark marginTB__1"> ··· ~ ··· </span>
-    <div class="display__f justifyC__sB">
+    <div class="display__f justifyC__sB alignI__c">
      <div>{%
     for social in site.data.social %}{% assign sp= social | last %}
       <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{%

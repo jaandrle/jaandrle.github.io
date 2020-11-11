@@ -46,6 +46,9 @@ h4, h5, h6 {
   color: $color_highlightLight;
 }
 
+summary{
+  @extend %focusLink;
+}
 p {
   margin: 15px 0;
   text-indent: 1em;
@@ -84,6 +87,7 @@ input, textarea{
 }
 
 a {
+  @extend %focusLink;
   color: $color_highlight;
   text-decoration-color: $color_highlight;
   font-weight: lighter;
@@ -92,11 +96,6 @@ a {
   &:hover, &:active {
     text-decoration: none;
     color: $color_highlightLight;
-  }
-  &:focus{
-    outline: 2px dotted currentColor;
-    outline-offset: 2px;
-    transition: outline .15s;
   }
   p > &[href^="http"] {
       background: left center no-repeat;
