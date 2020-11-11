@@ -1,5 +1,6 @@
 {% comment %}{% endcomment %}
 {% assign description= page.excerpt | default: site.description | strip_html | strip_newlines -%}
+{% assign files_version= '?v=' | append: site.code.version -%}
 {% assign full_baseurl= site.baseurl | prepend: site.url -%}
 {% assign full_url= full_baseurl | append: page.url | replace: "index.html", "" -%}
 {% assign assets= "files/internal/" | relative_url -%}
@@ -37,9 +38,9 @@ endif %}
 {{_S}}<meta name="msapplication-TileColor" content="#A03232">
 {{_S}}<meta name="theme-color" content="#A03232">
 {{_S}}{% include i/atom_criticalCSS.html %}
-{{_S}}<link rel="stylesheet" type="text/css" media="all" href="/files/internal/fonts/fonts.css" />
-{{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ site.baseurl }}/main.css?v={{ site.code.version }}" />
-{{_S}}<link rel="stylesheet" type="text/css" media="print" href="{{ site.baseurl }}/print.css?v={{ site.code.version }}" />
+{{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ '/files/internal/fonts/fonts.css' | relative_url | append: files_version }}" />
+{{_S}}<link rel="stylesheet" type="text/css" media="all" href="{{ '/main.css' | relative_url | append: files_version }}" />
+{{_S}}<link rel="stylesheet" type="text/css" media="print" href="{{ '/print.css' | relative_url | append: files_version }}" />
 {%- for feed in site.pages %}{% if feed.layout=='feed' %}
 {{_S}}<link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
 endfor %}
