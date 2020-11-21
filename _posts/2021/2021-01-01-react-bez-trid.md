@@ -20,4 +20,4 @@ Z referencích bych primárně vypíchl minimalistický startovací projekt {% 
 ## Reference
 {% include references_list.html references=page.reference %}
 
-[^1]: Nejedná se vlastně o standartní {{ site.data.abbr.JS }} funkcionalitu! Je potřeba ji kompilovat.
+[^1]: Nejedná se vlastně o standardní {{ site.data.abbr.JS }} funkcionalitu! Je potřeba ji kompilovat.
