@@ -1,0 +1,8 @@
+@font-face{ font-family: "iA Writer Duospace"; font-weight: normal; font-style: normal; font-display: swap;
+  src: local("iA Writer Duospace"), url("iAWriterDuospace-Regular.woff2") format("woff2"), url("iAWriterDuospace-Regular.woff") format("woff"); }
+@font-face{ font-family: "iA Writer Duospace"; font-weight: normal; font-style: italic; font-display: swap;
+  src: local("iA Writer Duospace"), url("iAWriterDuospace-Italic.woff2") format("woff2"), url("iAWriterDuospace-Italic.woff") format("woff"); }
+@font-face{ font-family: "iA Writer Duospace"; font-weight: bold; font-style: normal; font-display: swap;
+  src: local("iA Writer Duospace"), url("iAWriterDuospace-Bold.woff2") format("woff2"), url("iAWriterDuospace-Bold.woff") format("woff"); }
+@font-face{ font-family: "iA Writer Duospace"; font-weight: bold; font-style: italic; font-display: swap;
+  src: local("iA Writer Duospace"), url("iAWriterDuospace-BoldItalic.woff2") format("woff2"), url("iAWriterDuospace-BoldItalic.woff") format("woff"); }

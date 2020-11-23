@@ -31,7 +31,7 @@
 }
 .C__button {
   @extend %focus;
-  font-size: .8em;
+  font: .8em $font_serif;
   display: inline-block;
   text-decoration: none;
   background: $color_regularBG;
@@ -141,8 +141,7 @@ a.C__button {
 .C__sidebarInfo_description {
   display: inline;
   color: $color_highlightLight;
-  font-size: .75em;
-  line-height: 1.75em;
+  font-size: .85em;
   @include mobile {
     display: none;
   }

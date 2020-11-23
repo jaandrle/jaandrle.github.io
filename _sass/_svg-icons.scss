@@ -1,7 +1,5 @@
 .svg-icon {
   @extend %block_hover;
-  font: .8rem $font_monospace;
-  letter-spacing: 1px;
   border-radius: 5px;
   color: black;
   text-decoration: none;
@@ -20,7 +18,7 @@
   }
   &.account_github {
     background: black;
-    color: white;
+    color: $color_regularFG;
   }
   &.rss {
     background: #e49800;

@@ -96,7 +96,8 @@ Zde stačí inicializovat [`EventSource`](https://developer.mozilla.org/en-US/do
 {% include code.html caption="Tedy ukázka pro dřívější serverovou část" code='
 ```JavaScript
 const sse= new EventSource("cesta/ke/skriptu.php");
-const log= ({ data= "" }= {})=> console.log(data ? JSON.parse(data) : data);
+const parse= json_candidate=> { try{ return JSON.parse(json_candidate); } catch(e){ return json_candidate; } };
+const log= ({ data= "" }= {})=> console.log(parse(data));
 
 sse.addEventListener("event_a", log);
 sse.addEventListener("event_b", log);

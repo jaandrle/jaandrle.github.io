@@ -3,9 +3,11 @@ body{
 body::after{
   content:"Author Jan Andrle <jaandrle.github.io>";
   display:block;}
-aside,footer,.C__header{
+aside,footer,.C__header,form{
   display:none!important;}
 .container{
   max-width: 100%;
   margin:0;
   padding:0;}
+.highlight > pre{
+  max-height: initial;}

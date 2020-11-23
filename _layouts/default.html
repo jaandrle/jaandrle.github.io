@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  <head>
-{%
-    include i/molecule_meta.html %}
-  </head>
-  <body class="C__contentFirst display__f">
-    <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to main content begining">Scroll to content</a>
-    <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
-      <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img alt="User avatar photo" src="{{ site.avatar }}"/></a>
-      <nav class="C__sidebarNav display__f float__l" aria-labelledby="nav-heading">
-          <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2> {%
-          assign pages= site.pages | sort: "in_menu"
-            %}{% for page_i in pages %}{% if page_i.in_menu %}
-          <a {% comment %}{% endcomment
-                  %}href="{{ page_i.url }}" {% comment %}{% endcomment
-                  %}title="{{ page_i.description | strip_html }}" {% comment %}{% endcomment
-                  %}class="C__button{%
-                    if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
-                      %} C__sidebarNav_active{%
-                    endif %}"{% comment %}{% endcomment
-                  %}>{{ page_i.in_menu }}</a>{%
-            endif %}{% endfor %}
-      </nav>
+ <head>{% assign _S= "  " %}{%
+  include i/molecule_meta.html %}
+ </head>
+ <body class="C__contentFirst display__f">
+  <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to main content begining">Scroll to content</a>
+  <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
+   <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img alt="User avatar photo" src="{{ site.avatar }}"/></a>
+   <nav class="C__sidebarNav display__f float__l" aria-labelledby="nav-heading">
+     <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2> {%
+     assign pages= site.pages | sort: "in_menu"
+      %}{% for page_i in pages %}{% if page_i.in_menu %}
+     <a {% comment %}{% endcomment
+         %}href="{{ page_i.url }}" {% comment %}{% endcomment
+         %}title="{{ page_i.description | strip_html }}" {% comment %}{% endcomment
+         %}class="C__button{%
+          if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
+           %} C__sidebarNav_active{%
+          endif %}"{% comment %}{% endcomment
+         %}>{{ page_i.in_menu }}</a>{%
+      endif %}{% endfor %}
+   </nav>
 
-      <div class="C__sidebarInfo float__l margin__1_auto">
-        <div class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></div>
-        <p class="C__sidebarInfo_description C__textHighlited">{{ site.description }}</p>
-      </div>
-    </header>
+   <div class="C__sidebarInfo float__l margin__1_auto">
+    <div class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></div>
+    <p class="C__sidebarInfo_description C__textHighlited">{{ site.description }}</p>
+   </div>
+  </header>
 
-    <div class="container flex__4">
-      <main id="main" aria-label="Hlavní obsah">
+  <div class="container flex__4">
+   <main id="main" aria-label="Hlavní obsah">
 {{ content }}
-      </main>
-  
-      <footer class="C__targetHighlite textA__c" aria-labelledby="foot-heading" id="foot-section">
-        <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>
-        <span class="display__b background__dark marginTB__1"> ··· ~ ··· </span>
-        <div class="display__f justifyC__sB">
-        <div>{%
-        for social in site.data.social %}{% assign sp= social | last %}
-        <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{%
-        endfor %}</div>
-        <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">Vrátit se na začátek obsahu</a>
-        </div>
-        <span class="display__b"> ··· </span>
-        <span class="fontS__0d75">
-        {% assign dates= site.posts | map: "date" %}{{ dates | last | date: "%Y" }} – {{ dates | first | date: "%Y"
-        }} (<a target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze blogu">{{ site.code.name }}</a>)
-        </span>
-      </footer>
+   </main>
+ 
+   <footer class="C__targetHighlite textA__c" aria-labelledby="foot-heading" id="foot-section">
+    <h2 id="foot-heading" class="C__visuallyHide">Patička webu</h2>
+    <span class="display__b background__dark marginTB__1"> ··· ~ ··· </span>
+    <div class="display__f justifyC__sB alignI__c">
+     <div>{%
+    for social in site.data.social %}{% assign sp= social | last %}
+      <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{%
+    endfor %}
+     </div>
+     <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">Vrátit se na začátek obsahu</a>
     </div>
-    {% include i/molecule_scriptsBody.html %}
-    {% include i/molecule_svgIcons.html %}
-  </body>
+    <span class="display__b"> ··· </span>
+    <span class="fontS__0d75">
+     {% assign dates= site.posts | map: "date" %}{{ dates | last | date: "%Y" }} – {{ dates | first | date: "%Y"
+    }} (<a target="_blank" href="{{ site.code.hosted }}{{ site.code.repository }}/releases/tag/{{ site.code.version }}" title="Odkaz na popis aktuální verze blogu">{{ site.code.name }}</a>)
+    </span>
+   </footer>
+  </div>{% assign _S= "   " %}
+  {% include i/molecule_scriptsBody.html %}
+  {% assign _S= "  " %}{% include i/molecule_svgIcons.html %}
+ </body>
 </html>
