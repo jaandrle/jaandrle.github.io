@@ -3,6 +3,7 @@ issue: 62
 title: Nástrahy (prototypové) dědičnosti v JavaScriptu
 tags: [vývojářské tipy, JavaScript, OOP]
 category: dev
+show_toc: 3
 reference:
     - lokální:
         mdn_dedictnost:
@@ -23,6 +24,15 @@ reference:
         Reflect.construct():
             caption: "Mixing class and function Constructors"
             href: "https://forum.kirupa.com/t/js-tip-of-the-day-mixing-class-and-function-constructors/643264/1"
+        clone:
+            caption: "copy-constructor.js"
+            href: "https://gist.github.com/rauschma/c00b747df893b8afa30bbdd0bb6357a9"
+        copy:
+            caption: "Kopírování objektů v JS"
+            href: "https://jecas.cz/js-klonovani-objektu"
+        memory:
+            caption: "4 Types of Memory Leaks in JavaScript and How to Get Rid Of Them"
+            href: "https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/"
 ---
 
 Tohle asi nebude pro zkušenější programátory nic nového. Spíše jde o občané (znovu)připomenutí těchto vlastností JavaScriptu.
@@ -80,7 +90,6 @@ console.log($array_wtf.next());
 ```
 ' %}
 
-## Komentáře
 `pseudoArray` zde pracuje s internímy vlastnostmi `_array`, `_status` a `_index`. Ukázka je úmyslně napsána takto[^class] aby vynikla **[prototypová dědičnost](https://cs.wikipedia.org/wiki/JavaScript#D%C4%9Bdi%C4%8Dnost_%28Inheritance%29) typická pro JavaScript**.
 
 ### Prototypová dědičnost
@@ -152,6 +161,20 @@ const instance= Object.assign(Object.create(Třída),
 Nový zápis je [Syntaktický cukr](https://cs.wikipedia.org/wiki/Syntaktick%C3%BD_cukr "Wikipedie") starého zápisu s několika změnami (přesněji {% include reference.html target="mdn_classes" %}). Potíž může nastat, pokud bychom z nějakého důvodu potřebovali použít starý postup, ale dědit ze třídy již přepsané do nového zápisu, viz {% include reference.html target="Reflect.construct()" %}.
 
 Dále klíčové slovo `super` ve skutečnosti pracuje s prototypovou dědičností – lze jej používat i u objektů viz [Using `super.prop` in object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super#Using_super.prop_in_object_literals)[^super].
+
+## Objekty jsou předávány referencí!
+Častou potíží je, že v JS je skoro vše objekt, který se předává referecní a navíc díky dříve zmíněné dědičnosti se většinou neknonuje:
+
+{% include code.html caption="`Object.assign` argumenty neklonuje!" code='
+```JavaScript
+const a= { A: "text" };
+const b= Object.assign(a, { A: "!!!" });
+console.log(a.A);
+//="!!!"
+```
+' %}
+
+… podobné je to pro [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort), knihovnu [Moment.js](https://momentjs.com/) apod. Obecná rada je, na to myslet, **číst/psát dokumentaci**, počítat s možností klonování třídy (pokud dává smysl) {% include reference.html target="clone" %}. Dále být obecně opatrný (vědět co dělám) {% include reference.html target="copy" %}, protože můžu zbytečne alokovat místo v paměti {% include reference.html target="memory" %}.
 
 ## Reference
 {% include references_list.html references=page.reference %}
