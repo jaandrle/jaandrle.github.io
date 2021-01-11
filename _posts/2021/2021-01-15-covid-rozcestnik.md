@@ -1,6 +1,6 @@
 ---
 issue: 101
-title: „Covid” & vakcína – rozcestník
+title: „Covid” & vakcíny – jen rozcestník
 category: nondev
 tags: [ věda, covid ]
 reference:
