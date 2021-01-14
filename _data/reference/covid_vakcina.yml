@@ -1,0 +1,31 @@
+wiki_covid_vaccine:
+    caption: "COVID-19 vaccine"
+    href: https://en.wikipedia.org/wiki/COVID-19_vaccine
+    description: Dobrý přehledový zdroj průběhu vývoje vakcín, (finanžní) zapojení zemí (EU), schvalovaní (EU×ostatní), …
+vedecke_kladivo_rychlost:
+    caption: "Proč mohla být Covid-19 vakcína vytvořena rychle?"
+    href: https://www.youtube.com/watch?v=1Bpv5tX3bIs
+    description: Video na YouTube (Vědecké kladivo)
+vedecke_kladivo_mRNA:
+    caption: "Jak funguje mRNA Covid-19 vakcína?"
+    href: https://www.youtube.com/watch?v=ZGPyyAza-LA
+    description: Video na YouTube (Vědecké kladivo)
+zdrav_deník_10vakcina:
+    caption: "Deset věcí, které byste měli vědět o vakcíně proti covid-19 - Zdravotnický deník"
+    href: https://www.zdravotnickydenik.cz/2020/12/deset-veci-ktere-byste-meli-vedet-o-vakcine-proti-covid-19/
+zdrav_denik_ema:
+    caption: "Evropská komise: Výrobci vakcíny proti covid-19 ponesou plnou odpovědnost za její bezpečnost - Zdravotnický deník"
+    href: https://www.zdravotnickydenik.cz/2020/09/evropska-komise-vyrobci-vakciny-covid-19-ponesou-plnou-odpovednost-za-jeji-bezpecnost/
+sníh_70otazek:
+    caption: "FAQ - Nejčastějších 70 otázek kolem očkování » Společně to zvládneme"
+    href: https://www.iniciativa-snih.cz/nejcastejsi-dotazy-kolem-ockovani/
+technet_delka_ochrany:
+    caption: "Vydrží ochrana po očkování déle než po infekci? Zatím jsou data slibná - iDNES.cz"
+    href: https://www.idnes.cz/technet/veda/moderna-vakcina-ockovani-covid-19-koronavirus.A201209_171705_veda_mla
+technet_funkcnost:
+    caption: "Vakcíny proti koronaviru: když funguje ta od Pfizeru, budou zřejmě i další - iDNES.cz"
+    href: https://www.idnes.cz/technet/veda/vakcina-proti-koronaviru-covid-19-ockovani.A201110_155645_veda_mla
+mar_marillee_vakcina:
+    caption: "Jak je to s tou novou vakcínou?"
+    href: https://www.youtube.com/watch?v=81q3LRgFALQ
+    description: Video na YouTube (více povídací)
