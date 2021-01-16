@@ -122,19 +122,19 @@ Kromně dříve ukázaného zápisu[^class] se v {{ site.data.abbr.JS }} setkáv
 
 {% include code.html caption="Klasické „třídy” v JS" code='
 ```JavaScript
-function Třída(name) {
+function Trida(name) {
     this.name= name;
 }
-Třída.prototype.logName= function(){
+Trida.prototype.logName= function(){
     console.log(this.name);
 }
-const instance= new Třída("jméno");
+const instance= new Trida("jméno");
 ```
 ' %}
 
 {% include code.html caption="Nové „třídy” v JS" code='
 ```JavaScript
-class Třída{
+class Trida{
     constructor(name){
         this.name= name;
     }
@@ -142,18 +142,18 @@ class Třída{
         console.log(this.name);
     }
 }
-const instance= new Třída("jméno");
+const instance= new Trida("jméno");
 ```
 ' %}
 
 {% include code.html caption="Prototypový zápis alá „třída” v JS" code='
 ```JavaScript
-const Třída= {
+const Trida= {
     logName(){
         console.log(this.name);
     }
 };
-const instance= Object.assign(Object.create(Třída),
+const instance= Object.assign(Object.create(Trida),
     { name: "jméno" });
 ```
 ' %}
