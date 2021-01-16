@@ -20,24 +20,24 @@ The `master` (`main`) branch reflects current public state of web page. There ar
 ### Pages/Posts options
 The default options are saved in [_config.yml](./_config.yml).
 
-| option            	| available 	| default / [R]equired      	| description                                                                                                                                                	|
-|-------------------	|-----------	|----------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| layout            	| all       	| default                    	| See [_layouts](./_layouts)                                                                                                                                 	|
-| -\|\|-            	| posts     	| post                       	| -\|\|-                                                                                                                                                     	|
-| in_menu           	| pages     	| null                       	| The name of item to show in page side menu/list                                                                                                            	|
-| excerpt_separator 	| posts     	| `<!--more-->`                	|                                                                                                                                                            	|
-| permalink         	| all       	| [R]                        	|                                                                                                                                                            	|
-| -\|\|-            	| posts     	| /blog/:year-:month/:title/ 	|                                                                                                                                                            	|
-| **title**         	| all       	| [R]                        	| Page/Post name                                                                                                                                             	|
-| **category**      	| all       	| [R]                        	| See [blog](./blog) – mainly *(non)dev*                                                                                                                     	|
-| **tags**          	| posts     	|                            	| List of tags, eg. `[tag_1]`                                                                                                                              	|
-| show_toc          	| all       	| 0                          	| Headline level deep to generating TOC, see [_includes/show_toc.html](./_includes/show_toc.html)                                                            	|
-| reference         	| posts     	|                            	| See [_includes/references_list.html](./_includes/references_list.html)                                                                                     	|
-| redirect_from     	| all       	|                            	| See [jekyll/jekyll-redirect-from: Seamlessly specify multiple redirections URLs for your pages and posts.](https://github.com/jekyll/jekyll-redirect-from) 	|
-| noindex           	| all       	| null                       	| See [robots.txt](./robots.txt) and [sitemap.xml](./sitemap.xml).                                                                                           	|
-| date              	| all       	| based on filename           	| In form `YYYY-MM-DD HH:MM:SS`                                                                                                                              	|
-| updated           	| posts     	|                           	| In form `YYYY-MM-DD`                                                                                                                              	|
-| MathJax           	| all        	| null                        	| Use MathJax for processing page including mathematics, see [_inclused/i/molecule_scriptsBody.html](./_inclused/i/molecule_scriptsBody.html)                                                                                                                 	|
+|       option      | available |    default / [R]equired    |                                                                         description                                                                        |
+|:-----------------:|:---------:|:--------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| layout            | all       | default                    | See [_layouts](./_layouts)                                                                                                                                 |
+| -\|\|-            | posts     | post                       | -\|\|-                                                                                                                                                     |
+| in_menu           | pages     | null                       | The name of item to show in page side menu/list                                                                                                            |
+| excerpt_separator | posts     | `<!--more-->`                |                                                                                                                                                            |
+| permalink         | all       | [R]                        |                                                                                                                                                            |
+| -\|\|-            | posts     | /blog/:year-:month/:title/ |                                                                                                                                                            |
+| title             | all       | [R]                        | Page/Post name                                                                                                                                             |
+| category          | all       | ""                         | See [blog](./blog) – mainly *(non)dev*; Empty by default → listed in both categories                                                                         |
+| tags              | posts     |                            | List of tags, eg. `[tag_1]`                                                                                                                                |
+| show_toc          | all       | 0                          | Headline level deep to generating TOC, see [_includes/show_toc.html](./_includes/show_toc.html)                                                            |
+| reference         | posts     |                            | See [_includes/references_list.html](./_includes/references_list.html)                                                                                     |
+| redirect_from     | all       |                            | See [jekyll/jekyll-redirect-from: Seamlessly specify multiple redirections URLs for your pages and posts.](https://github.com/jekyll/jekyll-redirect-from) |
+| noindex           | all       | null                       | See [robots.txt](./robots.txt) and [sitemap.xml](./sitemap.xml)                                                                                            |
+| date              | all       | based on filename          | In form `YYYY-MM-DD HH:MM:SS`                                                                                                                              |
+| updated           | posts     |                            | In form `YYYY-MM-DD`                                                                                                                                       |
+| MathJax           | all       | null                       | Use MathJax for processing page including mathematics, see [_inclused/i/molecule_scriptsBody.html](./_inclused/i/molecule_scriptsBody.html)                |
 
 ### Helpers
 My partials/data for simplify creating posts.
