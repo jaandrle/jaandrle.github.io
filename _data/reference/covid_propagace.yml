@@ -1,0 +1,49 @@
+avcr_covid_bezpecnost:
+  caption: "#NA_MINUTU: O bezpečnosti a rychlosti schválení vakcíny proti covid-19"
+  href: https://youtu.be/_8dUNJLCcQw
+  description: "Video od Akademie věd České republiky s odpověďmi na otázky
+  <br>➡ Vakcína byla schválena podezřele rychle, je bezpečná?
+  <br>➡ Jaký je proces schvalování vakcín?"
+avcr_covid_vakcina:
+  caption: "#NA_MINUTU: O vakcíně proti covid-19"
+  href: https://youtu.be/kHf3OrTY8nk
+  description: "Video od Akademie věd České republiky s odpověďmi na otázky
+  <br>➡ Má očkování proti covid-19 vedlejší účinky?
+  <br>➡ Proč o vakcíně uvažovat? 
+  <br>➡ Dříve se neočkovalo a lidé to zvládli...?"
+vedecke_kladivo_covid_rychlost:
+  caption: "Proč mohla být Covid-19 vakcína vytvořena rychle?"
+  href: https://www.youtube.com/watch?v=1Bpv5tX3bIs
+  description: Video na YouTube (Vědecké kladivo)
+vedecke_kladivo_covid_mRNA:
+  caption: "Jak funguje mRNA Covid-19 vakcína?"
+  href: https://www.youtube.com/watch?v=ZGPyyAza-LA
+  description: Video na YouTube (Vědecké kladivo)
+mall_covid_proc:
+  caption: "Proč se nebát vakcíny. Jak vlastně funguje v našem organismu?"
+  href: https://www.mall.tv/vite-ze/proc-se-nebat-vakciny-jak-vlastne-funguje-v-nasem-organismu
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_nezadouci_ucinky:
+  caption: "Jaké nežádoucí vedlejší účinky mohou nastat po očkování?"
+  href: https://www.mall.tv/vite-ze/jake-nezadouci-vedlejsi-ucinky-mohou-nastat-po-ockovani
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_jak:
+  caption: "Návod, jak si rezervovat očkování v registračním systému"
+  href: https://www.mall.tv/vite-ze/navod-jak-si-rezervovat-ockovani-v-registracnim-systemu
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_pro_koho:
+  caption: "Pro koho není vhodné očkování proti koronaviru?"
+  href: https://www.mall.tv/vite-ze/pro-koho-neni-vhodne-ockovani-proti-koronaviru
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_alkohol:
+  caption: "Proč byste během očkování neměli pít alkohol"
+  href: https://www.mall.tv/vite-ze/proc-byste-behem-ockovani-nemeli-pit-alkohol
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_ochrana:
+  caption: "Jaká je šance nakazit se covidem, i když jste očkovaní"
+  href: https://www.mall.tv/vite-ze/jaka-je-sance-nakazit-se-covidem-i-kdyz-jste-ockovani
+  description: Pořad „Víte že” na MALL.TV
+mall_covid_zkusenost:
+  caption: "Vít Samek: Z covidového oddělení jsem musel odejít, polovina pacientů zemřela, včetně mého otce"
+  href: https://www.mall.tv/vite-ze/vit-samek-z-covidoveho-oddeleni-jsem-musel-odejit-polovina-pacientu-zemrela-vcetne-meho-otce
+  description: Pořad „Víte že” na MALL.TV

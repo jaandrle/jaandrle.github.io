@@ -1,16 +1,8 @@
 wiki_covid_vaccine:
     caption: "COVID-19 vaccine"
     href: https://en.wikipedia.org/wiki/COVID-19_vaccine
-    description: Dobrý přehledový zdroj průběhu vývoje vakcín, (finanžní) zapojení zemí (EU), schvalovaní (EU×ostatní), …
-vedecke_kladivo_rychlost:
-    caption: "Proč mohla být Covid-19 vakcína vytvořena rychle?"
-    href: https://www.youtube.com/watch?v=1Bpv5tX3bIs
-    description: Video na YouTube (Vědecké kladivo)
-vedecke_kladivo_mRNA:
-    caption: "Jak funguje mRNA Covid-19 vakcína?"
-    href: https://www.youtube.com/watch?v=ZGPyyAza-LA
-    description: Video na YouTube (Vědecké kladivo)
-zdrav_deník_10vakcina:
+    description: Dobrý přehledový zdroj průběhu vývoje vakcín, (finanční) zapojení zemí (EU), schvalovaní (EU×ostatní), …
+zdrav_denik_10vakcina:
     caption: "Deset věcí, které byste měli vědět o vakcíně proti covid-19 - Zdravotnický deník"
     href: https://www.zdravotnickydenik.cz/2020/12/deset-veci-ktere-byste-meli-vedet-o-vakcine-proti-covid-19/
 zdrav_denik_ema:
