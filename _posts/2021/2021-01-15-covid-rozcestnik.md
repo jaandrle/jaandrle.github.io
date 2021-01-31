@@ -3,7 +3,7 @@ issue: 101
 title: „Covid” & vakcíny – jen rozcestník
 category: nondev
 tags: [ věda, covid ]
-updated: 2021-01-17
+updated: 2021-01-31
 ref_propagace:
   - covid_propagace
 ref_vakcina:
