@@ -3,6 +3,7 @@ issue: 88
 title: Trochu bezpečnější přímá editace souborů na vzdáleném serveru
 tags: [ vývojářské tipy, FTP, Notepad++ ]
 category: dev
+updated: 2021-02-02
 reference:
     - ftp_npm
     - lokální:
@@ -18,6 +19,10 @@ reference:
             caption: "Rozšíření „Compare plugin” pro Notepad++"
             href: "https://github.com/jsleroy/compare-plugin"
             description: "umožňující porovnávání souborů, případně aktuálně neuložené úpravy."
+        jecas_ostry_server:
+            caption: "Úprava CSS/JS na ostrém serveru"
+            href: "https://jecas.cz/pripojeni-lokalnich-souboru"
+            description: "Idea vývoje na ostrém serveru namapováním lokálních souborů, které chceme měnit"
     - ftp_vscode
 ---
 
@@ -31,6 +36,8 @@ Prvně je dobré se zamyslet, **zda** toto opravdu chcete **podstupovat**. Úpra
 Některá {{ site.data.abbr.IDE }}[^2] tento postup umožňují, přičemž někdy podporují i detekci konfliktů. Osobně s tím ale dobrou zkušenost nemám.
 
 Korektní postup samozřejmě je, spravovat vývojářskou část odděleně vč. verzování[^1] a používat například nějaký script pro publikaci. Pro inspiraci můžete následovat {% include reference.html target="deploy_script" %} nebo {% include reference.html target="gulp-deploy-ftp" %}.
+
+Případně *ke zvážení/vyzkoušení – lze také použít postup Bohumila Jahody viz {% include reference.html target="jecas_ostry_server" %}*.
 
 ## Můj Notepad++ workflow
 Ideální postup/program by fungoval tak, že při ukládání by rozpoznal rozdíly a zobrazil porovnání souborů při kterém by šlo změny sloučit. Bohužel, něco takového a 100% funkčního se mi nalézt či zprovoznit nepodařilo.
