@@ -1,0 +1,22 @@
+vd_css_prirucka:
+    caption: "CSS3 příručka"
+    href: "https://www.vzhurudolu.cz/prirucka/css3"
+modern_layouts:
+    caption: "10 modern layouts in 1 line of CSS"
+    href: "https://www.youtube.com/watch?v=qm0IfG1GyZU"
+    description: "Hezké průřezové video k vytvoření daných rozvržení stránky"
+layouts:
+    caption: "Relearn CSS layout: Every Layout"
+    href: "https://every-layout.dev/"
+    description: "Jednoduchá stránka (EN) ukazující kousky kódu v CSS, které vytvoří dané rozložení stránky symbolizované náčrtkem a jménem. Bohužel, ne všechny layouty jsou dostupné bezplatně."
+vd_css_promenne:
+    caption: "CSS proměnné: 6 praktických příkladů, které vás nakopnou k jejich používání"
+    href: "https://www.vzhurudolu.cz/amp/prirucka/css-promenne-priklady"
+    description: "Část ukázek se týká prostě „jen” použití proměnných, jak by asi mohlo napadnout kdekoho (světlý/tmavý mód). Důležitá je znalost použití v SVG, také kombinace s `calc`em (ukázka s typografií) či breakpointů"
+know_css:
+    caption: "CSS Tricks | You-need-to-know-css"
+    href: "https://lhammer.cn/You-need-to-know-css/"
+    description: "Taková kuchařka zobrazující mimojiné jak dosáhnout vytvoření vícero okrajů či vlastních radio tlačítek."
+animations_collection:
+    caption: "A Collection of Pure CSS Animation Snippets & Demos"
+    href: "https://envato.com/blog/pure-css-animation-snippets/"

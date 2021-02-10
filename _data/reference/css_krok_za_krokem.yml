@@ -1,0 +1,12 @@
+radial_progress:
+    caption: "100% pure css radial progress bar · From An Egg"
+    href: "https://fromanegg.com/post/2013/01/23/100-pure-css-radial-progress-bar/"
+    description: "Vhodné odstranit `-webkit-` všude v textu (již není potřeba). Pro nováčky nmůže sloužit jako jednoduchý/malý projekt pro osahání práce s HTML/CSS (vhodné kombinovat s dokumentací)."
+background_blur_up:
+    caption: "The “Blur Up” Technique for Loading Background Images | CSS-Tricks"
+    href: "https://css-tricks.com/the-blur-up-technique-for-loading-background-images/"
+    description: "Může sloužit jako už pokročilejší projekt pro nováčky."
+line_graph:
+    caption: "Pure Css Line Graph"
+    href: "http://cssglobe.com/lab/csslinegraph/"
+    description: "Není nejspíše vhodné pro praktické použití, spíše bych šel do SVG. Ale mohlo by sloužit pro nováčky k hrátkům s pozadím."
