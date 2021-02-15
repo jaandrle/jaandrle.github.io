@@ -13,4 +13,17 @@ resize:
 curve_radii:
     caption: "Curve Radii: the border-radius properties"
     href: "https://www.w3.org/TR/css-backgrounds-3/#the-border-radius"
-    description: "Zaoblení rohů není jen `border-radius` viz dokumentace"
+    description: "Zaoblení rohů není jen `border-radius` viz tato dokumentace"
+css_matrix:
+    caption: "The CSS3 Matrix Construction Set"
+    href: "http://www.useragentman.com/matrix/"
+reworkcss:
+    caption: "reworkcss/rework: Plugin framework for CSS preprocessing in Node.js"
+    href: "https://github.com/reworkcss/rework"
+color_contrast:
+    caption: "Color contrast accessibility tools | CSS-Tricks"
+    href: "https://css-tricks.com/color-contrast-accessibility-tools/"
+    description: "nástroje však většinou již zabudovány přímo v prohlížečích"
+morphing_animation:
+    caption: "morphing circle animations"
+    href: "https://twitter.com/JoshWComeau/status/1223443153749008387"
