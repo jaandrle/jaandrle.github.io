@@ -25,5 +25,8 @@ color_contrast:
     href: "https://css-tricks.com/color-contrast-accessibility-tools/"
     description: "nástroje však většinou již zabudovány přímo v prohlížečích"
 morphing_animation:
-    caption: "morphing circle animations"
+    caption: "Morphing circle animations"
     href: "https://twitter.com/JoshWComeau/status/1223443153749008387"
+liquid_loader:
+    caption: "Liquid loader"
+    href: "https://codepen.io/ainalem/pen/eYmGLyp"
