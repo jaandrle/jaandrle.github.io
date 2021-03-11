@@ -1,0 +1,44 @@
+radial_progress:
+    caption: "100% pure css radial progress bar · From An Egg"
+    href: "https://fromanegg.com/post/2013/01/23/100-pure-css-radial-progress-bar/"
+    description: "Vhodné odstranit `-webkit-` všude v textu (již není potřeba). Pro nováčky nmůže sloužit jako jednoduchý/malý projekt pro osahání práce s HTML/CSS (vhodné kombinovat s dokumentací)."
+background_blur_up:
+    caption: "The “Blur Up” Technique for Loading Background Images | CSS-Tricks"
+    href: "https://css-tricks.com/the-blur-up-technique-for-loading-background-images/"
+    description: "Může sloužit jako už pokročilejší projekt pro nováčky."
+line_graph:
+    caption: "Pure Css Line Graph"
+    href: "http://cssglobe.com/lab/csslinegraph/"
+    description: "Není nejspíše vhodné pro praktické použití, spíše bych šel do SVG. Ale mohlo by sloužit pro nováčky k hrátkám s pozadím."
+animations_collection:
+    caption: "A Collection of Pure CSS Animation Snippets & Demos"
+    href: "https://envato.com/blog/pure-css-animation-snippets/"
+vd_css_promenne:
+    caption: "CSS proměnné: 6 praktických příkladů, které vás nakopnou k jejich používání"
+    href: "https://www.vzhurudolu.cz/amp/prirucka/css-promenne-priklady"
+    description: "Část ukázek se týká prostě „jen” použití proměnných, jak by asi mohlo napadnout kdekoho (světlý/tmavý mód). Důležitá je znalost použití v SVG, také kombinace s `calc`em (ukázka s typografií) či breakpointů"
+karusely_css:
+    caption: "Jednoduché karusely jen za pomocí CSS?"
+    href: "https://twitter.com/vzhurudolu/status/1216749755285614592"
+prefers-reduced-motion:
+    caption: "prefers-reduced-motion"
+    href: "https://twitter.com/vzhurudolu/status/1316753708105990144"
+css_is:
+    caption: "`:is`"
+    href: "https://twitter.com/argyleink/status/1316143837903896577"
+svg_v_css_1:
+    caption: "SVG lze zapsat v čitelné podobě do CSS"
+    href: "https://twitter.com/martinpesout/status/1219193282867159041"
+    description: "Využívá `background-image: url('data:imagesvg+xml,\\…`"
+svg_v_css_2:
+    caption: "SVG pomocí CSS masky"
+    href: "https://twitter.com/chriscoyier/status/1124064712067624960"
+css_motion_path:
+    caption: "CSS Motion Path"
+    href: "https://twitter.com/yuanchuan23/status/1215172578110857217"
+css_device_detection:
+    caption: "Víte, jak s CSS lépe poznat uživatelovo zařízení?"
+    href: "https://twitter.com/zdrojak/status/1230849198066720769"
+i_animation:
+    caption: "The Trick to Animating the Dot on the Letter \"i\""
+    href: "https://twitter.com/javascripting/status/1192079487866933248"

@@ -1,0 +1,37 @@
+heureka_styleguide:
+  caption: "Heureka Styleguide"
+  href: "https://www.heureka.cz/ui/"
+  description: "Pro inspiraci design systém na Heurece"
+design_system_atomic:
+  caption: "Atomický design systém pužívaný FutureLearn"
+  href: "https://design-system.futurelearn.com/"
+public_design_systems:
+  caption: "Adele – Design Systems and Pattern Libraries Repository"
+  href: "https://adele.uxpin.com/"
+  description: "Průzkumník veřejně dostupných design systémů a pravidel používaných různými sluýbami či organizacemi."
+css_keep_simpe:
+  caption: "Keeping it simple with CSS that scales - Andy Bell"
+  href: "https://archive.hankchizljaw.com/wrote/keeping-it-simple-with-css-that-scales/"
+itcss:
+  caption: "ITCSS: Scalable and Maintainable CSS Architecture - Xfive"
+  href: "https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/"
+brevis:
+  caption: "brevis/brevis.css at master · dlzi/brevis"
+  href: "https://github.com/dlzi/brevis/blob/master/brevis.css"
+  description: "Inspirace na názvy funkcionálního CSS"
+tailwind-in-js:
+  caption: "Tailwind-in-JS | tweet"
+  href: "https://twitter.com/lukejacksonn/status/1341858173498568704"
+inuitcss:
+  caption: "inuitcss/inuitcss: Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects."
+  href: "https://github.com/inuitcss/inuitcss"
+css_axis:
+  caption: "static-dev/axis: terse, modular & powerful css library"
+  href: "https://github.com/static-dev/axis"
+css_spector:
+  caption: "superbryntendo/spector: A generative functional SCSS library"
+  href: "https://github.com/superbryntendo/spector"
+smysluplne_css:
+  caption: "Smysluplné CSS: stylujte, jak se má | Interval.cz"
+  href: "https://www.interval.cz/clanky/smysluplne-css-stylujte-jak-se-ma/"
+  description: "Zahrnuto pro zamyšlení"

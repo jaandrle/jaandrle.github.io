@@ -1,0 +1,32 @@
+drop_shadow:
+    caption: "CSS tip: `drop-shadow`"
+    href: "https://twitter.com/denicmarko/status/1347437318374907907"
+    description: "Tento filtr lze použít pro transparentní obrázky…"
+numbering:
+    caption: "Automatic counters and numbering"
+    href: "https://www.w3.org/TR/CSS21/generate.html#counters"
+    description: "Dokumentace k `counter-{reset|increment}: {{pojmenovani citace}};` a `content: …counter({{pojmenovani citace}})…;` Použití například v [nadpisech](https://twitter.com/pichfl/status/1183363631074942977)"
+resize:
+    caption: "Resizing Boxes: the resize property"
+    href: "https://www.w3.org/TR/css-ui-3/#resize"
+    description: "Dokumentace k `resize: {none | both | horizontal | vertical};`"
+curve_radii:
+    caption: "Curve Radii: the border-radius properties"
+    href: "https://www.w3.org/TR/css-backgrounds-3/#the-border-radius"
+    description: "Zaoblení rohů není jen `border-radius` viz tato dokumentace"
+css_matrix:
+    caption: "The CSS3 Matrix Construction Set"
+    href: "http://www.useragentman.com/matrix/"
+reworkcss:
+    caption: "reworkcss/rework: Plugin framework for CSS preprocessing in Node.js"
+    href: "https://github.com/reworkcss/rework"
+color_contrast:
+    caption: "Color contrast accessibility tools | CSS-Tricks"
+    href: "https://css-tricks.com/color-contrast-accessibility-tools/"
+    description: "nástroje však většinou již zabudovány přímo v prohlížečích"
+morphing_animation:
+    caption: "Morphing circle animations"
+    href: "https://twitter.com/JoshWComeau/status/1223443153749008387"
+liquid_loader:
+    caption: "Liquid loader"
+    href: "https://codepen.io/ainalem/pen/eYmGLyp"

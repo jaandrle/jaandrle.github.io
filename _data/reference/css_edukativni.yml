@@ -1,0 +1,47 @@
+vd_css_prirucka:
+    caption: "CSS3 příručka"
+    href: "https://www.vzhurudolu.cz/prirucka/css3"
+resilient_css:
+    caption: "Resilient CSS (Jen Simmons)"
+    href: "https://twitter.com/jensimmons/status/1148027614461923328"
+    description: "Jak v CSS zařídit „zpětnou” kompatibilitu (PS: ukazuje právě, že „zpětnou” je špatný přístup)"
+modern_layouts:
+    caption: "10 modern layouts in 1 line of CSS"
+    href: "https://www.youtube.com/watch?v=qm0IfG1GyZU"
+    description: "Hezké průřezové video k vytvoření daných rozvržení stránky"
+layouts:
+    caption: "Relearn CSS layout: Every Layout"
+    href: "https://every-layout.dev/"
+    description: "Jednoduchá stránka (EN) ukazující kousky kódu v CSS, které vytvoří dané rozložení stránky symbolizované náčrtkem a jménem. Bohužel, ne všechny layouty jsou dostupné bezplatně."
+know_css:
+    caption: "CSS Tricks | You-need-to-know-css"
+    href: "https://lhammer.cn/You-need-to-know-css/"
+    description: "Taková kuchařka zobrazující mimojiné jak dosáhnout vytvoření vícero okrajů či vlastních radio tlačítek."
+colors_missing:
+    caption: "Why don't color spaces use up the entire color spectrum?"
+    href: "https://photo.stackexchange.com/questions/70140/why-dont-color-spaces-use-up-the-entire-color-spectrum"
+    description: "Logická otázka na *sRGB*"
+wiki_barevny_prostor:
+    caption: "Barevný prostor"
+    href: "https://cs.wikipedia.org/wiki/Barevn%C3%BD_prostor"
+    description: "Článek na Wikipedii o barevných prostorech (*RGB*, *CMYK*, …)"
+wiki_sRGB:
+    caption: "sRGB"
+    href: "https://cs.wikipedia.org/wiki/SRGB"
+    description: "Wikipedia „o webovém barevném prostoru”"
+gamut_of_color:
+    caption: "The Expanding Gamut of Color on the Web"
+    href: "https://css-tricks.com/the-expanding-gamut-of-color-on-the-web/"
+    description: "„Moderní barvy i v CSS”"
+subgrid:
+    caption: "Ale slyšeli jste už i název subgrid?"
+    href: "https://twitter.com/zdrojak/status/1140551689658929152"
+cssgrid:
+    caption: "wesbos/css-grid: Starter Files + Solutions to my CSSGrid.io Course"
+    href: "https://github.com/wesbos/css-grid"
+flexbox:
+    caption: "wesbos/What-The-Flexbox: Exercises for the What The Flexbox video series - available at Flexbox.io"
+    href: "https://github.com/wesbos/What-The-Flexbox"
+lch_css:
+    caption: "LCH colors in CSS: what, why, and how?"
+    href: "https://twitter.com/LeaVerou/status/1246429169896108033"
