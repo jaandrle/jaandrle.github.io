@@ -1,3 +1,14 @@
+heureka_styleguide:
+  caption: "Heureka Styleguide"
+  href: "https://www.heureka.cz/ui/"
+  description: "Pro inspiraci design systém na Heurece"
+design_system_atomic:
+  caption: "Atomický design systém pužívaný FutureLearn"
+  href: "https://design-system.futurelearn.com/"
+public_design_systems:
+  caption: "Adele – Design Systems and Pattern Libraries Repository"
+  href: "https://adele.uxpin.com/"
+  description: "Průzkumník veřejně dostupných design systémů a pravidel používaných různými sluýbami či organizacemi."
 css_keep_simpe:
   caption: "Keeping it simple with CSS that scales - Andy Bell"
   href: "https://archive.hankchizljaw.com/wrote/keeping-it-simple-with-css-that-scales/"
