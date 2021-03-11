@@ -20,7 +20,7 @@ arr.forEach(conslole.log);
 const forEach1= Array.prototype.forEach;
 forEach1.call(arr, console.log);
 //#3
-const forEach= Array.prototype.forEach.call.bind(Array.prototype.forEach);
+const forEach= Function.prototype.call.bind(Array.prototype.forEach);
 forEach(arr, console.log)
 ```
 ' %}
@@ -65,7 +65,7 @@ Důležité je mít na paměti, že takovéto použití má důsledky mimojiné 
 
 Dále některé takto vytvořené funkce nejsou „funkcionální” (*[Pure function](https://en.wikipedia.org/wiki/Pure_function)*) – například [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
 
-Pro funkcionální přístup potřebujeme některé další funkcionality, jako například *„pipe” funkci* (viz dále). Lako lépe předpřipravené řešení použít nějakou knihovnu jako [emphori/stark: Minimal and incredibly lightweight functional programming for JavaScript](https://github.com/emphori/stark).
+Pro funkcionální přístup potřebujeme některé další nástroje, jako například *„pipe” funkci* (viz dále). Jako lépe předpřipravené ucelené řešení lze použít nějakou knihovnu jako [emphori/stark: Minimal and incredibly lightweight functional programming for JavaScript](https://github.com/emphori/stark).
 {% include code.html caption="Příklad definice „pipe” funkce." code='
 ```JavaScript
 /**
