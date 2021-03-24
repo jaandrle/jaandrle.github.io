@@ -17,6 +17,10 @@ know_css:
     caption: "CSS Tricks | You-need-to-know-css"
     href: "https://lhammer.cn/You-need-to-know-css/"
     description: "Taková kuchařka zobrazující mimojiné jak dosáhnout vytvoření vícero okrajů či vlastních radio tlačítek."
+mozilla_developer_yt:
+    caption: "Mozilla Developer - YouTube"
+    href: "https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w"
+    description: "Například [Style Lists with New CSS — Bullets, Numbers, Markers](https://youtu.be/2awepiNoaZI)"
 colors_missing:
     caption: "Why don't color spaces use up the entire color spectrum?"
     href: "https://photo.stackexchange.com/questions/70140/why-dont-color-spaces-use-up-the-entire-color-spectrum"

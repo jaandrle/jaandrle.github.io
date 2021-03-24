@@ -35,3 +35,9 @@ arabesque:
   caption: "Články o VIM tipech na blogu Arabesque (EN)"
   href: "https://sanctum.geek.nz/arabesque/category/vim/"
   description: "Například [Special characters in Vim](https://sanctum.geek.nz/arabesque/special-characters-in-vim/)."
+onivim:
+  caption: "Onivim 2 - Modal Editing from the Future"
+  href: "https://v2.onivim.io/"
+vsc_and_neovim:
+  caption: "VSCodium & Neovim"
+  href: "https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/"
