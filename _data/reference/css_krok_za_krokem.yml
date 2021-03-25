@@ -23,6 +23,9 @@ karusely_css:
 prefers-reduced-motion:
     caption: "prefers-reduced-motion"
     href: "https://twitter.com/vzhurudolu/status/1316753708105990144"
+typekit_font:
+    caption: "The Typekit Blog | Better web font loading with JavaScript"
+    href: "https://blog.typekit.com/2011/08/11/better-web-font-loading-with-javascript/"
 css_is:
     caption: "`:is`"
     href: "https://twitter.com/argyleink/status/1316143837903896577"
