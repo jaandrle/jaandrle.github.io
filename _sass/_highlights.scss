@@ -8,6 +8,10 @@ code {
   border-left-width: .2rem;
   padding: .1rem .25rem;
   border-radius: .5rem;
+
+  @include mobile{
+    word-break: break-word;
+  }
 }
 // Figure - base style
 .highlight {
@@ -50,7 +54,7 @@ code {
   .code {
     padding-left: 1rem;
   }
-  .info{
+  .info {
     text-indent: 0;
   }
   [data-lang]::before {
