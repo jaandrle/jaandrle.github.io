@@ -49,5 +49,7 @@ endif %}
 {{_S}}<link rel="alternate" type="application/rss+xml" title="{{ feed.subtitle }}" href="{{ feed.url }}" />{% endif %}{%
 endfor %}
 {{_S}}<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ full_baseurl }}{{ '/sitemap.xml' }}" />
+{{_S}}<link rel="webmention" href="https://webmention.io/jaandrle.github.io/webmention" />
+{{_S}}<link rel="pingback" href="https://webmention.io/jaandrle.github.io/xmlrpc" />
 {{_S}}<!-- 💬 -->
 {{_S}}<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.author.name }} (osobní stránky/blog)</title>
