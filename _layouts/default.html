@@ -39,7 +39,7 @@
     <div class="display__f justifyC__sB alignI__c">
      <div>{%
     for social in site.data.social %}{% assign sp= social | last %}
-      <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}">{{ sp.name }}</a>{%
+      <a href="{{sp.href}}{{sp.account}}" title="{{sp.title}}" class="svg-icon {{ social | first }}" rel="me">{{ sp.name }}</a>{%
     endfor %}
      </div>
      <a href="#main" role="button" aria-label="Scroll to main content begining" class="C__button">Vrátit se na začátek obsahu</a>
