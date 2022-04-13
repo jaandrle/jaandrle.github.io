@@ -11,14 +11,14 @@
      <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2> {%
      assign pages= site.pages | sort: "in_menu"
       %}{% for page_i in pages %}{% if page_i.in_menu %}
-     <a {% comment %}{% endcomment
-         %}href="{{ page_i.url }}" {% comment %}{% endcomment
-         %}title="{{ page_i.description | strip_html }}" {% comment %}{% endcomment
-         %}class="C__button{%
-          if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
-           %} C__sidebarNav_active{%
-          endif %}"{% comment %}{% endcomment
-         %}>{{ page_i.in_menu }}</a>{%
+          <a {% comment %}{% endcomment -%}
+            href="{{ page_i.url }}" {% comment %}{% endcomment -%}
+            title="{{ page_i.description | strip_html }}" {% comment %}{% endcomment -%}
+            class="C__button{%
+                if page.in_menu contains page_i.in_menu or page.category contains page_i.category and page_i.category contains page.category
+                    %} C__sidebarNav_active{%
+                endif %}"{% comment %}{% endcomment -%}
+          >{{ page_i.in_menu }}</a>{%
       endif %}{% endfor %}
    </nav>
 
