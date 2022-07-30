@@ -1,6 +1,7 @@
 name: Trigger GitHub pages rebuild every day at 1:00am
 
 on:
+    workflow_dispatch:
     schedule:
     - cron: '0 1 * * *'
 jobs:
