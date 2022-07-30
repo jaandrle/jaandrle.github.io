@@ -1,18 +1,18 @@
 name: Trigger GitHub pages rebuild every day at 1:00am
 
 on:
-	schedule:
+    schedule:
     - cron: '0 1 * * *'
 jobs:
   curl:
-	runs-on: ubuntu-latest
-	steps:
-	- name: curl
-	  run: |
-		  curl --fail --request POST \
-		  --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
-		  --header "Authorization: Bearer $USER_TOKEN"
-	  env:
-		  # You must create a personal token with repo access as GitHub does
-		  # not yet support server-to-server page builds.
-		  USER_TOKEN: ${{ secrets.PAGES_ACCESS_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      run: |
+          curl --fail --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/pages/builds \
+          --header "Authorization: Bearer $USER_TOKEN"
+      env:
+          # You must create a personal token with repo access as GitHub does
+          # not yet support server-to-server page builds.
+          USER_TOKEN: ${{ secrets.PAGES_ACCESS_TOKEN }}
