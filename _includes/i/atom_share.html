@@ -1,9 +1,14 @@
 {%      assign user_twitter= site.author.twitter
+%}{%    assign _um= site.data.social.account_mastodon
+%}{%    capture user_mastodon %}{{_um.account}}{{_um.instance}}{% endcapture
 %}{%    assign post_url= page.url | prepend: site.url | url_encode
 %}{%    assign post_title= page.title | url_encode
 %}{%    assign link_params= 'target="_blank" rel="nofolow" '
 %}{{_S}}<div class="C__asideInfo">
 {{_S}} {% include i/atom_asideHeadline.html headline="Sdílet" icon=":link:" %}
+{{_S}} <a onclick="mastodonShare(event)" href="" data-href="/share?text={{post_title}}%0A[{{user_mastodon}}]&url={{post_url}}" {% comment %}{% endcomment
+        %}{{link_params}}title="Sdílet na Mastodonu">Mastodon</a>
+{{_S}} <br>
 {{_S}} <a href="https://twitter.com/intent/tweet?text={{post_title}}&url={{post_url}}&via={{user_twitter}}&related={{user_twitter}}" {% comment %}{% endcomment
         %}{{link_params}}title="Sdílet na Twitteru">Twitter</a>
 {{_S}} <br>
