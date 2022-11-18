@@ -2,5 +2,5 @@
 permalink: .well-known/security.txt
 ---
 Contact: {% capture tmp_url %}{% link about.md %}{% endcapture %}{{ tmp_url | absolute_url }}
-Contact: https://twitter.com/messages/compose?recipient_id={{ site.author.twitter_id }}
+Contact: {{ site.data.social.account_mastodon.href }}{{ site.data.social.account_mastodon.account }}
 Preferred-Languages: cs, en
