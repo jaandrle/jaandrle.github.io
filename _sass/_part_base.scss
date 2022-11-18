@@ -1,6 +1,9 @@
 html {
   font-size: 100%;
 }
+.nojs [onclick]{
+	display: none;
+}
 
 body {
   background-color: $color_highlightMiddle;

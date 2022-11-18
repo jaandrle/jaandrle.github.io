@@ -4,7 +4,7 @@
 #   - code version (name) / repository
 #   - name convention based on https://en.wikipedia.org/wiki/Ubuntu_version_history#Release_history
 code:
-  version: 2020.11b
+  version: 2020.11c
   name: Dapper Drake LTS
   hosted: "https://github.com/"
   repository: "jaandrle/jaandrle.github.io"
@@ -33,8 +33,6 @@ welcome_text: Vítejte na osobních stránkách Jana Andrle.
 author:
   name: Jan Andrle
   email: andrle.jan@centrum.cz
-  twitter: jaandrle
-  twitter_id: 272926176
 avatar: https://avatars0.githubusercontent.com/u/8017233?s=460&v=4
 
 # Posts

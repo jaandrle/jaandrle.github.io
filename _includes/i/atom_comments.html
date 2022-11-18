@@ -1,15 +1,15 @@
-{%      assign user_twitter= site.author.twitter
+{%      assign user_mastodon= site.data.social.account_mastodon
 %}{%    assign post_url= page.url | prepend: site.url | url_encode
 %}{%    assign link_params= ' target="_blank" rel="nofolow"'
-%}{%    assign id_post= page.date | date: "%-Y%-m%-d%-H%-M%-S"
-%}{%    assign id= "jablog_" | append: id_post 
 %}{{_S}}<div class="C__asideInfo">
 {{_S}} {% include i/atom_asideHeadline.html headline="Komentáře" icon=":speech_balloon:" %}
-{{_S}} <a href="https://twitter.com/search?q=(%23{{id}})(%40{{user_twitter}})&src=typed_query" {% comment %}{% endcomment
-        %}title="Tweety s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
-        %}{{link_params}}>Reakce na Twitteru</a>
+{%- if page.toot %}
+{{_S}} <a href="{{user_mastodon.href}}{{user_mastodon.account}}/{{page.toot}}" {% comment %}{% endcomment
+        %}title="Diskutovat lze na Mastodonu"{% comment %}{% endcomment
+        %}{{link_params}}>viz Mastodon</a>
 {{_S}} <br>
-{{_S}} <a href="https://twitter.com/intent/tweet?hashtags={{id}}&url={{post_url}}&screen_name={{user_twitter}}" {% comment %}{% endcomment
-        %}title="Vytvořit tweet s tagem {{id}} (identifikující tento příspěvek) a se zmínkou @{{user_twitter}} (můj účet)"{% comment %}{% endcomment
-        %}{{link_params}}>Twítnout postřeh</a>
+{%- endif %}
+{{_S}} <a href="https://discu.eu/?q={{post_url}}&submit_title={{page.title}}" {% comment %}{% endcomment
+        %}title="Diskuze nalezené pomocí discu.eu"{% comment %}{% endcomment
+        %}{{link_params}}>discu.eu</a>
 {{_S}}</div>

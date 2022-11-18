@@ -4,5 +4,5 @@ permalink: humans.txt
 /* TEAM */
     Author: {{ site.author.name }}
     Contact: {{ site.author.email | replace: "@", " [·at·sign·] " }}
-    Twitter: @jaandrle
+    Mastodon: {{ site.data.social.account_mastodon.href }}{{ site.data.social.account_mastodon.account }}
     From: Prague, Czechia

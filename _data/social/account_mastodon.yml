@@ -1,4 +1,5 @@
 name: "Mastodon"
 title: "My mastodon account"
 account: "@jaandrle"
+instance: "@fosstodon.org"
 href: "https://fosstodon.org/"
