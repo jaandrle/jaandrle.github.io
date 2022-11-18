@@ -1,6 +1,7 @@
 ---
 permalink: .well-known/security.txt
 ---
-Contact: {% capture tmp_url %}{% link about.md %}{% endcapture %}{{ tmp_url | absolute_url }}
+Contact: {{ site.author.email | replace: "@", " [·at·sign·] " }}
 Contact: {{ site.data.social.account_mastodon.href }}{{ site.data.social.account_mastodon.account }}
+Contact: {% capture tmp_url %}{% link about.md %}{% endcapture %}{{ tmp_url | absolute_url }}
 Preferred-Languages: cs, en
