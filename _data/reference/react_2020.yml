@@ -20,3 +20,7 @@ RFS_guide:
   caption: "React Function Components"
   href: "https://www.robinwieruch.de/react-function-component"
   description: "Již komplexnější návod, který už mlčky předpokládá některé znalosti „staršího” Reactu."
+Sara_guide:
+  caption: "Opinionated Guide to React"
+  href: "https://opinionatedreact.com/"
+  description: "Tuto knihu doporučil Dan Abramov"
