@@ -1,5 +1,5 @@
 .C__targetHighlite:target{
-  background-color: transparentize($color_highlight, .85);
+  background-color: css_hsl($color_highlight / .85);
   transition: all 2s;
 }
 /*
