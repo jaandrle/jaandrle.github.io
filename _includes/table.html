@@ -1,0 +1,14 @@
+{%- comment %}
+Použití: {% include table.html caption="Popisek" table=markdown-table %}
+    - `table`: Markdown tabulka, která bude vložena do figure.
+    - `caption`: Popisek obrázku jako markdown. Volitelný parametr.
+{% endcomment -%}
+
+{%- assign caption = include.caption | default: '' -%}
+
+<figure class="C__figureObject C__figureObject-table">
+  {{- include.table | markdownify -}}
+  {%- if caption != '' -%}
+    <figcaption class="info">{{ include.caption | markdownify | strip }}</figcaption>
+  {%- endif %}
+</figure>
