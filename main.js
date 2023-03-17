@@ -1,7 +1,5 @@
 /* jshint esversion: 6,-W097, -W040, browser: true, expr: true, undef: true */
 /* global prompt */
-console.log("{{site.data.social.account_mastodon.account}}");
-
 window.mastodonShare= function(event){
 	event.preventDefault();
 	const { target }= event;

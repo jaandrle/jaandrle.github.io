@@ -136,11 +136,29 @@ kbd {
   border-radius: 5px;
   padding: .1rem .25rem .05rem .25rem;
 }
-table, td, th {
-  border: 1px dotted $color_regularFG;
-  border-collapse: collapse;
+table {
+  border-radius: 6px;
+  border: 1px dashed $color_highlightLight;
+}
+tbody{
   text-align: right;
+}
+td, th {
+  border-left: 1px dashed $color_highlightLight;
+  border-top: 1px dashed $color_highlightLight;
   padding: .5em;
+}
+th {
+  border-top: none;
+}
+td:first-child, th:first-child {
+   border-left: none;
+}
+tr:first-child td {
+  border-top: 2px dashed $color_highlight;
+}
+tr:nth-of-type(odd) td {
+  border-top-color: $color_highlight;
 }
 
 // Fixes images in popup boxes from Google Translate
