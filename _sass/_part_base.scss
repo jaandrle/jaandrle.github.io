@@ -136,6 +136,12 @@ kbd {
   border-radius: 5px;
   padding: .1rem .25rem .05rem .25rem;
 }
+table, td, th {
+  border: 1px dotted $color_regularFG;
+  border-collapse: collapse;
+  text-align: right;
+  padding: .5em;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
