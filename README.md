@@ -3,7 +3,7 @@ This document covers building and managing my pages with [Jekyll](#jekyll). Ther
 
 ## Current progress/state
 - [Technická část](https://github.com/jaandrle/jaandrle.github.io/projects/2?fullscreen=true) for technical background.
-- [Správa příspěvků](https://github.com/jaandrle/jaandrle.github.io/projects/1?fullscreen=true) for posts progress.
+- [Správa příspěvků](https://github.com/users/jaandrle/projects/4) for posts progress.
 
 ## This instance
 The `master` (`main`) branch reflects current public state of web page. There are some helpers/setups for speed up blogging.
