@@ -5,8 +5,8 @@
  </head>
  <body class="C__contentFirst display__f">
   <a href="#main" class="C__skipLink" role="button" aria-label="Scroll to main content begining">Scroll to content</a>
-  <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix">
-   <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img alt="User avatar photo" src="{{ site.avatar }}"/></a>
+  <header class="C__header display__f minW__bar flex__1 textA__c margin__0_auto padding__1 m_padding__0 clearfix h-card">
+   <a href="{{ site.baseurl }}/" class="C__sidebarAvatar float__l margin__0_auto"><img class="u-photo" alt="User avatar photo" src="{{ site.avatar }}"/></a>
    <nav class="C__sidebarNav display__f float__l" aria-labelledby="nav-heading" role="navigation">
      <h2 id="nav-heading" class="C__visuallyHide">Hlavní navigace</h2> {%
      assign pages= site.pages | sort: "in_menu"
@@ -23,7 +23,7 @@
    </nav>
 
    <div class="C__sidebarInfo float__l margin__1_auto">
-    <div class="C__sidebarInfo_name C__textHighlited"><a href="{{ site.baseurl }}/">{{ site.author.name }}</a></div>
+    <div class="C__sidebarInfo_name C__textHighlited"><a class="p-name u-url" href="{{ site.baseurl }}/">{{ site.author.name }}</a></div>
     <p class="C__sidebarInfo_description C__textHighlited">{{ site.description }}</p>
    </div>
   </header>
