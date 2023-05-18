@@ -189,6 +189,8 @@ a.C__button {
   }
 
   &-table{
+    overflow-x: auto;
+
     table {
       border-radius: 6px;
       border: 1px dashed $color_highlightLight;
