@@ -26,8 +26,8 @@ Prvním místem mohou samozřejmě být přímo služby daných televizí. Tedy:
        - [České a československé filmy - sledujte online \| Česká televize](https://www.ceskatelevize.cz/ivysilani/kategorie/3947-filmy/4720-ceske/)
        - [Klasické filmy pro pamětníky - sledujte online \| Česká televize](https://www.ceskatelevize.cz/ivysilani/kategorie/3947-filmy/3971-klasicke/)
   - navíc i zahraniční díla (vždy jen dočasná práva)
-1. [Televize Seznam](https://www.televizeseznam.cz/tv?tf=1701385200&dotId=4892455)
-  - cena: **zdarma+reklamy**, nebo **29,– Kč**
+1. [Televize Seznam](https://www.televizeseznam.cz/tv?tf=1701385200&dotId=4892455), [ᐅ Filmy zdarma online \| Stream](https://www.stream.cz/videa/filmy)
+  - cena: **zdarma+reklamy**, nebo **29,– Kč** (součást [Seznam Premium](https://premium.seznam.cz/))
 1. [Prima+ | sledujte filmy, seriály a pořady TV Prima na Prima plus](https://www.iprima.cz/)
   - cena: **zdarma+reklamy**, nebo **99,– Kč + ½reklam**, nebo **149,– Kč**
   - [Prima+ je s námi šest měsíců. Obstojí ve srovnání se světovými standardy? - Lupa.cz](https://www.lupa.cz/clanky/prima-je-s-nami-sest-mesicu-obstoji-ve-srovnani-se-svetovymi-standardy/)
@@ -40,9 +40,9 @@ Při rozhodování může pomoci přehled co je kde dostupné, např. viz [Filmt
 
 ## Česká VOD „kina”
 1. [FILMY ČESKY - YouTube](https://www.youtube.com/@FILMYCESKY447)
-  - cena: **zdarma+reklamy**
+  - cena: **zdarma+reklamy**, nebo **179,–** ([YouTube Premium](https://www.youtube.com/premium))
 1. [Česká filmová klasika - YouTube](https://www.youtube.com/@Ceskafilmovaklasika)
-  - cena: **zdarma+reklamy**
+  - cena: **zdarma+reklamy**, nebo **179,–** ([YouTube Premium](https://www.youtube.com/premium))
 1. [iDNES KINO](https://kino.idnes.cz/)
   - cena: **zdarma+reklamy**
 1. [Sledujte filmy online zdarma na \| Kinobox.cz](https://www.kinobox.cz/videa/cele-filmy-zdarma)
